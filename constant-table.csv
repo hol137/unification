@@ -1,0 +1,39 @@
+symbol, value
+c,constants.c
+h,constants.h
+hbar,constants.hbar
+a,137.0359990836958
+d_e,1.00115965218128
+zeta3,1.202056903159594
+zeta2,np.pi**2/6
+e,np.e
+gamma,np.euler_gamma
+Gamma,(constants.fine_structure**-1*gamma)/np.pi
+F,(2*137*Gamma)**1.5
+lambdabare,constants.hbar/(constants.m_e*constants.c)
+lambdabar_F,lambdabare/F
+lambdabar_p,(constants.hbar/(constants.m_p*constants.c))
+H,1837.152646
+p,1836.15267343 
+n,1838.68366173 
+m_e, constants.m_e
+m_p, constants.m_p
+m_n, constants.m_n
+beta,(H-p)**(-1)
+j,(8*np.pi**2)/np.log(2)
+k_B,constants.Boltzmann
+T_cmb,2.7255
+l_P,((constants.hbar*G_s)/constants.c**3)**0.5
+ƛ_w,(constants.hbar/(constants.m_e*constants.c))/F**2
+b,2.897771955*10**(-3)
+𝜔,(h*c)/(k_B*b)
+l_ph,(lambdabare*(np.pi*(a**2))**2)
+aprime, 137.1106292
+r_H,(lambdabare*aprime)
+G_s,6.67545372e-11
+Lucas,170141183460469231731687303715884105727
+OM,808017424794512875886459904961710757005754368000000000
+OB,4154781481226426191177580544000000
+OP,2663849798329448283764291471531459318169741293570162121768960000000000000
+
+

@@ -1,0 +1,2478 @@
+\documentclass[a4paper,9pt]{article}
+%\documentclass{aa}
+%\pgfplotsset{compat=1.12}
+\usepackage{conference}
+\usepackage{latexsym}
+\usepackage[perpage,symbol*]{footmisc}
+%\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{amssymb,amsfonts,amsmath}
+\usepackage{xcolor}
+
+%\begin{filecontents*}{\periodictable.tex}
+\usepackage{pdfpages}
+\usepackage{bashful}
+%\immediate\write18{pdflatex \periodic-table.tex}
+
+%\usepackage{graphicx}
+%\usepackage{pstricks,pst-node}             % Pstricks
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{tikz-feynman}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage[varg]{txfonts}
+\usepackage{booktabs}       % professional-quality tables
+%\usepackage[letterpaper, landscape, lmargin=0.25in, rmargin=1.25in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumerate}
+%\usepackage{enumitem}
+\usepackage{multicol}
+% \usepackage{ifpdf}
+
+% \usetikzlibrary{shapes}
+% \usepackage[left=0.1cm, right=0.1cm, top=0.1cm, bottom=0.1cm]{geometry}
+% \usepackage[ansinew]{inputenc}           % Input
+\usepackage[T1]{fontenc}                   % Font encoding
+% \usepackage{cmbright}                    % Font style
+%\usepackage[nohead,margin=0mm]{geometry}  % Page & margins
+
+%%%%%%
+%%%%%%
+
+\usetikzlibrary{patterns,arrows.meta,shapes,calc,angles,positioning,intersections,through,quotes,decorations.markings}
+\tdplotsetmaincoords{70}{110}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+
+%%%%%%%
+\def\doubleunderline#1{\underline{\underline{#1}}}
+%%%%%%%
+%%%%%%%
+
+%% Begin of Watermark feature
+%\usepackage[printwatermark]{xwatermark}
+%\usepackage{xcolor}
+%\newwatermark[allpages,color=red!50,angle=60,scale=6,xpos=0,ypos=0]{DRAFT}
+%\newwatermark[allpages,color=red!20,angle=60,scale=2,xpos=0,ypos=0]{For Peer Review}
+%% End of Watermark feature
+
+%\pagenumbering{gobble}
+
+%\title{Towards Physics-Arithmetics Unification}
+
+\title{Vers l' Unification Arithmétique}
+
+\author{F. M. Sanchez \thanks{Retired Prof. of Physics, University of Paris 11, Orsay, France, \href{mailto:hol137@yahoo.fr}{hol137@yahoo.fr}} 
+   %%\\ email \href{mailto:hol137@yahoo.fr}{hol137@yahoo.fr}  	  
+   \and M. H. Grosmann \thanks{Retired Prof. of Physics, University of Strasbourg, France, \href{mailto:michelgrosmann@me.com}{michelgrosmann@me.com}}
+   %%\\ email \href{mailto:michelgrosmann@me.com}{michelgrosmann@me.com} 
+   \and R. Veysseyre \thanks{Retired Agregee de mathematiques et professeur honoraire \`a l'Ecole centrale de Paris, France, \href{mailto:renee.veysseyre@normalsup.org}{renee.veysseyre@normalsup.org}}
+   %%\\ email \href{mailto:renee.veysseyre@normalsup.org}{renee.veysseyre@normalsup.org} 
+   \and D. Weigel  \thanks{Retired Prof of Cristallography, University of Paris 6, Paris, France, \href{mailto:dominiqueweigel18@gmail.com}{dominiqueweigel18@gmail.com}} 
+   %%\\ email \href{mailto:dominiqueweigel18@gmail.com}{dominiqueweigel18@gmail.com} 
+   \and L. Gueroult \thanks{Retired PhD instructor in Holography at ENS, Physics department A2, Cachan, France, \href{mailto:lgueroult@hotmail.com}{lgueroult@hotmail.com}}
+   %%\\ email \href{mailto:lgueroult@hotmail.com}{lgueroult@hotmail.com}
+   }
+
+\begin{document}
+\setcounter{page}{1}
+
+\maketitle
+
+\begin{abstract}
+%The hypothesis that the Cosmos is a computer milits for a reunification of Arithmetics and Physics, with an implication of high-dimension cristallography. The %exigence of quasi-continuity implies a $\pi$ symbolic rationalisation rehabilitating the Wyler's theory and confirming in the ppb domain the Permanent Cosmology $G$ %value, excluding the concept of universe expansion. With the hypothesis that the scalar massive boson is $495^2$ times the electron mass, the tau value from Koide %Fermion formula connects with the electroweak model. 
+
+
+La forme extrême du Principe Calculatoire, le Principe Holique, implique une "Hypersymétrie" entre les constantes $G$ et $\hbar$, permettant de définir le rayon de Hubble, confirmé par 14 formules simples, et celui du Cosmos à partir de masses fondamentales, où celle du bi-codon d'ADN est centrale. L'Univers, et la localité liée à $c$, apparaissent alors comme émergents. Le Multivers est ainsi exclu au profit d'une Unification Science-Arithmétique. Le Principe Calculatoire est confirmé par une série de rationalisations symboliques de $\pi$. Celle liée au proton et à la théorie de Wyler permet de relier $G$ à la constante de Lucas, le dernier terme de la Hiérarchie Combinatoire. Une autre rationalisation, liée aux bosons intermédiaires, confirme l'invariance de la température de fond, éliminant définitivement le concept d'expansion de l'Univers, au profit de la Cosmologie Permanente.  
+\end{abstract}
+
+
+% keywords can be removed
+\keywords{Quantum Physics \and Holographic Principle \and Holic Principle  \and Cosmology \and Number theory  \and String theory \and Crystallography}
+
+
+
+%\label{sec:headings}
+
+\tableofcontents
+\listoftables{}   % table list
+\listoffigures{}  % figure list
+\pagebreak
+
+\section{Introduction: l'Axe Topologique}
+
+La physique mathématique, malgré une série de succès unificateurs, se heurte actuellement au blocage de la cosmologie standard, qui, \textit{malgré une optimisation de 6 paramètres}, butte sur un écart de 10\% avec la mesure directe du rayon de Hubble. De plus, la théorie des cordes semble privilégier la thèse du Multivers, un renoncement à la recherche ancestrale de l'Unité. Le "réglage fin" observé, si propice à la Vie, est alors justifié par une utilisation dévoyée du "principe anthropique" : on se limite à proclamer qu'un monde vivable est, statistiquement, possible. De plus, \textit{le seul argument} pour justifier des fameuses corrélations entre les grands nombres relevées par Eddington et Dirac est précisément du même type "anthropique": dans le cadre de la cosmologie standard évolutive nous vivrions un moment cosmique particulier, où le soi-disant "age de l'univers" serait comparable au temps de vie d'une étoile capable d'ensemencer l'espace d'atomes vitaux \cite{Rees}.
+
+Mais cela est réfuté par l'Axe Topologique (Table \ref{AxeTopologique} qui montre que les multiples corrélations observées entre les grands nombres de la physique mathématique peuvent être considérées comme une succession de relations holographiques 1D-2D, confirmant la théorie bosonique des cordes, et sa dimension 26, qui correspond au rayon de Hubble donné par le modèle de la molécule gravitationnelle d'hydrogène  \cite{Sanchez2}.
+
+\textit{Cet Axe Topologique réfute aussi bien l'idée de Multivers que celle d'âge de l'Univers}
+
+La précision de ces relations ($10^{-3}$ pour le rayon de hubble) est telle que la vague explication "anthropique" ci-dessus ne peut suffire. De plus, de toute façon, \textit{le concept même d'"age de l'Univers" disparaît}, car cet Axe Topologique, visiblement lié à la théorie bosonique des cordes et l'algèbre des octonions, annoncé comme central par Atiyah \cite{Atiyah}, consacre l'invariane temporelle des paramètres, donc la Cosmologie Permanente ("steady-state") de Hoyle, Bondi et Gold \cite{Hoyle} \cite{Bondi}.
+
+Selon le mot de B. Russell, celui-là même qui a démontré que $1+1 = 2$ en 180 pages \cite{Russell}, \textit {"Le plus incroyable de la science moderne est son retour au pythagorisme"}\cite{Alcina}. En effet, le pythagorisme s’accorde avec la nature quantique du monde, en particulier les nombres quantiques de la physique des particules et les nombres de dimensions de la série spéciale $d = 2 + 4k$ de la théorie des cordes, exhibée par l'Axe Topologique 
+
+En fait, plus généralement, la Science se caractérise par l'existence de lois de conservation, aussi bien en physique qu'en biologie. Les théoriciens associent conservation et symétrie, mais plus fondamentalement, \textit{conservation implique calcul, ce qui justifie la primauté de l'Arithmétique}. Cela élimine l'hypothèse du continu, centrale de la physique classique, et donc justifie l'apparition de phénomènes quantiques.
+ 
+Cet article entend orienter la Recherche vers l'existence d'une Théorie Ultime, unifiant Physique, Arithmétique et Biologie.
+
+
+
+
+
+
+
+
+\begin{table}
+%  \label{tbl:excel-table}
+%  \includegraphics[width=\linewidth]{excel-table}
+
+%\begin{figure}
+%\label{tab:1:table1}
+\centering
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 
+45,x=0.25cm,y=0.25cm]
+%\begin{axis}[%
+%width=\figurewidth,
+%height=\figureheight,
+%scale only axis,
+%xmin=1,
+%xmax=20,
+%ymin=0,
+%ymax=2,
+%title={caracteristics length follow the law $exp(2^{d/4})$, unit length: electron compton reduced wavelength: $\hbar m_ec=\lambdabar_e$}, 
+%legend style={draw=black,fill=white,legend cell align=left}
+%]
+%\draw[step=1cm,gray,very thin] (-31,-31) grid (31,31);
+\tkzDefPoint(-31.0,-31.0){A} %\tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(31.0,31.0){Y}
+\tkzDefPoint(-28.0,-28.0){B}
+\tkzDefPoint(-20.0,-20.0){C}
+\tkzDefPoint(-12.0,-12.0){D}
+\tkzDefPoint(-12.0,-12.0){E}
+\tkzDefPoint(28.0,28.0){F}
+\tkzDefPoint(-4.25,-4.25){G}
+\tkzDefPoint(4.0,4.0){H}
+\tkzDefPoint(12.0,12.0){I}
+\tkzDefPoint(-3.0,-3.0){J}
+\tkzDefPoint(16.0,16.0){K}
+\tkzDefPoint(18.25,18.25){L}
+\tkzDefPoint(20.0,20.0){M}
+\tkzDefPoint(29.0,29.0){N}
+\tkzDefPoint(-10.0,-10.0){P}
+\tkzDefPoint[color=red](31.0,31.0){Q}
+\tkzDefPoint(31.0,31.0){Y}
+\tkzDrawPoints(A,B,C,D,F,E,G,H,I,J,K,L,M,N,P,Q,Y)
+%\tkzMarkRightAngle(A,D,C)
+%\tkzLabelPoints[text=red,right](G,H)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+\tkzDefMidPoint(A,Y) \tkzGetPoint{BICODON}
+\coordinate (center) at (BICODON);
+%\tkzLabelPoints[below,color=green](BICODON)
+\tkzDrawPoints(BICODON)
+\draw [->] (-31.0,-31.0) node[left]{} -- (-31.,34.) node[right]{}; % scale Y
+%\draw [->] (31.0,-31.0) node[left]{} -- (31.,31.) node[right]{}; % 
+\draw [->] (-31.0,-31.0) node[left]{} -- (31.8,-31.0) node[right]{}; % scale d
+\draw [->] (-31.0,-34.) node[left]{} -- (31.8,-34.) node[right]{};   % scale k
+\draw [->] (-34.0,-31.) node[left]{} -- (-34.,34.) node[right]{};   % scale Y'
+%%% Blue Dashed Horizontal lines
+\draw [-,color=green,dashed] (-34.0,-24.) node[left]{} -- (-24.,-24.) node[right]{};   % \sqrt{a_s} horizontal line
+\draw [-,color=blue,dashed] (-34.0,-2.8) node[left]{} -- (-2.8,-2.8) node[right]{};   % Scalar Boson horizontal line
+\draw [-,color=green,dashed] (-34.0,0.) node[left]{} -- (0.,0.) node[right]{};   % bicodon horizontal line
+\draw [-,color=red,dashed] (-34.0,31.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos horizontal line
+%%% Blue Dashed Vertical lines
+\draw [-,color=blue,dashed] (-28.0,-31.) node[left]{} -- (-28.,-28.) node[right]{};   % String vertical line
+\draw [-,color=blue,dashed] (-24.0,-31.) node[left]{} -- (-24.,-24.) node[right]{};   % \sqrt{a_s} vertical line
+\draw [-,color=blue,dashed] (-20.0,-31.) node[left]{} -- (-20.,-20.) node[right]{};   % Gluon vertical line
+\draw [-,color=blue,dashed] (-12.0,-31.) node[left]{} -- (-12.,-12.) node[right]{};   % ATOM DIAMETER vertical line
+\draw [-,color=blue,dashed] (-10.0,-31.) node[left]{} -- (-10.,-10.) node[right]{};   % Kaon vertical line
+\draw [-,color=blue,dashed] (-4.0,-31.) node[left]{} -- (-4.,-4.) node[right]{};   % Half Mean Weak Boson vertical line
+\draw [-,color=blue,dashed] (-3.0,-29.) node[left]{} -- (-3.,-3.) node[right]{};   % Scalar Boson vertical line
+\draw [-,color=blue,dashed] (-3.0,-29.) node[left]{} -- (-3.,-34.) node[right]{};   % \gamma\Gamma->\pi vertical line
+\draw [-,color=blue,dashed] (0.,-31.) node[left]{} -- (0.,0.) node[right]{};   % Bicodon vertical line
+\draw [-,color=blue,dashed] (4.1,-31.) node[left]{} -- (4.1,4.1) node[right]{};   % Thermal Photon vertical line
+\draw [-,color=blue,dashed] (12.1,-31.) node[left]{} -- (12.1,12.1) node[right]{};   % Boson X GUT vertical line
+\draw [-,color=blue,dashed] (16.,-31.) node[left]{} -- (16.,16.) node[right]{};   % Photon vertical line
+\draw [-,color=blue,dashed] (18.25,-29.) node[left]{} -- (18.25,18.25) node[right]{};   % Galaxy group vertical line
+\draw [-,color=blue,dashed] (20.0,-31.) node[left]{} -- (20.0,20.) node[right]{};   % Gravitonde vertical line
+\draw [-,color=blue,dashed] (28.0,-31.) node[left]{} -- (28.0,28.0) node[right]{};   % Super Period vertical line
+\draw [-,color=blue,dashed] (29.,-29.) node[left]{} -- (29.,29.0) node[right]{};   % Topon vertical line
+\draw [-,color=red,dashed] (31.0,-35.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos vertical line
+%\draw[blue, dotted]
+%      let \p1 =  ($(B)-(center)$),
+%          \n0 = {veclen(\x1,\y1)}
+%      in (center) circle(\n0);
+%\draw[color=red] (-1.42,0.) -- (5.,0.);
+%\draw[color=red] (5.,0.) -- (5.,3.43);
+%\draw[color=red] (-1.42,0.) -- (5.,3.43);
+\draw[color=blue] (A) -- (Y);
+\node [anchor = text=blue] at (-8.,35.75) {\Large{TOPOLOGICAL AXIS}};
+\node [anchor = text=black] at (-10.,34.75) {\small{Caracteristics length follow the law: $exp(2^{d/4})$}};
+\node [anchor = text=black] at (-13.,33.75) {\small{Unit length: electron Compton reduced wavelength $\hbar m_e c=\lambdabar_e$}};
+\node [anchor = text=black] at (-15.,32.75) {\small{Super Period unit: $\lambdabar_e/c$. Photonde and Gravitonde masses unit: $2\pi m_N$}};
+\node [anchor = text=black] at (-28.,-38.0) {\small{Dimensional numbers in the Bosonic string theory: $d=4k+2$ from k=0 to k=7 (Bott sequence)}};
+\node [anchor = east,text=red] at (31.75,31.75) {\Large{COSMOS}};
+\node [anchor = south] at (-28.,-33.0) {$2$};
+\node [anchor = south] at (-28.,-36.0) {$0$};
+\node [anchor = north] at (-28.,-28.0) {$STRING$};
+
+\node [anchor = south] at (-24.,-33.0) {$4$};
+\node [anchor = east] at (-24.,-24.0) {$2\sqrt{a_s\phi_s}$};
+\node [anchor = south] at (-20.,-33.0) {$6$};
+\node [anchor = south] at (-20.,-36.0) {$1$};
+\node [anchor = east] at (-20.,-20.0) {$GLUON$};
+\node [anchor = south] at (-12.,-33.0) {$10$};
+\node [anchor = south] at (-10.,-33.0) {$11$};
+\node [anchor = south] at (-12.,-36.0) {$2$};
+\node [anchor = east] at (-12.,-12.) {MEAN BOSON PI};
+\node [anchor = west,color=red] at (-12.,-12.) {ATOM DIAMETER};
+\node [anchor = east] at (-10.,-10.) {KAON};
+\node [anchor = south] at (-4.25,-33.0) {$14$};
+\node [anchor = south] at (-4.25,-36.0) {$3$};
+\node [anchor = east] at (-4.5,-4.5) {HALF MEAN WEAK BOSON};
+\node [anchor = west,color=red] at (-4.5,-4.5){HALF RYDBERG WAVELENGTH};
+\node [anchor = south] at (-2.75,-31.0) {$\gamma\Gamma$};
+\node [anchor = south] at (-2.75,-36.0) {$\pi$};
+\node [anchor = east,color=black] at (-3.0,-3.0){SCALAR BOSON};
+\node [anchor = west,color=black] at (-3.0,-3.0){$125GeV$};
+\node [anchor = south,color=black!40!green] at (0.,-33.0) {\textbf{16}};
+\node [anchor = east,color=black!40!green] at (0.,0.0) {DNA BI-CODON};
+\node [anchor = west,color=black!40!green] at (0.,0.0) {$\times$ $\phi_a^2$};
+\node [anchor = south] at (4.25,-33.0) {$18$};
+\node [anchor = south] at (4.25,-36.0) {$4$};
+\node [cross,anchor = west,color=red] at (4.25,4.25){THERMAL PHOTON: $\hbar c/2k_B$};
+\node [cross,anchor = west,color=red] at (3.15,3.15){T=2.73 Kelvin $\approx T_{mam}/j$};
+\node [anchor = south] at (12.25,-33.0) {$22$};
+\node [anchor = south] at (12.25,-36.0) {$5$};
+\node [anchor = east,color=black] at (12.25,12.250){BOSON $X_{GUT}:2.3 \times 10^{16}$GeV};
+\node [anchor = east,color=black!40!green] at (16.,16.){$PHOTONDE$};
+\node [anchor = west,color=red] at (16.,16.){Kotov Length $\times$ $2\pi$a};
+\node [anchor = west,color=red] at (18.25,18.250){Galaxy group};
+\node [anchor = south,color=red] at (18.25,-31.0) {$\Gamma$};
+\node [anchor = east,color=black!40!green] at (20.,20.0){$GRAVITONDE$};
+\node [anchor = west,color=red] at (20.,20.0){Hubble Radius $\times$ 6};
+\node [anchor = south] at (16.25,-33.0) {\textbf{24}};
+\node [anchor = east,color=black!40!green] at (28.25,28.250){$Super Period$};
+\node [anchor = east,color=black] at (29.25,29.250){$TOPON$\tiny{:Visible universe wavelength}};
+\node [anchor = east,color=black] at (-8.25,24.250){\LARGE{MICROPHYSICS}};
+\node [anchor = east,color=black] at (-8.25,22.250){$Y=(\lambdabar_e(d)/\lambdabar_{MICRO})$};
+\node [anchor = east,color=red] at (22.25,-20.250){\LARGE{MACROPHYSICS}};
+\node [anchor = east,color=red] at (22.25,-22.250){$Y=(\lambdabar_{MACRO}(d)/\lambdabar_{e})$};
+\node [anchor = south] at (20.25,-33.0) {$26$};
+\node [anchor = south] at (20.25,-36.0) {$6$};
+\node [anchor = south] at (28.25,-33.0) {$30$};
+\node [anchor = south] at (28.25,-36.0) {$7$};
+\node [anchor = south] at (31.25,-36.0) {$e^2$};
+\node [anchor = south] at (29.25,-31.0) {$2e^e$};
+\node [anchor = south] at (32.6,-33.00) {$d$};
+\node [anchor = south] at (32.6,-36.00) {$k$};
+%%% Y AXIS
+\node [anchor = north] at (-31.55,-31.0) {$0$};
+\node [anchor = north] at (-31.55,-19.0) {$1$};
+\node [anchor = north] at (-31.55,-7.0) {$2$};
+\node [anchor = north] at (-31.55, 5.0) {$3$};
+\node [anchor = north] at (-28.55, 1.0) {$\pi-1/e$};
+\node [anchor = north] at (-31.55, 16.0) {$4$};
+\node [anchor = north] at (-31.55, 26.0) {$5$};
+\node [anchor = north] at (-31.55, 32.4) {$2e$};
+\node [anchor = north] at (-29.0,36.0) {$y=\ln\ln(Y)$};
+%%% Y' AXIS
+\node [anchor = north] at (-34.25,-31.0) {$e$};
+\node [anchor = north] at (-34.25,-20.0) {$10$};
+\node [anchor = north] at (-34.25,-12.0) {$100$};
+\node [anchor = north] at (-34.25,-2.0) {$495^2$};
+\node [anchor = north] at (-34.25,4.0) {$10^{10}$};
+\node [anchor = north] at (-34.25,12.0) {$10^{20}$};
+\node [anchor = north] at (-34.25,20.0) {$10^{40}$};
+\node [anchor = north] at (-34.25,28.0) {$10^{80}$};
+\node [anchor = north] at (-34.25,36.0) {$Y$};
+%% SLOPE
+\tkzLabelSegment[sloped,below,text=black](A,D){Slope $\ln(2)/4$}
+\end{tikzpicture}
+\caption[Table \ref{AxeTopologique}: Topological Axis ]{The Topological Axis follows the law $exp(2^{d/4})$ for its caracteristics lengths; its unit length: the electron compton reduced wavelength: $\hbar m_ec=\lambdabar_e$. it is the extrapolation toward smaller numbers of the Eddington's Double Larger Number correlation. The double natural logarithms y = ln(ln(Y)) of the main dimensionless physical quantities (Y) corresponds to the special string dimension series d = 4k + 2, from k = 0 to k = 7, characteristics of a Bott octonion sequence. This is the reunion of height 2D-1D holographic relations, hence the name `Topological Axis`.}
+%\end{figure}
+%\label{tab:1:table1}
+\label{AxeTopologique}
+%\includegraphics[width=\linewidth]{tab:1:table1}
+\end{table}
+
+\section{Le Principe Calculatoire}
+
+La théorie standard procède essentiellement par approximations successives, par la méthode dite "des perturbations". Ainsi le "couplage électrique" standard est un  nombre inférieur à l’unité, de sorte que son influence devient négligeable à des puissances suffisantes. On a pris l’habitude de le désigner par la lettre \textbf{$\alpha$}, appelée ‘constante de structure fine’, car ce nombre apparaît dans l’étude des raies spectrales, jusqu’à des puissances élevées. Il est lié à la charge électrique, mais la notation courante de celle-ci, $e$, peut entrainer des confusions avec la base optimale des logarithmes néperiens, qui est d’importance centrale dans le cadre d’un cosmos calculateur. La charge électrique élémentaire, un nombre pur, est donc notée \textbf{$q$}.
+
+
+Les paramètres-clefs sont réunis dans la Table \ref{tab:2:table2}. Certains sont mesurés à $10^{-9}$ près, mais d'autres sont moins bien déterminés, comme les masses essentielles des bosons faibles, mesurées seulement à $10^-4$ près (boson W) et $10^-5$ près (boson Z). \textit{ En interprétant le "réglage fin" par l'hypothèse que les paramètres adimensionnés sont des bases de calcul inter-reliées}, une série d'inter-corrélations très précises a permis de leur attribuer les valeurs optimales consignées dans la Table \ref{tab:2:table2} (nombres purs). La Table \ref{tab:3:table3} présente les grandeurs physiques dimensionnées \cite{Tanabashi}. 
+
+
+
+Comme ce \textit { Cosmos calculateur doit utiliser des bases de calcul supérieures à l’unité}, les 4 constantes de couplages considérées (électrique, gravitationnelle, faible, forte), $a, a_G, a_w, a_s$ sont ici les inverses des quantités officielles. On y joint la constante $P = m_P/m_e$, le rapport de la masse de Planck sur celle de l'électron, voir le bas de la Table \ref{tab:2:table2}. 
+
+
+\begin{table}
+%\label{tab:2:table2}
+\caption[Table \ref{tab:2:table2}: Adimensional primary constants.]{Adimensional primary constants}
+\label{tab:2:table2}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+    name & symbol    & value & imp (ppb) \\
+    \midrule
+    
+    Euler-Napier constant  & e    & 2.718281828459042 & "exact" \\    
+    Archimedes constant & $\pi$    & 3.14159265358979 & "exact" \\    
+    $\pi$ fifth fractional term & $\pi_5$    & 292.63459101440 & "exact" \\ 
+    Euler-Mascheroni constant & $\gamma$    & 0.57721566490153 & "exact" \\    
+    Wien factor $ w_i = 5(1-e^{-w_i})$ &  $w_i$  & 4.96514245  & "exact" \\
+     
+    Electric constant  & $a_{mes}$    & 137.035999084(21) & 0.15 \\
+    Excess Electron Magnetic moment  & $d_e$    & 1.00115965218128 & 0.15 \\
+    
+    %Measured massive scalar boson/Electron mass ratio  & $H^0_{meas}$ & 245000(250)  & $10^6$ \\
+    Optimized massive scalar boson/Electron mass ratio  & $H^0$ & $ 495^2 = 245025$  & exact, off.value: 245000(250)  \\
+    
+    %Measured W boson/Electron mass ratio  & $W_{meas}$ &   & $1.5 \times 10^5$ \\     
+    Optimized  W boson/Electron mass ratio  & $W$ & 157340.1093  & ppb\cite{Sanchez2} off.value: 157297(24)  \\     
+    %This work  W boson/Electron mass ratio  & $W$ & 157340.1100  & ppb \\
+    
+    %Measured Z boson/Electron mass ratio  & $Z_{meas}$ & 178450(4)  & $2.3 \times 10^4$ \\     
+    Optimized  Z boson/Electron mass ratio  & $Z$ & 178451.7402  & ppb\cite{Sanchez2}off.value: 178450(4)\\     
+   %This work  Z boson/Electron mass ratio  & $Z$ & 178451.7171  & ppb\\
+   
+  Effective "weak-mixing angle"  & $(\sin \theta)^2(m_Z)$    & 0.23155(4) & $1.7 \times 10^7$ \\
+  This work "weak-mixing angle" & $(\sin \theta)^2(m_Z)$    & 0.231475 &  \\
+  
+   Optimized SU(2) gauge coupling &{$q'$}     & 0.6421390034 & 100 this work \\
+   Optimized U(1) gauge coupling & {$q''$}    & 0.3436256462 & 100 this work \\
+   Optimized electric charge & $ q $    & 0.302973211 & 100 this work\\
+        
+    Atiyah constant & $\Gamma$    & 25.17809724196  & 0.15 \\                  
+    Lucas Large Prime Number & $N_L$    & $2^{127}-1$  & exact \\
+    Eddington Large Number & $N_{Ed}$    & $136\times 2^{256}$  & exact \\
+    %Measured Fermi/Electron $m_F/m_e$ & $F_{meas}$   & 573007.362  & 250 \\ 
+    Fermi Sanchez-Atiyah mass ratio: & $F$   & 573007.3652  & 0.22 off.value: 573007.362 \\      
+    Proton/Electron mass ratio $m_p/m_e$ & p   & 1836.15267343  & 0.06 \\  
+    Hydrogen/Electron mass ratio  & $H$  & 1837.15266014  & 0.06 \\      
+    Neutron/Electron mass ratio  & $n$ & 1838.6836617  & 0.5 \\     
+    %Measured Muon/Electron mass ratio  & $\mu_{meas}$ & 206.7682830  & 22 \\     
+    Optimized Muon/Electron mass ratio  & $\mu$ & 203.7682869  & 0.1 off.value: 206.7682830 \\     
+   % Measured Tau/Electron mass ratio  & $\tau_{meas}$ & 3477(2)  & $7\times 10^4$ \\        
+    Optimized Koide Tau/Electron mass ratio  & $\tau$ & 3477.441701  & 0.1 off.value: 3477(2) \\  
+ 
+ Planck ratio $m_P/m_e$ & P   & $2.389015907 \times 10^{22}$ &ppb  \cite{Sanchez2}  \\
+ Gravitational proton ratio $P N_L^{-1/2}$ & $p_G$    & $ 1831.531181 $ &ppb  \cite{Sanchez2}  \\
+ Gravitational coupling constant $R/2\lambdabar_e = P^2/pH$ & $a_G$   & $1.691936467 \times 10^{38}$ &ppb  \cite{Sanchez2}  \\
+ Electroweak coupling constant $F^2 = (2\gamma\times 137)^3$ & $a_w$     & $3.283374406 \times 10^{11}$ & ppb \cite{Sanchez2}  \\
+Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906$ & ppb \cite{Sanchez2} off.value: \\
+  
+    
+         
+   \bottomrule
+  \end{tabular}
+\end{table}
+ 
+ 
+ \begin{table}
+%\label{tab:3:table3}
+\caption[Table \ref{tab:3:table3}: Physical constants]{Table of Physical constants}
+\label{tab:3:table3}
+  \hskip-2.0cm\begin{tabular}{lllll}
+    \toprule
+    %\multicolumn{5}{c}{}                  \\
+    \cmidrule(r){1-5}
+    \ name & Symbol  & unit  & Value & imp (ppb) \\
+    \midrule
+  
+ Relativity speed     & c   & $m s^{-1}$   & 299792428 & exact \\
+ Reduced Planck constant $h/2\pi$    & $\hbar$   & J s   & $1.05457181 \times 10^{-34}$ & "exact" \\
+ %Official Gravitation constant   & $G_{off}$ & $kg^{-1} m^3 s^{-1}$ & $6.67430 \times 10^{-11}$  &  contested\\
+ Optimized Gravitation constant   & G & $kg^{-1} m^3 s^{-1}$  & $6.67545375\times 10^{-11}$  & \cite{Sanchez2} off. value: $6.67430 $\\
+ Fermi constant  & $G_F$ & $J m^3$   & $61.435851 \times 10^{-62}$  &  500\\
+ Electron mass $m_e = m_p/p = m_H/H = m_n/n$  & $m_e$ & kg  & $9.1093837015 \times 10^{-31}$  &  0.3\\
+ Electron reduced wavelength $\hbar/m_ec$ & $\lambdabar_e$ &  m   & $3.861592675\times 10^{-13}$  & 0.3\\
+ Electron classical radius $\hbar/am_ec$ & $r_e$ &  m   & $2.817940322\times 10^{-15}$  & 0.45\\
+ Hydrogen Bohr radius $a(1+1/p)\lambdabar_e$ & $r_H$ &  m   & $5.294654092 \times 10^{-15}$  & 0.45\\
+ %Proton radius  & $r_p$ &  m   & $8.8\times 10^{-16}$  & contested\\
+ %Planck length $(\hbar G /c^3)^{1/2}$ & $l_P$  & m  & $1.61639471 \times 10^{-35}$ & ppb \cite{Sanchez2}  \\
+ 
+ %Rydbergh reduced wavelength $\lambdabar_e(2aH/p)^2$ & $\lambdabar_{Ryd}$  & m  & $1.45190673 \times 10^{-8} $ & 0.3   \\
+ 
+ 
+ 
+  %Official CMB temperature & $T_{CMBoff}$ & K & $2.7255(6)$ & $2 \times 10^5$ \\    
+   Cosmos (CMB) temperature & $T_{C}$ & K & $2.725820138$ & \cite{Sanchez2}, off value $2.7255(6)$  \\
+   Cosmos (CMB) reduced wavelength & $\lambdabar_{CMB} = \hbar c/ k_B T_C $ & m & $8.400716621 \times 10^{-4} $ & \cite{Sanchez2} \\
+   Cosmos (CMB) Wien wavelength & $\lambda_{CMB}/w_i $ & m & $1.063082472  \times 10^{-3} $ & \cite{Sanchez2} \\
+   
+   
+   
+    Hubble length & $R$ & m & $1.306713894 \times 10^{26} $ & \cite{Sanchez2} \\ 
+   
+   
+   
+   Hubble length & $R$ & m & $1.306713894 \times 10^{26} $ & \cite{Sanchez2} \\ 
+   Cosmos radius & $R_C$ & m & $9.075773376 \times 10^{86} $ & \cite{Sanchez2} \\ 
+   
+
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\section{Le rayon \textit{invariant} de Hubble}\label{AxeTopologique}
+%\label{tab:1:table1}
+
+%Dans le cadre de la Cosmologie de précision, le réexamen des corrélations entre grands nombres \cite{Sanchez2} conduit à l'Axe Topologique (Table \ref{AxeTopologique}), qui montre que le rayon de Hubble est invariant et confirme la théorie bosonique des cordes. 
+
+La théorie des cordes a suscité un espoir énorme quand elle a exhibé une particule de spin 2, qu'on a identifié au graviton, intégrant ainsi la gravitaton. De plus, elle a mis en évidence une correspondance holographique explicite entre des espaces-temps de dimensions différentes. \textit{Mais cette théorie bute sur le concept de l'univers en expansion}. Schwarz :\textit {"this turns out to be surprisingly difficult"} \cite{Schwarz}.  
+
+La plupart des physiciens ont opté pour la solution de facilité, le "Multivers", évacuant le problème, pourtant ancestral, de la caractérisation précise de l'Univers \textit{unique}. Ils s'appuient sur le fait que le nombre de solutions pour le repliement des dimensions cachées est énorme ($10^{500}$). 
+
+Le rayon de Hubble est identifié avec le rayon de la molécule gravitationnelle d'hydrogène  \cite{Sanchez2}, qui s'identifie avec
+ la limite du rayon d'nevétoile quand son nombre d'atomes tend vers 1 \cite{Davies1}:
+
+\begin{equation}
+R =  2 \hbar^2/Gm_e m_p m_H \approx 13.811977~~Gly
+ \end{equation}
+
+
+De plus, cette valeur $R$ connecte à $10^-3$ près avec la fonction topologique réduite : $g(k) = exp(2^{k+1/2})/k$, pour la valeur $k = 6 (d = 26)$ de l'Axe Topologique, où $26$ est la dimension privilégiée de la théorie bosonique des cordes: 
+
+\begin{equation}
+R \approx \lambdabar_e g(6) = 13.82~~Gly
+ \end{equation}
+
+où $\lambdabar_e = \hbar/m_ec$ est la longueur d'onde réduite de l'électron. 
+
+La Table \ref{tab:6:table6} présente 14 formules simples qui confirment ce rayon de Hubble. 
+
+\begin{table}
+%\label{tab:6:table6}
+\caption[Table \ref{tab:6:table6}: 14 Hubble radius formulas]{14 formula for $R$}
+\label{tab:6:table6}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    \multicolumn{3}{c}{}                   \\
+    \cmidrule(r){1-3}
+    Formule     & Valeur (Gal)  & Remarques \\
+    \midrule
+ 
+ $ 2\hbar^2/Gm_em_pm_H $ & 13.81197676 & Rayon de la Molecule gravitationnelle d'Hydrogene  \\
+ 
+ $ 2\hbar^2/Gm_em_pm_n $ & 13.80 & Obtenue par analyse dimensionnelle sans c (1997)  \\
+ 
+ $ 2\hbar^2/Gm_em_p^2 $ & 13.82 & Rayon théorique limite d'une étoile monoatomique \cite{Davies2}  \\
+ 
+ $ \lambdabar_{e} 2^{128}$ & 13.89 & Pertinence du grand nombre de Lucas $2^{127}-1$  \\
+ 
+ $ (20/3)N_{Ed}Gm_H/c^2\lambdabar_{e} (\tau/p)^a$ & 13.79 & Confirme le coeficient de matière sombre 3/10  \\
+ 
+ 
+ %$ (3/10)\lambdabar_{e} (\tau/p)^a$ & 13.83 & Confirme le coeficient de matière sombre 3/10  \\
+    
+ 
+ $\sqrt {(\lambdabar_{p} \lambdabar_{H})} (WZ)^4$  & 13.811966    & Précise la relation connue $a_G \approx W^8$ \cite{Rees} \\
+ 
+ %$(\lambdabar_{e} 2^{128}/d_e^2(m_H/m_p)^6$  & 13.81197681    & empiric \\
+ 
+ %$(\lambdabar_{e} 2^{137})(\gamma^2 n^6 / 137^3 \Gamma^{11})$ & 13.81197681 & superstring liaison 11D-9D, with $\Gamma$, the Atiyah constant \\
+ 
+ %$(\lambdabar_{e} 2^{128})(1-(137^2+\pi^2+e^2)/pH)$ & 13.81197681 & shows a symmetry between $\pi$, e and 137, prolongating $ a \approx (137^2 + \pi^2)^{1/2}$ \\
+ 
+   $ 2\lambda_{H}2^{210} (a_w/P)^2  $ & 13.81110 & Pertinence du terme holique $2^{210}$ \\
+   
+   %$ \lambda_{e}(e^{2a}2H/3p^2)^{1/3} (a_w/P)^2  $ & 13.81145 & Pertinence du terme holographique $e^a$ \\
+   
+   %$ \lambdabar_{e}e^{a}/\Gamma p^6 $ & 13.815 & Pertinence du terme holographique $e^a$ \\
+   
+   $ 2\lambdabar_{e} a_s^2 W^7$ & 13.86 & Confirme le Principe Holique  \\
+     $ \lambdabar_{e} (\sqrt a_w Z)^{7/2}$ & 13.95 & Confirme le Principe Holique  \\
+   
+   
+   $(2\pi^2 a^3)^5 \lambdabar_{e} $ & 13.80 & Relation holographique 5D  \\
+   
+   %$\Gamma^{55/2} \lambdabar_{e} $ & 13.80 & Implique $2\pi^2 a^3 \approx \Gamma^{11/2}$  \\
+   
+   
+   
+   
+   $ g(6) \lambdabar_{e} $ & 13.82 & Avec la fonction topologique réduite $g(k) = exp(2^{k+1/2})/k$, pour k = 6, d = 26  \\
+   
+    %$ (\tau/\mu)^{32}/wi \lambdabar_{e} $ & 13.83 & Utilise l'identité $6g(6) = g(1)^{32}$ \\
+   
+   
+   $ \lambdabar_{e} \pi^{155/2}$ & 13.80 & Confirme $\pi$ comme base de calcul: $2^{1/155} \approx \pi^{1/16^2}  \approx (2\pi)^{1/3\times 137} $  \\
+   $ \lambda_{F} P^3/p^7$ & 13.80 & Confirme $p$ comme base de calcul  \\
+   %$ \lambdabar_{e} (\tau/p)^{140}/2$ & 13.77 & Confirme la symétrie $\tau/p$ d'Eddington  \\
+   
+   $ (2\lambdabar_{e})/3 (\lambdabar_{CMB}/\lambdabar_{H_2})^2$ & 13.90 &  Holographie dans la molécule gravitationnelle d'hydrogène \\
+     %$ R_C(e^{\gamma/R_N^7})^{1/2}$ & 13.81 &  Confirme le rayon cosmique $R_C$ et son rayon holographique $R_N$ \\
+     
+     %$ (3/10)\lambdabar_{e} (\tau/p)^a$ & 13.83 & Confirme le coeficient de matière sombre 3/10  \\
+     
+     
+     
+     
+     
+    
+     
+   
+ 
+       
+    
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Cette démarche rappelle celle de Jean Perrin qui, en présentant 14 formules impliquant des nombres de molécules en 1908, a finalement convaincu la communauté de l'existence réelle des atomes. Cette table devrait convaincre les indécis de \textit{l'inexistence de l'expansion de l'Univers}.
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=5cm,height=6cm]{./figure/triaxis.png}
+\caption[MLT Adimensional cuboid]{\textit{Geo-adimensional Universe-Cosmos couple}, with unit length the Electron Compton reduced wavelength. 
+In a 3D Super-space, logarithms of physical ratios are considered vectors. The Grandcosmos radius appears as the norm of the vector using for length and time projections the same value $R/\lambdabar_e = t/t_e$. For the mass projection it is $M_N/m_e$ where
+%that of the Hubble radius, and for mass ratio $M^{\prime}/m_e$.
+$M_N$ is the critical mass in the Cosmos reduced spherical hologram. This is a dramatic geometrical confirmation (not dependant of the base for logarithms) of the Extended (2D-1D) Holographic Principle applied to the Bekenstein-Hawking Universe entropy. The Cosmos existence cannot be denied since the relation involving \textit{natural} logarithms with $e$ and $a$ reach precision $10^{-7}$.} 
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{La question de la structure de l'espace-temps}
+
+Les théories actuelles (théorie des cordes, modèle des boucles, ...) débouchent tous sur la question de la structure de l'espace-temps.
+
+Le concept d'Univers en expansion étant éliminé, la courbure de l'espace-temps n'est alors qu'une propriété locale, tandis que l'Univers dans son ensemble présente une géomérie dite "plate", c'est-à-dire euclidienne. C'est effectivement ce que les astrophysiciens constatent, et désignent sous le nom de 'condition critique'. L'application de la physique non-relativiste à l'Univers critique conduit alors à justifier directement la fraction $3/10$ de l'énergie totale, ce qui confirme le taux de masse noire. Par contre, la partie complémentaire, les $70\%$ restants, attribuée à la soi-disant "énergie sombre", n'est ainsi qu'un faux problème \cite{Sanchez2}.
+
+\subsection{La Constante Cosmologique}
+
+Le fait que le soi-disant "age de l'univers" soit très voisin de $R/c$ montre que les équations de la cosmologie standard renferment une part de vérité, mais sont mal interprétées. En effet, ce mythe de l'expansion de l'univers est avantageusement remplacée par une force répulsive entre galaxies, proportionnelle à la distance $r$ \cite{Davies2}:   
+
+\begin{equation}
+F_{cosmic} = \Lambda r mc^2
+\end{equation}
+
+où $m$ serait la masse moyenne des 2 galaxies, correspondant à \textit{la constante cosmologique $\Lambda$} que Hilbert avait suggéré à Einstein pour compléter les équations de la Relativité Générale, et que de Sitter avait utilisée comme terme moteur de son modèle cosmologique vide\cite{deSitter}. En effet, une telle récession galactique est \textit{naturellement} accélérée, ce qui a été une totale surprise pour les cosmologues standards. La raison d'être de cette force est qu'elle autorise un renouvelement par des bébé-galaxies, effectivement observées par Halton Arp \cite{Arp}, empéchant ainsi l'Univers de finir dans un 'Big Child', comme c'est le cas dans la cosmologie standard actuelle.
+
+Cette récession galactique n'est pas le seul phénomène à permettre un renouvelement de la matière des étoiles mortelles. Ce serait aussi le rôle des trous noirs géants d'éliminer les vieilles galaxies au profit de nouvelles. Les trous noirs géants, cette autre grande surprise de la cosmologie standard, agissent à l'intérieur d'un amas de galaxie, tandis que la répulsion n'est effective qu'à des distances supérieures au million d'années-lumière \cite{Sanchez2}.
+
+\textit{Ainsi le second principe de la thermodynamique, qui prédit un sort fatal à tout systême isolé est contourné par ces deux phénomènes: la répulsion galactique entre amas de galaxies et les trous noirs géants à l'intérieur des amas}.
+
+
+
+
+
+
+\subsection{L' Holographique Toponique: l'immergence des particules}
+
+Pour justifier ce caractère critique, les cosmologistes ont introduit une étape originelle d'inflation. Mais celle-ci devient inutile si l'on abandonne le concept d'expansion. En effet, avec un rayon de Hubble invariant, on peut appliquer sur la sphère d'horizon le principe holographique de trou noir de Bekenstein-Hawking \cite{Sanchez2}, justifiant ainsi directement le caractère critique, mais avec pour conséquence que le mur de Planck est reculé d'un facteur $10^{61}$, en contradiction avec tous les modèles théoriques actuels. Le quantum d'espace est ainsi le "topon" $d \approx 3.05 \times 10^{-96} m$.
+
+
+\textit{Cette "Cosmologie Permanente" conduit enfin à une explication de l'énormité ($10^{121}$) de l'énergie quantique du vide par rapport à celle de l'univers} \cite{Sanchez2}.
+
+Une autre conséquence est que l'énormité du Cosmos est aussi justifiée par la même exigence de quasi-continuité dans "l'holographie toponique quantique" qui implique que toutes les masses des particules soient un sous-multiple entier de la masse universelle $1.15 \times 10^{53}~ kg$ Table \ref{tab:5:table5}. Ainsi, les particules sont des propriétés "immergentes" du Cosmos. C'est le contre-pied du point de vue de la théorie des cordes qui considère que l'espace et le temps sont des  "propriétés émergentes", comme écrit Seiberg \cite {Seiberg}: \textit{they will be not present in the fundamental formulation of the theory and will appear as semiclassical notions in the macroscopic world.}
+
+
+Ainsi, c'est l'hypothèse de l'expansion de l'Univers qui a conduit au blocage actuel de la physique théorique, empechant d'appliquer le principe holographique, pourtant présenté comme l'espoir de la nouvelle physique. Un autre écueil est l'impossibilité de définir des conditions initiales qui devraient être définis jusqu'à la 120ième décimale. On a oubié l'avertissement de Poincaré: \cite{Poincare1} \textit{l'Univers n'étant tiré qu'à un seul exemplaire, il ne peut être défini par des équations différentielles, car on buterait sur le problème des conditions initiales}.
+
+
+La complexité de la structure de l'espace-temps est trahie par les phènomènes décrits dans les deux sections suivantes. 
+
+
+
+
+\subsection{L'inexplicable périodicité des décalages Doppler cosmiques} 
+Un phénomène \textit{totalement incompréhensible} par le modèle standard est la périodicité $v_T = 75 km/s$ des décalages Doppler \cite{Tifft}. Or cette vitesse montre une double singularité :
+
+\begin{equation}
+c/v_T \approx \sqrt a_w/a \approx 4181 \approx \Phi_1^{19} / \sqrt 5 
+ \end{equation}
+
+où $4181$ est le 19ième terme de la suite de Fibonacci, qui se singularise par le fait qu'il est divisible ($4181 = 37 \times 113$), alors que tous les termes précédents d'ordre premier sont aussi premiers. 
+
+
+Cette singularité n'est pas unique: elle implique que le nombre de premiers dans la suite de Fibonnaci pourrait ne pas être infini: c'est un problème non résolu. Par contre la propriété inverse ne présente qu'une seule exception, le terme de rang 4 est 3 \cite{Corbalan}.
+
+De plus ce nombre $4181$ est l'hypothénuse du rectangle pythagoricien dont les côtés sont $21\times 89$ et $2\times 34 \times 55$, où $21;34;55;89$ sont les termes de la suite de numéros d'ordre (8;9;10;11) \cite{Corbalan}. Or:
+
+\begin{equation}
+34\times55  = 21\times 89 + 1 \approx (137^2-138/2)/10 
+ \end{equation}
+
+où $137^2/10$ est, au premier ordre, le rapport des racines dans l'équation d'Eddington $10x^2-136x+1=0$ \cite{Eddington}. L'analyse montre alors qu'une approximation $\Phi_1$ du nombre d'or est utilisée, 
+\begin{equation}
+(a_w /WZ)^4 /2 = \Phi_1^{19} \approx \sqrt 5 \times \sqrt{a_w/a}
+ \end{equation}
+ 
+ reliant les paramètres $a, a_w, W, Z$ à 0.8 ppm près:
+
+ 
+\subsection{L'inexplicable période non-Doppler des quasars}
+
+L'absence d'effet Doppler pour l'oscillation de la puissance du rayonnement de période $9600.60$ s est tellement hors-norme qu'aucun physicien n'y a prété attention. Seul Pecker a fait publier les travaux de Kotov et Lyuty \cite{Kotov1}.
+
+L'Axe Topologique réhabilite la théorie \textit{bosonique} des cordes qui a le défaut apparent de faire intervenir des tachyons. En fait, c'est plutôt un avantage pour expliquer le caractère non-Doppler de l'oscillation \cite{Kotov1} \cite{Kotov2} de période $t_K \approx 9600.06(2)$ s, qui apparaît à la fois dans le rayonnement solaire et de plusieurs quasars. 
+
+
+En effet, le rapport de cette période avec celle de l’électron $t_e = \hbar/m_ec^2$ est donnée par la plus simple formule éliminant $c$ entre la constante électrofaible ci-dessus $a_w$ et la constante inverse de couplage gravitationnelle $a_G = \hbar c/G m_p m_H$, qui intervient dans le modèle de la molécule gravitationnelle d’hydrogène \cite{Sanchez2}, où $m_p$ et $m_H$ sont les masses du proton et de l’hydrogène: 
+
+\begin{equation}
+t_K /t_e   \approx  (a_G a_w)^{1/2}
+\end{equation}
+
+
+Cela donne une valeur de $G$ précise à $10^{-6}$, compatible avec la mesure du BIPM, précise à $10^{-5}$ \cite {Quinn}. Cela implique que la valeur officielle de $G$ est grossièrement fausse de 5 sigmas.
+
+
+
+
+
+
+
+
+\section{Le Principe Holique}
+Considérer l'espace-temps comme une propriété \textit{secondaire} signifie que \textit{les concepts de masse, longueur et temps sont en final réductibles à des nombres purs}. Cela justifie la relation purement numérique observée entre le Cosmos et l'Univers limité par la constante $c$ (Table \ref{tab:3:table3}). 
+
+
+
+
+
+
+\begin{figure}
+\label{tab:10:table10}
+\centering
+\begin{tikzpicture}[scale=2, tdplot_main_coords,axis/.style={->,dashed},thick]
+%\tkzDefPoint(1.,-1.,0.75){A} \tkzDefPoint(4.9,0.,-0.75){B} \tkzDefPoint(3.12,0.,-1.74){C}
+%\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
+\node[shape=circle,draw,fill=black,inner sep=1pt] (O) at (0,0,0){};
+%\node[shape=circle,draw,fill=black,inner sep=1pt] (M) at (1,-1,0){};
+\draw[axis] (0, 0, 0) -- (3, 0, 0) node [right] {$G$};
+\draw[axis] (0, 0, 0) -- (0, 2, 0.25) node [above] {$\hbar$};
+\draw[axis] (0, 0, 0) -- (0, 0, 1) node [above] {$c$};
+\coordinate  (d1) at (1,0,1){};
+%\coordinate  (d2) at (3,-2,-1){};
+\coordinate  (M) at (1,-1,0){};
+%\coordinate  (d3) at (0,0,1){};
+%\coordinate  (d4) at (0,0,4){};
+%\draw [] (d1) -- (d4)--(d2)--(d3)--cycle;
+
+%\coordinate  (t1) at (1,2.,4){};
+%\coordinate  (t2) at (-1,2,4){};
+%\coordinate  (t3) at (0,2,2){};
+%\draw (t1)--(t2)--(t3)--cycle;
+%\foreach \d in {1,2,3,4}{
+%\draw[color=red] (O)--(d\d);
+%}
+%\foreach \i in {1,2,3,4}{
+%\foreach \j in {1,2,3}{
+%\draw[color=red] (d\i)--(t\j);
+%}}
+\node[color=black!40!green] at (0.,0.5,-0.5) (l){$\mathbf COSMOS$};
+%\node at (2.,0.0,1.5) (l){$\mathbf Gravitation$};
+\node[color=black!40!green] at (1.,0.25,1.75) (l){$\mathbf UNIVERS$};
+\node[color=red] at (1.,1.5,1.05) (l){$\mathbf PHOTONDE$};
+\tkzLabelSegment[sloped,below,text=blue](d1,M){$GRAVITONDE$}
+\end{tikzpicture}
+\caption[The cG$\hbar$ Trihedra]{ Cosmologie Holique : The Trihedra $G\hbar c$}
+\end{figure}
+
+
+
+\begin{table}
+%\label{tab:5:table5}
+\caption[Table \ref{tab:5:table5}: Cosmologie Holique.]{Cosmologie Holique}
+\label{tab:5:table5}
+  \hskip-2.0cm\begin{tabular}{lllll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+    $m_G$ & $m_{\hbar}^2$    & $r = \hbar^2/Gm_G m_{\hbar}^2$  & Propriété arithmétique & masse associée $m_P^4/m_G m_{\hbar}^2$ \\
+    \midrule
+    
+    
+    $m_N $ & $m_N^2$   & $R_N/2$ demi-rayon holographique du Cosmos & $R_N/\lambdabar_e \approx (3^3)^{3^3}$&  $m_P^4/m_G m_{\hbar}^2 = M_N$ \\
+    $m_{bc} $ & $m_{bc}^2$   & $2l_{cc}$ double longueur non-Doppler & $ l_{cc}/\lambdabar_e \approx \pi^{50}$&  $m_P^4/m_{bc}^3 = m_{ph} = a_w m_{gr}$  \\
+    $m_Pa^3 $ & $m_pm_H$   & $\lambda_{Wn}$ longueur d'onde de Wien du rayonnement de fond & $\lambda_{Wn}/l_P \approx \pi^{64}$& $m_P^4/m_Pa^3m_pm_H$ \\
+    $m_e $ & $m_pm_H$   & $R/2$ demi-rayon de l'Univers & $R/\lambdabar_e \approx g(6) \approx 2^{128}\approx (2R/R_N)^{210}$   & $m_P^4/m_em_pm_H = M$ \\
+    
+    $m_{bc}R/R_N $ & $m_{ph}m_{gr}$   & $R_C$ rayon du Cosmos & $ R_C/\lambdabar_e \approx 3^{128}$&  $m_P^4/m_{bc}(R/R_N)m_{ph}m_{gr} = M_C $ \\
+    
+  
+         
+   \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+Une telle synthèse arithmético-physique a été annoncée par le principe holique \cite{Sanchez1}, forme simplifiée du principe holographique, qui, dans une équation diophantienne, permet de distinguer des rapports $T$ temporels, agissant par leur carré, des rapports $L$ spatiaux, agissant par leur cube. L'équation $T^2 = L^3 = n^6$ est la forme diophantienne de la troisième loi de Kepler, qui implique $L = r_n/r_1 = n^2$ et $T = t_n/t_1 = n^3$ : d'où 
+
+ \begin{equation}
+ \left\{
+    \begin{array}{ll}
+        r_nv_n^2 = r_1v_1^2 = Gm_G \\
+        \\
+        r_nv_n = nr_1v_1 = n \hbar/m_{\hbar}
+    \end{array}
+\right.
+\end{equation}
+
+ces équations gravito-quantiques symétrisent $G$ et $\hbar$, ces constantes étant associées à des masses $m_G$ et $m_{\hbar}$. D'où:
+
+\begin{equation}
+ \left\{
+    \begin{array}{ll}
+        r_n = n^2 r_1 \\
+        \\
+        r_1 = \hbar^2/Gm_Gm_{\hbar}^2   
+    \end{array}
+\right.
+\end{equation}
+
+Avec les cas particuliers:
+
+\begin{equation}
+ \left\{
+    \begin{array}{ll}
+        m_G = m_{\hbar} = m_N  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \rightarrow r_1 = R_N/2 \\
+        
+        \\
+        
+        m_G = m_{bc} = m_{\hbar}   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \rightarrow r_1 = 2l_{cc} \\
+        \\
+        
+        m_G = a^3 m_P~~ m_{\hbar}^2 = m_pm_H ~~~~~~~~~~~~~~ \rightarrow r_1 = \lambda{Wn} \\
+        \\
+        m_G = m_e~~ m_{\hbar}^2 = m_pm_H ~~~~~~~~~~~~~~~~~~~~ \rightarrow r_1 = R/2 \\
+         
+         \\
+         m_G = m_{bc}R_N/R;~~ = m_{\hbar}^2 = m_{ph}m_{gr}    ~~ \rightarrow r_1 = R_C 
+    \end{array}
+\right.
+\end{equation}
+
+où $R$ est le rayon de Hubble et $ R_N/2 = l_P^2/r_e^3$ est le demi-rayon \textit{holographique} du Cosmos (de rayon $R_C = 2R_N^2/l_P$. Ce rayon holographique $R_N$ est donné par l'élimination de $c$ entre la longueur de planck $l_P$ et le rayon classique de l'électron $ r_e = \hbar/am_ec$, ce qui introduit la masse de Nambu $m_N = am_e$, centrale en physique des particules\cite{Nambu}.
+
+\textit{La cosmologie permanente est tachyonique, liée au couple $G,\hbar$, tandis la théorie quantique correspond au couple $\hbar,c$, et la gravitation au couple $G,c$, associés respectivement au couple "photonde"-"gravitonde"}, voir le "trièdre des constantes" (fig. \ref{tab:10:table10}).
+Il se confirme donc que la période non-Doppler est liée au processus calculateur du Cosmos et à la masse $m_p^2/m_e $, très voisine de la masse du bi-codon d'ADN.
+
+\textit{Contrairement à la thèse du Multivers, basée sur une indépendance entre lois physiques et biologique et sur une mauvaise interprétation du principe anthropique, la biologie s'intègre dans le Cosmos calculateur, la molécule d'ADN devant être un calculateur-hologramme-ligne}.
+
+En extrapolant à l'exposant 5 pour un rapport de masse, et 7 pour un rapport de champ, la formulation diophantienne la plus simple est donc:
+
+\begin{equation}
+T^2 = L^3 = M^5 = Ch^7 = x^{210}
+ \end{equation}
+ 
+ En effet, la clef holique du rayon de Hubble est singulière, à 15 ppm et 150 ppm près : 
+
+\begin{equation}
+(R/\lambdabar_e)^{1/210} \approx 2R/R_N \approx (2/\phi_9)^2
+ \end{equation}
+
+où $\phi_9 = n_9/n_8 = 34/21$ est le neuvième rapport de Fibonnacci. Noter que la résonance $ R/\lambdabar_e \approx 2^{128}$ se traduit par: 
+
+\begin{equation}
+\phi_9^{2\times 210} \approx 2^{292}
+ \end{equation}
+ 
+ où apparaît le nombre 292, caractéristique de $\pi$, voir ci-dessous. 
+
+
+
+\section{L'exigence de quasi-continuité : la rationalisation symbolique}
+
+Le propre de la Science est que l’on peut progresser sans connaître la théorie ultime, par approximations successives.  La non-reconnaissance de cette évidence historique a fait rejeter plusieurs théories et formules empiriques que le principe de rationalisation symbolique, en partculier de $\pi$, réhabilite pleinement. 
+
+Une "exigence de quasi-continuité" a été présentée dans la conférence ANPA 1994 \cite{Sanchez1}, introduisant le Principe Holographique de manière beaucoup plus simpe que celle d'autres théoriciens \cite{Hooft}. En effet, par opposition aux équations différentielles, qui sont fondamentalement inadaptées dans un monde quantique, comme Poincaré l'avait expressément souligné \cite{Poincare1}, \textit{les équations globales les plus simples} sont les connexions entre variétés topologiques de dimensions différentes (périmètre, aire, volume…), donc utilisent la constante $\pi$, et pourraient être liées aux symétries cristallines de dimensions supérieures, comme constaté ci-dessous.  
+
+Dans cette hypothèse d’un Cosmos calculateur, de même qu’un ordinateur ne peut utiliser le $\pi$ mathématique "rigoureux", \textit {tout calcul doit être associé à une imprécision}. Dans cet article, la précision maximale $10^{-9}$ (ou ppb) est recherchée, laissant peu de prise au hasard. Ainsi $\pi$ \textit {doit} être rationalisé, et ce, dans un premier temps, de manière symbolique, c’est-à-dire que son développement fractionnaire doit montrer des paramètres-clefs, lesquels sont rappelés ci-dessous.
+
+\subsection{Le développement fractionnaire du $\pi$ mathématique}
+En effet, le développement fractionaire du $\pi$ mathématique commence par les nombres 3, 7, 15, 1, 292.634591, ce dernier terme $\pi_5$ étant le rapport de masse neutron/électron $n$ divisé par $2\pi$, à 3 ppm près. Le rapport de masse proton-electron $p$ est doublement impliqué:
+
+\begin{equation}
+ \pi_5 \approx n/2\pi \approx p/2(3+1/(2\pi+1)) \approx p/2(3+1/(2w))
+ \end{equation}
+ 
+où $W_+ =  W_-$ et $Z$ étant les masses des trois bosons de jauge électrofaibles, rapportées à la masse de l'électron, $w = \sqrt a_w/W$ est un paramètre central dans la théories électrofaible rappelée ci-dessous, associé au paramètre $z = \sqrt a_w/Z$. On en déduit les relations ($7 \times 10^{-5}$ et $2 \times 10^{-3}$):
+ 
+ 
+ \begin{equation}
+ \left\{
+    \begin{array}{ll}
+        w \approx \pi + 1/2 \\
+        z \approx ~ e + 1/2
+    \end{array}
+\right.
+\end{equation}
+ 
+ 
+montrant que \textit{le Cosmos utilise à la fois, et de manière symétrique, $\pi$ et la base néperienne $e$}. Noter que les séries de Riemann d'ordre paires utilisent effectivement des puissances de $\pi$, lequel se comporte donc bien comme une base de calcul.
+
+
+
+
+
+
+
+
+
+
+
+\subsection{La théorie de Wyler}
+La base de calcul $\pi$ est confirmée par la théorie de Wyler \cite{Wyler}, qui aboutit à une formule approchant $p$ à 18 ppm près, repérée initialement par Lenz, dans un article célèbre d'une seule ligne \cite{Lenz}:
+
+\begin{equation}
+p_W = 6\pi^5
+\end{equation}
+ 
+Noter que cette expression est le produit aire-volume d'un cube de coté $\pi$. La thèorie de Wyler conduit aussi à une expression pour $a$ faisant intervenir $\pi^{11}$ où 11 est la dimension de la supergravité. L'ordinateur confirme son implication, à $10^{-7}$ près: :
+
+\begin{equation}
+(3\sqrt a/4)^8 /120 \approx \pi^{11} \approx (P/a^2pn\mu)^5/(n_t \tau)^6
+\end{equation}
+ 
+ce qui s'écrit de manière holique, avec $\pi^{11} = \pi^{5}\pi^{6}$:
+
+\begin{equation}
+(\pi n_t \tau)^6 \approx (\pi a^2pn\mu)^5 \approx \Phi_a^{2\times 3\times 5 \times 6}
+\end{equation}
+
+faisant apparaître une aproximation $\Phi_a$ du nombre d'or, telle que
+
+\begin{equation}
+\Phi_a^2/2 \approx (6\pi_a^5)^2/a^3  ~~~~ \rightarrow \pi_a = \sqrt {(a^2 - 137^2)}
+\end{equation}
+
+où la relation $a^2 \approx 137^2 + \pi^2$ a été soulignée par Sir M. Atiyah cite{Atiyah}. Une autre proriété liée à la théorie de Wyler est basée sur 
+l'approximation $\pi \approx 4/\sqrt \Phi$ :
+
+\begin{equation}
+(4/\sqrt \Phi_a)^5/6 \approx (4\pi)^2 \sqrt a
+\end{equation}
+
+\textit{Ainsi la théorie de Wyler, trop vite abandonnée par suite de l'utilisation du $\pi$ mathématique, relie $a$ et $\Phi_a$.}
+
+
+
+
+\subsection{Le rayon de Hubble et $\pi$}
+Les multiples relations holographiques, impliquant en particulier le rayonnement de fond, conduisent à:
+
+\begin{equation}
+R/\lambdabar_e \approx (2\pi^2a^3)^5
+ \end{equation}
+
+où $2\pi^2a^3$ est l’aire de la sphère 4D de rayon $a$, mais cette relation montre une imprécision de 565 ppm, voisine de $H/p_W$, à 1.5 ppm près. Et ce dernier écart est réduit au ppb si on considère la valeur suivante de $\pi$:
+
+\begin{equation}
+\pi_R = 3 + 1/(7+1/(16+2/e^{2e}))
+\end{equation}
+
+Noter que $H \approx 8e^{2e}$ à 33 ppm près. On retrouve ainsi, à $10^{-9}$ près, la valeur $R \approx 13.8119768$ milliards d’années-lumière:
+
+\begin{equation}
+R/\lambdabar_e  \approx H (2\pi_R a^3)^5
+\end{equation}
+
+ce qui rétablit une symmétrie électron-hydrogène, conformément au modèle de la molécule gravitationnelle d’hydrogène.
+
+
+
+
+
+\subsection{Le terme Lucasien du proton et $\pi$}
+De plus, le terme Lucasien du proton $p_G = P/\sqrt {N_L}\approx 1831.531182$, où $N_L$ est le grand nombre de Lucas, le nombre premier le plus célèbre des l'histoire des mathématiques et le terme terminal de la Hiérarchie Combinatoire \cite{Bastin}, écrite sous la forme ci-dessus de Lenz-Wyler, présente un terme $\pi$ ayant un développement singulier: 
+
+\begin{equation}
+p_G = 6\pi_G^5~~~~ \rightarrow  ~~~~ \pi_G : 3, 7, 7, 7\sqrt 7
+\end{equation}
+
+Cette formule confirme à 5 ppb près une étude d'optimisation antérieure \cite{Sanchez2}, et réhabilite ainsi la théorie de Wyler, trop vite écartée, qui, précisément, implique un espace de dimension 7, caractéristique de l'algèbre des octonions. \textit{Sir Atiyah avait effectivement prédit que la gravitation devait être liée à cet algèbre}\cite {Atiyah}.
+
+
+\subsection{Le terme Lucasien du proton et $e$}
+Ce terme Lucasien $p_G$ se trouve aussi dans le développement suivant de la base naturelle des logarithmes, basé sur l'approximation $e \approx 19/7$, qui connecte avec l'approximation d'Archimède: $\pi \approx 22/7$. $e : 2, 7/5, -128$. Or $128/3 \approx \sqrt p$. On observe que le développement:
+
+\begin{equation}
+e_G : 2; 7/5;  -3\sqrt{p_G} 
+\end{equation}
+
+approche $e$ à 2 ppb près.
+
+
+\subsection{Le rayonnement de fond et $\pi$}
+La longueur d'onde de Wien du rayonnement de fond vérifie (longueur fixe en Cosmologie Permanente, contrairement à la cosmologie standard):
+
+\begin{equation}
+\lambda_{Wn} \approx \pi_0^{64}~~~~ \rightarrow  ~~~~ \pi_0 : 3, 7, 16, 1, (W_+ + W_-)/Z
+\end{equation}
+
+ce qui confirme la température cosmique optimale \cite{Sanchez2} dans le domaine du ppb. 
+
+\textit{A moins d'admettre que nous vivons un siècle très particulier, force est d'admettre l'invariance de la température cosmique. Ceci est contraire aux publications officielles, mais seules les observations conformes au paradigme cosmologique dominant sont réellement publiées.}
+
+
+\subsection{Le lepton Tau et $\pi$}
+
+Le fermion Tau est le fermion ultime, $\tau$ étant son le rapport de masse avec l'Electron. On observe le développement singulier suivant,  
+
+\begin{equation}
+ 1+W/Z \approx \tau/(4\pi_{\tau})^2\sqrt a ~~~~ \rightarrow ~~ \pi_{\tau} : 3, 7, \sqrt a
+\end{equation}
+
+\textit { $\sqrt a$ est le terme générateur de l'électrodynamique quantique des diagrammes de Feynman}.
+
+
+De plus, l'écart ci-dessus $e-2$ apparaît dans, à 30 ppb près:
+
+\begin{equation}
+ 1+W/Z \approx 2(e-2)(1836p-3\times 137)/a^3
+\end{equation}
+
+où 1836 est la partie entière de $p$.
+\newpage
+
+\subsection{Connexions cristallographiques}
+
+La suite fractionnaire ci-dessus de $\pi$ est un problème non résolu des mathématiques actuelles. 
+
+\begin{table}
+%\label{tab:4:table4}
+  \hskip-0.0cm\begin{tabular}{llllllllllllll}
+    \toprule
+    \multicolumn{14}{c}{Table \ref{tab:4:table4} Crystallographic $PSO_{Cr}$.}                  \\
+    \cmidrule(r){1-14}
+    %\ $E^d$ & E & $E^1$  & $E^2$ & $E^3$ & $E^4$ & $E^5$ & $E^6$ & $E^7$ & $E^8$ & $E^9$ & $E^{10}$ & $E^{11}$ & $E^{12}$ \\
+    \midrule
+    %$K_{d+}$  & 1 & 1 & 5 & 5 & 19 & 19 & 59 & 59 & 165 & 165 & 419 & 419 & 1001 \\
+    
+     %$K_{d-}$  &  & 1 & 1 & 5 & 5 & 19 & 19 & 59 & 59 & 165 & 165& 419 & 419 \\
+     
+    % $2K_{d+} + K_{d-}$  & 2 & 3 & 11 & 15 & 43 & 57 & 137 & 177 & 389 & 495 & 1003 & 1257& 2421 \\
+     
+      %$(K_{d+} - K_{d-})/2 + d$  &  &  & 4 & 3 & 11 & 5 & 26 & 7 & 61 & 9 & 137 & 11& 303 \\
+      
+      \ $E^{(d)}$ & $E^{(0)}$ & $E^{(1)} $ & $E^{(2)}$ & $E^{(3)} $& $E^{(4)}$ &$ E^{(5)}$ &$ E^{(6)} $&$ E^{(7)}$ &$ E^{(8)}$ & $E^{(9)}$ &$ E^{(10)} $&$ E^{(11)} $&$ E^{(12)}$ \\
+    \midrule
+    $K_{d+}$  & 1 & 1 & 5 & 5 & 19 & 19 & 59 & 59 & 165 & 165 & 419 & 419 & 1001 \\
+    
+     $K_{d-}$  &  & 1 & 1 & 5 & 5 & 19 & 19 & 59 & 59 & 165 & 165& 419 & 419 \\
+     
+      $K_{d} = (K_{d+} + K_{d-})/2$  & & 1 & 3 & 5 & 12 & 19 & 39 & 59 & 112 & 165 & \doubleunderline{292} & 419 & 710 \\
+      
+      $\Sigma K_{d}$ &  & 1 & 4 & 9 & 21 & 40 & 79 & \underline{138} & 250 & 415 & 707 & 1126 & \underline{1836} \\
+      
+      $K_{(d-1)+} +K_{d+}+ K_{(d+1)+}$  &  & 7 & 11 & 29 & 43 & 97 & \underline{137} & 283 & 389 & 749 & 1003 & \underline{1839} & 2421 \\
+
+    \bottomrule
+  \end{tabular}
+\label{tab:4:table4}
+\end{table}
+
+Cependant, on note que la partie entière de $\pi_5$, le nombre $292$, déjà rencontré ci-dessus en connexion avec le nombre d'or $\Phi_a$, est la moyenne des nombres de symétries cristallines paires (419) et impaires (265) dans l'espace $10D$ des supercordes \cite{Weigel} \cite{Veysseyre} (Table \ref{tab:4:table4}).
+
+
+Dans cette table  \ref{tab:4:table4}, figurent les nombres canoniques 137, 1836 et 1839, qui sont respectivement les parties entières de \textbf{a, p, n}  montrant que \textit{la théorie ultime est liée à l'arithmétique des symétries cristallines en dimensions supérieures}.
+
+
+Toutes ces dimensions sont considérées dans la théorie des supercordes, sauf la dimension 12. Mais la racine carrée du rapport de masse boson scalaire/électron, le nombre 495, central dans le présent article, est le coefficient binomial $C_{12}^4$, voir ci-dessous.
+
+
+Avec la valeur de $G$ optimisée par une précédente étude de corrélation précise au ppb \cite{Sanchez2}, on observe la relation suivante entre les trois paramètres de couplages électrique, électrofaible et gravitationnel $a, a_w, P$ (Table \ref{tab:2:table2} ):
+
+\begin{equation}
+a_w^{5/2} = \eta P a^3  ~~~~ \rightarrow    \eta \approx 419/417 \approx 2^{1/12^2}
+ \end{equation}
+
+où $417 = 419 - 2$ est le nombre de symétries positives $10D$ non triviales, et $2^{1/12^2}$ le limma musical repéré en physique des particules \cite{Sternheimer}.
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+\section{Les paramètres-clefs}
+
+\subsection{Le boson scalaire et le nombre co-parfait 495} 
+Le nombre de « paramètres libres » dans le modèle standard est considérable, de l'ordre d’une trentaine. Les paramètres-clefs sont ces nombres purs (dits "sans dimension") qui interviennent le plus directement dans les théories physiques (Table \ref{tab:2:table2}). En particulier, on considère le rapport des masses des particules les plus importantes avec celle de l'électron, ce qui s'est révélé déterminant dans l'Axe Topologique ci-dessus (Table \ref{AxeTopologique}). Certains paramètres sont mesurés dans le domaine du ppb, mais les masses centrales dans la théorie électrofaible rappelée ci-dessous, ne sont définis qu'à $10^{-3}$ (boson scalaire massif de Brout-Englert-Higgs), $10^{-4}$ (boson chargé W), $10^{-5}$ (boson neutre Z).
+
+Cet article prétend préciser ces valeurs cruciales à partir de l'hypothèse que le rapport de masse principal est:
+
+\begin{equation}
+ m_{BEH}/m_e = 495^2 
+ \end{equation}
+
+ce qui correspond à $125.21 GeV$, compatible avec la mesure \cite{Tanabashi}, et à $d \approx \gamma\Gamma$ dans l'Axe Topologique.
+
+Rappelons qu'un progrès essentiel dans la théorie des cordes est survenu quand Green et Schwarz \cite{Green} ont montré que des anomalies théoriques s'éliminaient si la dimension 496 du groupe SO(32) était impliquée. Or ce nombre est le troisième nombre parfait, c'est-à-dire qu'il excède d'une unité le nombre 495 qui est la somme des diviseurs de 496, sans compter l'unité. Noter que la définition usuelle d'un nombre parfait est déficiente dès lors qu'on considère l'unité comme un diviseur. Ce concept de perfection implique donc toujours des couples de nombres. On observe que le couple $495-496$ semble le seul où les deux éléments font partie des coefficients du binome (triangle de Pascal): $ 496 = C_{32}^2$, $495 = C_{12}^4$. 
+
+De plus, le nombre co-parfait 495 est la partie impaire de l'ordre du groupe de Matthieu: $7920 = 16 \times 495$ et le triple de 165, le nombre de symétries cristallines impaires de dimension 10 (Table \ref{tab:4:table4}).
+
+\pagebreak
+
+Les masses des bosons W et Z sont reliées à la masse du boson scalaire massif (Brout-englert-Higgs), voir le triangle de Weinberg (Figure \ref{WeinbergTriangle}). Comme le groupe SU(2) ne concerne que les rotations dans un plan, il est naturel de compléter le triangle de Weinberg par un troisième axe portant l'unité. On obtient un vecteur de module directement lié à la constante holique ci-dessus, où $H$ est remplacé par la masse lucasienne du proton ci-dessus $p_G$:
+
+\begin{equation}
+ 1 + {q'}^2  + {q''}^2 = 1 + (m_Z/m_{BEH})^2 = 1 + (q'm_Z/m_W)^2\approx 2a^3/pp_G 
+ \end{equation}
+ 
+où $m_P$ est la masse de Planck. Avec la valeur du boson scalaire $ m_{BEH} = 495^2 m_e $, on obtient une valeur de $m_Z$ à $10^{-7}$ de la valeur précédemment optimisée  \cite{Sanchez2}, et donc des valeur précises de $q$' et $q''$ (Table \ref{tab:2:table2}). 
+
+
+
+\subsection{La constante électrique d’Eddington, \textit{le monstre arithmétique} 137}
+
+Rappelons que le calendrier est issu des égyptiens qui vénéraient les nombres parfaits 6 (semaine) et 28 (mois). De plus, les colonnes centrales de la salle Hypostyle à Karnak sont au nombre de 6, mais l'une est immergée dans la paroi, ce qui illustre la dualité parfaite 5-6 dont le produit 30 est la dimension culminante dans l'Axe Topologique. Cela est confirmé par le fait que les colonnes latérales forment des ensembles de 28 et 33 colonnes (le numéro d'ordre du nombre premier 137). Le total des colonnes est donc 134, qui, augmenté des 3 pylones impliqués, fait 137. Les égyptiens ne considéraient que les fractions de l'unité, donc il est normal qu'ils aient repéré le 137 car il apparait comme un \textit{monstre arithmétique} dans le cinquième terme de la série harmonique, ce qui est confirmé par l'excellente approximation de Ptolémée utilisant cette série harmonique $\pi \approx 377/120 = 2 + 137/120$.
+
+Le fait qu'ils aient isolé le 3, le premier terme de la Hiérarchie Combinatoire, et que les colonnes latérales soient rangées par rangs de 7, le deuxième terme, prouve qu'ils connaisaient cette Hiérarchie Combinatoire. Il est possible qu'ils aient deviné aussi l'importance cosmique cruciale du quatrième terme, le nombre premier de Lucas ci-dessus, qui est le \textit{terme terminal de la Hiérarchie} \cite {Sanchez2}.
+
+Il est curieux de constater que les mathématiciens modernes, qui savent pourtant que les nombres premiers sont liés aux série de Riemann n'aient pas songé à examiner les nombres premiers qui apparaissent dans le seule pôle, la série harmonique. La suite obtenue est pourtant révélatrice : 3, 11,5,137,7,11, car il apparait deux fois le 11 de la théorie des supercordes, en position symétrique par rapport au monstre arithmétique $137 = 4^2 + 11^2$.
+
+Comme rappelé ci-dessus, Atiyah a récemment fait le parallèle entre la méthode d’Archimède pour la détermination de $\pi$ et la détermination de la constante électrique $a = \alpha^{-1} ≈ 137.035999084(21)$, qu’il considère comme une renormalisation. Il insiste sur la première approximation de $a$, l’entier 137 d'Eddington \cite{Eddington}, en l’associant aux nombres caractéristiques 0, 3 et 7, des algèbres des réels, des quaternions et des octonions $137 = 2^0 + 2^3 + 2^7$. 
+ 
+De plus, il a montré que l’extrapolation de la relation d’Euler $e^{2i\pi} = 1$ aux quaternions introduit la constante $\Gamma = \gamma a/\pi$, où $\gamma$  est la constante d’Euler-Mascheroni. La pertinence de ces nombres $137$ et $\Gamma$ est confirmée par la relation suivante les liant au facteur de couplage inverse électro-faible $a_w$, mesuré à $5 \times 10^{-7}$ près, où $G_F$  est la constante de Fermi et $m_F$ sa masse associée:
+
+\begin{equation}
+ a_w \approx  \hbar^3/G_Fm_F^2c \approx (2 \times 137 \times \Gamma)^3 
+ \end{equation}
+
+Cela montre de façon indiscutable que le Cosmos utilise la base $137$. Cela est confirmé par la double relation suivante (double ppb), impliquant les rapports de masse $p$ proton/électron, $H$ (hydrogène/électron), et $n$ (neutron/électron), et la dimension spatiale 9D des supercordes:
+
+\begin{equation}
+ ap_G/\pi \sqrt{pH} \approx  (4n/\Gamma)^3/\sqrt{a_w} \approx  (n\sqrt{a_w}/137^2 \Gamma^3)^3  
+ \end{equation}
+
+A noter que $ 4n/\Gamma \approx 292.108$, voisin de $\pi_5$ ci-dessus, le cinquième terme fractionnaire de $\pi$.
+
+
+
+
+
+
+
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.65,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+\draw[step=1cm,gray,very thin] (-5,-8) grid (11,8);
+\tkzDefPoint(-4.,0.){A} 
+\tkzDefPoint(0.,0.){C}
+\tkzDefPoint(3.,0.){O'}
+\tkzDefPoint(10.,0.){E}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\tkzInterLC[R](A,C)(C,-0.3cm) \tkzGetSecondPoint{B}
+\tkzInterLC[R](C,E)(E,-1cm) \tkzGetSecondPoint{F}
+%\tkzDefLine[orthogonal=through D](A,D)
+\tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
+\tkzDefLine[perpendicular=through B](O,C) \tkzGetPoint{J}
+\tkzDefMidPoint(F,G) \tkzGetPoint{H}
+\tkzDefMidPoint(J,B) \tkzGetPoint{D}
+%\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
+%\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
+%\tkzDrawPolygon(A,E,H)
+\tkzDrawSegment[color=blue](H,E)
+\tkzDrawSegment[color=blue](H,D)
+\tkzDrawSegment[color=blue](C,E)
+\tkzDrawSegment[color=red](A,C)
+\tkzDrawSegment[color=red](D,A)
+\tkzDrawSegment[color=red](C,D)
+\tkzDrawPoints(A,C,D,O,O',E,H)
+\tkzLabelPoints(A,C,O,E,H)
+\tkzLabelPoints[above](O',D)
+%\tkzLabelPoints[left](D)
+\coordinate (center) at (O);
+\coordinate (center1) at (O');
+\draw[blue, dotted]
+      let \p1 =  ($(C)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\draw[blue, dotted]
+      let \p1 =  ($(E)-(center1)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center1) circle(\n0);
+%\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
+\node [anchor = east,text=blue] at (3.,-3.5) {\large $1+\mu+\tau \approx \mu \Gamma / \sqrt(2)$};
+\draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
+\node [anchor = west,text=red] at (-2.,-1.) {\large $q'/2$};
+\draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
+\tkzMarkRightAngle(A,H,E)
+\tkzMarkRightAngle(A,D,C)
+\tkzDefMidPoint(H,E) \tkzGetPoint{I}
+\tkzLabelSegment[left,text=blue](H,E){\large $\approx \tau$}
+\tkzLabelSegment[right,text=red](D,C){\large $q$}
+%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
+%\tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
+    \begin{pgfinterruptboundingbox}
+        \tkzMarkAngle[fill = gray, size=0.633cm, opacity = .3](C,A,D)
+        \tkzLabelAngle[pos = 1.](D,A,C){$\theta$}
+    \end{pgfinterruptboundingbox}
+\end{tikzpicture}
+\caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles. Figure not drawn to scale.}
+\label{WeinbergKoideCircles}
+\end{figure}
+
+
+
+\subsection{La relation de Koide des trois fermions principaux}
+L'Axe Topologique est dévolu aux bosons, mais les deux fermions exotiques principaux, le muon et le tau, apparaisent par leur rapport, pour k = 1, c'est-à-dire dans les 6 dimensions cachées des cordes: $\tau/\mu \approx g(1) \approx 2 a_s$. où $\mu$ et $\ tau$ sont les rapports de masse des fermions muon et tau par rapport à l'électron, qui sont les correspondants de l'électron dans les deux "générations apparemment inutiles" des particulesL'étude des déviations conduit à la relation (1 ppm):
+
+\begin{equation}
+2 a_s \approx \sqrt{g(1)\tau/\mu}~ (H-p)^{-4}  
+\end{equation}
+
+La valeur précise de $\tau$ est déduite de la formule empirique suivante de Koide, et de la relation $\mu \approx a\sqrt{(a_w/pH)}$ précisant, au ppb près, la mesure, déjà à 10 ppb, du rapport de masse muon-électron. On observe qu'elle fait intervenir la constante d'Atiyah, à 6 ppm près: 
+
+
+\begin{equation}
+(1+\mu+\tau) = (2/3)(1+\sqrt\mu+\sqrt\tau)^2 \approx \Gamma (H/p)^2 / \sqrt 2 
+\end{equation}
+
+Cette relation, liée aux propriétés des "matrices circulantes", ne reçoit aucune explication dans le modèle standard, qui manifeste, là encore, son insuffisance.
+Cette formule s'est révélée prédictive à une époque où la mesure de $\tau$ était fausse de $3 \sigma$. La valeur optimale de $\tau$ a été déduite \cite{Sanchez2} de cette formule 
+
+Le rapport $\tau/(2\times (1+\mu+\tau) = \sin\theta_{\tau} $ est très voisin du $\sin\theta$ du modèle électro-faible rappelé ci-dessous (Table \ref{tab:2:table2}). Il corrèle directement avec les couplages $a_w$ et $P$ (12 ppb):
+
+\begin{equation}
+a_{w} \sin \theta_{\tau} \approx \sqrt{P} (H/p_W)^4
+\end{equation}
+
+où $p_W = 6\pi^5$ est le rapport de Wyler, avec une valeur de $\pi$ très proche (2 ppb) de la valeur théorique.
+
+%On observe que $1-\cos\theta_{\tau} \approx 1/a_s$, tandis que le terme symétrique $1+\cos\theta_{\tau}$ correspond au développement singulier suivant:
+
+%\begin{equation}
+ %1+\cos\theta_{\tau} \approx \tau/(4\pi_{\tau})^2\sqrt a ~~~~ \rightarrow ~~ \pi_{\tau} : 3, 7, \sqrt a
+%\end{equation}
+
+%\textit { $\sqrt a$ étant le terme générateur de l'électrodynamique quantique des diagrammes de Feynman, la pertinence de la rationalisation symbolique de $\pi$ ne %peut être niée.}
+
+
+
+
+
+\subsection {Le modèle électro-faible }
+Le modèle standard de la physique des particules a unifié les forces électriques et nucléaires faibles dans le modèle "électrofaible". La théorie de jauge invoquée \cite{Taylor}, introduit les charges de jauge {$q'$} (groupe SU(2)) et {$q''$} (groupe U(1)), reliés à la constante électrique $q$ par :
+
+\begin{equation}
+ 1/q^2 = 1/{q'}^2  + 1/{q''}^2 
+ \end{equation}
+ 
+La notation officielle $g$, {$g’$}, moins symétrique, n'est pas utilisée.
+La théorie prévoit un photon de masse nulle et trois bosons massifs $W_{+}$, $W_{-}$ et $Z$, caractérisés par un angle de couplage $\theta$  défini par:
+
+\begin{equation}
+\cos\theta = m_W/m_Z 
+\end{equation}
+ 
+et la charge électrique est:
+
+\begin{equation}
+q = {q'} \sin\theta = {q''} \cos\theta 
+\end{equation}
+ 
+ Le triangle de Weinberg (Figure 4.) illustre ces relations.
+ Le cercle circonscrit fait apparaître le nombre musical $2^{1/12}$, qui est voisin de 
+ 
+ \begin{equation}
+2^{1/12} \approx (1+\mu+\tau)/\tau
+ \end{equation}
+ 
+ Cette corrélation connue \cite{Sternheimer} explique la conjonction ci-dessus les deux cercles Weinberg-Koide. L'écart suivant est significatif:
+ 
+\begin{equation}
+\sin \theta^2 - \sin \theta_{\tau}^2  \approx 1/\sqrt a_w \sin_{eff}{\theta} (m_Z) \approx 1 / P^{1/4}
+ \end{equation}
+  
+ faisant apparaître le terme $\sin_{eff}{\theta} (m_Z)$ appelé "effective weak mixing angle"  (Table \ref{tab:2:table2}).
+ 
+ Dans un monde arithmétique, on s'attend à ce que $\delta = a - 137 $ intervienne, en effet, à 0.4 ppm près:
+
+\begin{equation}
+((1+\mu+\tau)/\mu)^2 = (\Gamma/qrt 2)(q'/delta)(H^3/p^2n_t) 
+\end{equation}
+
+confirmant ainsi la relation ci-dessus, en la reliant à $q'$, ce qui valide ainsi les valeurs de $W$ et $Z$ à mieux que le ppm.
+
+
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:14:table14}
+\draw[step=1cm,gray,very thin] (-3,-3) grid (6,6);
+\tkzDefPoint(-1.42,0.0){A} \tkzDefPoint(5.,3.43){C} \tkzDefPoint(5.,0.){B} \tkzDefPoint(3.3,2.5){Q}
+\tkzDrawPoints(A,C,B,Q)
+\tkzMarkRightAngle(A,Q,B)
+\tkzLabelPoints[below](A,B)
+\tkzLabelPoints[above](C,Q)
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,A,C)
+\tkzLabelAngle[pos=0.6](B,A,C){$\theta$}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[below](O)
+\tkzDrawPoints(O)
+\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
+\tkzLabelSegment[sloped,right,above,text=red](A,C){$m_Z/m_{BEH}$}
+\draw[blue, dotted]
+      let \p1 =  ($(C)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](C,B,Q)
+%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](O,E,D')
+\tkzLabelAngle[pos=0.6](C,B,Q){$\theta$}
+\draw[color=red] (-1.42,0.) -- (5.,0.);
+\draw[color=red] (5.,0.) -- (5.,3.43);
+\draw[color=red] (-1.42,0.) -- (5.,3.43);
+\draw[color=blue] (5.,0.) -- (3.3,2.5);
+\node [anchor = east,text=blue] at (3.9,1.0) {$q$};
+\node [anchor = east,text=red] at (6.,1.5) {$q''$};
+\node [anchor = east,text=red] at (2.5,-0.5) {$q'=m_W/m_{BEH}$};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
+\draw[color=black] (-0.5,2.0) node {\large $\approx 2^{1/12} q'' ~~$};
+\end{tikzpicture}
+\caption[Weinberg Triangle]{Weinberg Triangle.}
+\label{WeinbergTriangle}
+\end{figure}
+
+
+
+
+
+ 
+ 
+ \begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.75]
+%\tkzInit[xmax=6.4, zmax=3.4]
+\tkzDefPoint(0.0,0.0){A} \tkzDefPoint(6.4,0.0){B} \tkzDefPoint(5.1,-1.3){C} \tkzDefPoint(4.0,-1.0){q}
+\tkzDrawPoints(A,B,C,q)
+\tkzDefMidPoint(B,q) \tkzGetPoint{D}
+%\tkzDefPoint[label={[align=left]right:$q$},xshift=00mm](4.5,-0.5){D}
+\tkzLabelSegment[sloped,text=red,xshift=-06mm](q,B){$q$}
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,q,C)
+\tkzLabelPoints[below](A,B,C)
+%\tkzLabelPoints[above right](q)
+\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
+    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
+    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw (6.4,0,0) coordinate (x) |- (0,10,0) coordinate [midway] (h) coordinate (y) -- (0,10,3.4) coordinate (a) -- (0,0,3.4) coordinate (z) -- (6.4,0,3.4) edge (x) -- (6.4,10,3.4) coordinate (v) edge (h)
+  -- (a)  ;
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  \draw [blue] (0,0,0)  -- (6.4,0.0,3.4);
+  \draw [red] (4.9,0.02,2.7)  -- (6.4,0.0,0.0);
+  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$\sqrt{2a^3/pp_G}$] at (v) {};
+  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above] {$\sqrt{2a^3/pp_G}$} (6.4,10,3.4);
+  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  \draw [decoration={markings,mark=at position 1 with
+    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,10,3.4);
+  \draw [dashed] (0,0,0) -- (6.4,0,3.4);
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$q'$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$q''$};
+  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
+  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
+  %\node [label=45:C] at (c) {};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\end{tikzpicture}
+\caption[The Weinberg-Sanchez Cuboid]{3D perspective of the "Weinberg-Sanchez" cuboid: Electro-weak / Gravitation connection}
+\label{WeinbergSanchezCuboid}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.75,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:13:table13}
+\tkzDefPoint(-4.32,0.0){A} \tkzDefPoint(6.0,5.52){B} \tkzDefPoint(6.,0.){C} %\tkzDefPoint(0.0,0.0){D}
+\tkzDrawPoints(A,B,C)
+\tkzMarkRightAngle(B,C,A)
+%\tkzMarkRightAngle(B,D,C)
+
+\tkzLabelPoints[below](A,C)
+\tkzLabelPoints[above](B)
+\tkzDefMidPoint(A,B) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[below](O)
+\tkzDrawPoints(O)
+%\tkzDefInterPoint(A,C) \tkzGetPoint{O}
+\tkzLabelSegment[sloped,above,text=red](A,B){$\sqrt{a}$}
+\draw[blue, dotted]
+      let \p1 =  ($(-4.32,0)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\tkzDefMidPoint(O,B) \tkzGetPoint{E}
+\tkzDrawPoints(E)
+\tkzLabelPoints[above](E)
+\tkzMarkRightAngle(B,E,C)
+\draw[step=1cm,gray,very thin] (-6,-4) grid (7,9);
+\draw[color=red] (-4.32,0.) -- (6.,0.);
+\draw[color=red] (6.,0.) -- (6.,5.52);
+\draw[color=red] (-4.32,0.) -- (6.,5.52);
+\draw[color=blue] (E) -- (C);
+\tkzDefMidPoint(E,B) \tkzGetPoint{F}
+\tkzLabelSegment[sloped,below,text=black](E,B){$EB \approx \phi^{2}$}
+\tkzMarkAngle[fill=blue!20,size=0.633cm,opacity=.5](B,C,E)
+\tkzLabelAngle[pos=0.6](B,C,E){$\theta$}
+%\node [anchor = east] at (1.,3.5) {$\sqrt{a}$};
+\node [anchor = east,text=red] at (6.,2.5) {$\sqrt{a'}$};
+\node [anchor = east,text=red] at (1.,-0.5) {$\sqrt{a''}$};
+\draw [<->] (O) node[left]{} -- (-5.0,2.8) node[right]{};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
+\draw [shift={(-4.3,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
+\draw [shift={(-4.3,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
+%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
+%\draw (0.,6.)-- (-4.32,0.);
+%\draw (6.,5.52)-- (-4.32,0.);
+%\draw (6.,0.)-- (6.,5.52);
+\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
+\draw[color=black] (-2.,2.5) node {\large $\approx \phi^4-1$};
+\draw[color=gray] (0.34,0.33);
+%\tkzMarkRightAngle[fill=blue!20](B,F,C)
+\end{tikzpicture}
+\caption[Electric Triangle properties]{Electric Triangle.}
+\label{ElectricTriangle}
+\end{figure}
+
+
+
+
+  
+
+\subsection{La relation charge-couplage électrique}
+La relation entre la charge électrique adimensonnelle $q$ et le couplage électrique $a$ est \cite{Taylor}
+\begin{equation}
+ a/4 \pi = 1/q^2 = 1/{q'}^2  + 1/{q''}^2 
+ \end{equation}
+ 
+ 
+  Cela correspond aux paramètres numériques:
+\begin{equation}
+ 4\pi / {q'}^2  = {a'}  \approx 30 ,    ~~~~         4\pi / {q''}^2  = {a''}  \approx 107
+ \end{equation}
+ 
+c'est-à-dire:
+\begin{equation}
+\sqrt{a}  = \sqrt({a'} + {a''}) = \sqrt{a'} / \sin\theta  = \sqrt{a''}  / \cos\theta
+ \end{equation}
+
+
+Ces relations sont illustrées dans le « triangle électrique » figure \ref{ElectricTriangle}. 
+
+Le nombre 30 est non seulement la dimensionalité terminale de l’axe topologique, mais aussi le seul cas où l’aire d’ un triangle de Pythagore (12,5,13) est égal à son périmètre.  Il peut être considéré comme le produit des trois dimensionnalités basiques, $2 \times 3 \times 5$. Le triplet suivant constitué de nombres premiers est le produit $3 \times 5 \times 7$ = 105, de sorte que la formule de base serait:
+\begin{equation}
+30 + 105 = 135 = 5 \times 3^3
+\end{equation}
+
+où $5$ et $3^3$ sont les deux premiers nombres co-parfaits, précédant 495. Si on rétablit l’algèbre des nombres complexes qu’Atiyah avait ôté de la série, on aboutit au nombre 139, la partie entière de $a_{00} = i^{\pi/i} = e^{\pi^2/2}$. \textit{Il apparaît que 137 est la moyenne de ces deux nombres 135 et 139}. 
+
+
+
+
+La charge électrique $q = \sqrt{4\pi/a} $ montre une connection avec la forme trigonométrique \cite{Sanchez2} $a \approx 44\pi - \arccos(1/e)$
+
+\begin{equation}
+a \approx 44\pi_a + \ln(\sqrt {4\pi_a/a})     ~~~~ \rightarrow 6\pi_a^5 \approx p ~~~~ \rightarrow \pi_a : 3, 7, e^e + 1
+ \end{equation}
+
+Ainsi la charge électrique $q$  est intimement reliée au couplage électrique $\sqrt a$. Le triangle représentatif de ce dernier montre une nette connexion avec les puissances 2 et 4 du nombre d'or, dont la pertinence avait été prédite \cite{Sanchez1}.
+
+
+
+ 
+
+
+\subsection{Connexions avec le générateur de Lucas-Lehmer}
+
+Le générateur de Lucas-Lehmer est le nombre $(2 + \sqrt 3)$, lié à $a$ et $a^a$, ce dernier terme étant aussi lié au générateur de Pell-Fermat $(1 + \sqrt2)$. Les puissances de type $2^n$ de ce générateur produisent des nombres dont la partie entière est la série de Lucas-Lehmer, qui permet de déterminer si un nombre de type Mersenne $2^n-1$ est premier. Ce générateur se caractérise par:
+
+
+\begin{equation}
+(2 + \sqrt 3) + 1/ (2 + \sqrt 3) = 4
+\end{equation}
+
+
+On observe, à 20 ppb:
+
+\begin{equation}
+(2\cot\theta) + 1/(2\cot\theta) \approx \sqrt{4^2 + (1/5)^2}
+\end{equation}
+
+ce qui semble impliquer l'espace 5D prévu par Eddington, en réinterprétant l'algèbre de Dirac.
+
+De plus, on observe la connexion suivante impliquant la fonction topologique \underline{$f(d) = exp(2^{d/4})$} et $136$, la première estimation
+d'Eddington pour $a$:
+
+\begin{equation}
+(q\cos\theta + 1/q\cos\theta )/4 \approx f(-a/4d_e)    \approx (2(a-136))^{1/(2\times 137)}
+\end{equation}
+
+%tandis que:
+
+%\begin{equation}
+% 1/q\cos\theta \approx e^{2a /(\mu+1)}    \approx (2+\sqrt3)(2a^3p/H^2n)^{1/a}
+%\end{equation}
+
+%de sorte qu'on retrouve un terme analogue à la racine holique ci-dessus du rayon de Hubble. 
+
+\textit{La triplet $136-137-a$ est vraiment au centre de l'Arithmétique Cosmique}. En effet, d'après Salingaros \cite{Salingaros}: \textit{Indeed, it seems that Eddington was really ahead of his time : Eddington anticipated results of current interest. He discovered the Majorana spinors, and was responsible for the standard $\gamma^5$ notation as well as the notion of chirality. Furthermore, Eddington defined Clifford algebras in eight and nine dimensions which are now appearing in grand unified gauge and supersymmetric theories. A point which Eddington cleared up, yet is still misunderstood, is that the Dirac algebra corresponds to a five-dimensional base space.}
+
+
+Le caractère"monstrueux" de $a$ est qu'il apparait comme exposant dans la triple relation suivante (écarts -1.69, -1.73 et 0.01 $\times 10^{-3}$, impliquant le nombre "économique" géant  $ E = exp(exp(e^e))$:
+
+\begin{equation}
+  P^4  \approx E^{1/(a-1)^2} \approx (9/2)^a \approx (1/\sin \theta)^{2d_ea}/d_e^4 
+\end{equation}
+
+où $2d_e$ est le moment magnétique de l'électron.
+
+
+
+
+
+
+
+\subsection{La connexion avec la table périodique des élements chimiques}
+
+Les dimensions de la série anormale des cordes $d = 2 + 4k$, qui apparaissent dans l’Axe Topologique sont les nombres $2, 6, 10, 14, 18, 22, 26, 30$. Les quatre premiers s’identifient avec les nombres atomiques de la série spectroscopique s,p,d,f. La table périodique contient 19 de ces séries, aboutissant à l’Oganesson, de numéro atomique $7s + 6p + 6d + 2f = 118$. Mais les périodes se distinguent des nombres quantiques principaux, de telle façon que les périodes, à partir de la deuxième, sont doubles, de sorte que le nombre ci-dessus se décompose en $118/2 = 59 =  1+3s+3p+2d+f$. D'où "la relation crstallographique" 
+
+\begin{equation}
+  137 = 2 \times 59 + 19 
+\end{equation}
+
+
+En séparant les termes extremes $f + 1 = 15$, la séparation de jauge ci-dessus $137 = 107 + 30$ est justifiée par la somme $137 = 7(s+1)+6(p+1)+4(d+1)+2(f+1)$.
+ 
+\section{Conclusion: vers l'unification}
+
+Le physicien E.Schrödinger \cite{Schroedinger} avait anticipé l'existence d'une mémoire moléculaire, qui s'est révélée dans la double hélice de l'ADN. De la présente étude il ressort le rôle central de la masse du bi-codon d'ADN, voisine de $m_H^2/m_e$, qui est définie à 3 atomes d'Hydrogène près \cite{Sanchez3}. En effet, elle occupe la place centrale $d = 16$ dans l'Axe Topologique, et figure dans la progression double de Fibonacci: 2(corde), $4(2\sqrt{\Phi_s a_s)}$, 6 (gluon), 10(atome), 16(ADN), 26(Univers).
+
+\textit{Le rôle central de la masse du bicodon d'ADN, à la fois dans les équation holiques et dans l'Axe Topologique annonce enfin l'unification physique-biologie.} 
+\textit{Plus qu'une simple mémoire, l'ADN serait un centre de calcul, utilisant la base arithmétique optimale 3}
+
+Il a déjà été observé que l'ADN est parcouru par un courant électrique \cite{}, ce qui confirme qu'il fonctionne comme un hologramme-ligne, capable d'envoyer des informations électro-magnétique dans l'organisme.
+
+La relation, pour $k = 4, d= 18$, entre la température cosmique et celle des mammifères $T_{mam}\approx jT_C$, où $j = 8 \pi^2/ln2$ est la constante d'échelle de Sternheimer \cite {Sternheimer} prend toute son importance. Elle est très précise (37.2 Celcius). De plus, la longueur d'onde correspondante est très voisine de la moyenne entre le rayon de Hubble et la longueur de Planck, tandis qu'avec le rayon holographique $R_N$ du Cosmos on obtient le point triple de l'Eau, lequel est très voisin de $T_{H^2}T{O^2}/T_C$, où les points triples de l'Hydrogène et de l'Oxygène sont impliqués.
+
+\textit{ Alors que la chimie actuelle est incapable de calculer ces points triples, la cosmologie permanente montre clairement qu'ils sont connectés avec la température cosmique}. 
+
+
+La relation $ln(4\pi (R_N/\lambda_{Wn})^2) \approx a$, précise à $10^{-5}$ près, montre que la longueur d'onde de Wien du rayonnement cosmique est centrale en Holographie cosmique. Ces relations sont beaucoup plus précises que les vagues assertions concernant le soi-disant "réglage fin" (fine tuning").  
+ 
+
+
+
+Le nombre d'or, par ses approximations remarquables $\Phi_s$ et $\Phi_a$, dont le rapport est $n(1-p/H)$, à 35 ppb près, apparait dans l'axe topologique ($\Phi_s$) et intervient par sa puissance holique 210 ($\Phi_a$).
+
+
+Donc l'apparition ancestrale du nombre d'or en biologie doit être reconsidérée avec la plus grande attention. Mais son role calculatoire n'a apparammet pas été signalé. De plus, malgré la très riche littérature sur les rapports entre les arts graphiques et architecturaux, la corrélation musicale n'a jamais été convainquante. En plus du fait que le grand nombre de la gamme chinoise $3^{60} \approx \phi^{137}$ \cite{Sanchez3}, une autre corrélation apparait nettement dans cette étude, faisant intervenir le nombre 292, la valeur entière de $\pi_5$. 
+
+{textitContrairement à la tendance actuelle de formalisation à outrance, les mathématiques doivent maintenant s’appuyer sur la physique de précision pour s'unifier et réunir Physique et Biologie.} 
+
+
+
+
+\section {Acknowledgements}
+
+The authors thank Anatole Khelif for many thoroughful discussions, including with the regretted Sir Atiyah, and Denis Gayral for technical assistance.
+\pagebreak
+
+\bibliographystyle{unsrt}  
+%\bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
+%%% and comment out the ``thebibliography'' section.
+%%% Comment out this section when you \bibliography{references} is enabled.
+\begin{thebibliography}{99}
+
+\bibitem{Rees} Carr B.J. and Rees M. J. , “The anthropic principle and the structure of the physical world”, Nature 278, 605-612 (1979). Rees M. J. "Cosmic Coincidences: Dark Matter, Mankind, and Anthropic Cosmology" (co-author John Gribbin), 1989, Bantam; ISBN 0-553-34740-3  \\
+
+\bibitem{Sanchez2} F.M. Sanchez, V. Kotov, M. Grosmann, D. Weigel, R. Veysseyre, C. Bizouard, N. Flawisky, D. Gayral, L. Gueroult, ``Back to Cosmos''. Progress in Physics, vol. 15, issue 2, (2019). http://www.ptep-online.com/2019/PP-57-12.PDF .\\
+
+
+
+
+\bibitem{Davies1} Davies P.C.W. The Accidental Universe, p. 50, C.U.P. 1993 \\ 
+
+\bibitem{Atiyah} Atiyah M. Heidelberg Laureate Forum 24th Sept 2018 https://hitsmediaweb.h-its.org/Mediasite/Play/35600dda1dec419cb4e99f706197a3951d. \\
+
+\bibitem{Davies2} Davies P.C.W. The Accidental Universe, p. 11, C.U.P. 1993 \\ 
+
+%\bibitem{Atiyah} Atiyah M. Heidelberg Laureate Forum 24th Sept 2018 https://hitsmediaweb.h-its.org/Mediasite/Play/35600dda1dec419cb4e99f706197a3951d. \\ 
+
+\bibitem{Hoyle}  Hoyle, "A New Model for the Expanding Universe," MNRAS 108 (1948) 372. Bibcode: 1948MNRAS.108..372H  \\
+
+\bibitem{Bondi} Bondi and Gold, "The Steady-State Theory of the Expanding Universe," MNRAS 108 (1948) 252. Bibcode: 1948MNRAS.108..252B \\
+
+\bibitem{Russell} Whitehead, Whitehead, Alfred North and Bertrand Russell (1963). Principia Mathematica. Cambridge: Cambridge University Press.
+
+
+
+\bibitem{Corbalan} Corbalan F., "Le nombre d'or", Le language mathématique de la beauté - Collection Le monde est mathématique , ISBN: 9782823701005 \\
+
+\bibitem{Schroedinger} Schrödinger E., "What is Life?", Macmillan (1944).  \\
+
+
+
+
+\bibitem{Tanabashi} Tanabashi M. et al. (Particle Data Group), Phys. Rev. D98, 030001 (2018), and 2019 update.\\
+
+
+
+\bibitem{Schwarz} Schwarz J. H. String Theory: Past, Present, and Future. Séminaire Poincaré vol 1, 2004 p. 42.
+
+\bibitem{Arp} Arp H. ``The origin of companion galaxies''. Astrophys. J. 496, p661--669 (1998). \\
+
+\bibitem{Poincare1} Poincaré H., Sur la théorie des quanta, Journal de physique, vol 2, p. 5.(janvier 1912).
+
+\bibitem{Kotov1} Kotov V. A. and Lyuty V. M., “The 160-min. Periodicity in the optical and X-ray observations of extragalactic objects.” Compt. Rend. Acad. Sci. Paris 310, Ser. II, 743-748 (1990).
+
+\bibitem{Kotov2} Scherrer, Philip \& Wilcox, J. \& Severnyi, A. \& Kotov, V. \& Tsap, T.. (1980). Further evidence of solar oscillations with a period of 160 minutes. The Astrophysical Journal. 237. 10.1086/183242. \\
+
+\bibitem{Tifft} Tifft W.G. ``Redshift periodicities. The galaxy-quasar connection''. Astrophys. Space Sci. 285(2):429 (2006). \\
+
+\bibitem{Sanchez1}  Sanchez F.M., Holic Principle, Entelechies, ANPA 16, Sept. 1995. Bowden K.G., 324--343.\\\bibitem{Hooft}  Hooft G., Nucl.Phys. B 335, 138, (1990); L. Susskind, J. Math. Phys. 36, 6377 (1995) ; arXiv:hep-th/9409089\\
+
+
+\bibitem{Hooft}  Hooft G., Nucl.Phys. B 335, 138, (1990); L. Susskind, J. Math. Phys. 36, 6377 (1995) ; arXiv:hep-th/9409089\\
+
+\bibitem{Poincare2} Poincaré H., Dernières Pensées. “Conférence à l’Université de Londres”, pp. 102-103 (Flammarion, 1913).\\
+
+\bibitem{Wyler} Wyler A., "L'espace symetrique du groupe des equations de Maxwell" C. R. Acad. Sc. Paris, t. 269, 743-745 (1969). Wyler A., C.R. Acad. Sci, Paris "Les groupes des potentiels de Coulomb et de Yukawa". C. R. Acad. Sc. Paris, t. 272, 186-188 (1971).\\
+
+\bibitem{Lenz} Lenz F., “The Ratio of Proton and Electron Masses”, Phys. Rev. 82, 554, (1951).\\
+
+\bibitem{Bastin} Bastin T. and Kilmister C.W., Combinatorial Physics (World Scientific, 1995).\\
+
+
+
+\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry Operations of space $E^{n}$" AAECC 5, 53--70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
+
+\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l'espace $E^{n}$ . (Number of types of crystallographic point symmetry operations of space $E^{n}$ )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
+
+\bibitem{Sternheimer} Sternheimer J., Musique des particules elementaires, CRAS, 297, II, 829--834 (1983).\\
+
+
+\bibitem{Freedman} Freedman W et al, The Carnegie-Chicago Hubble program. ArXiv:1907.05922v1. \\
+
+
+\bibitem{Seiberg} Seiberg N. Emergent Spacetime. The Quantum Structure of Space and Time, Proccedings of the 23rd Sovay Conference on Physics, Brussels, Belgium, ed. David Gross, Marc Henneaux and Alexander Sevrin, World Scientific, Dec. 2005, 163-178.\\
+
+
+\bibitem{Nambu} Nambu H., “An Empirical Mass Spectrum of Elementary Particles”, Prog. Theor. Phys. Vol 7, n°5, 595-6, (1952).\\
+
+
+
+
+
+
+
+\bibitem{Green} Green, M. Schwarz J. (1984)  Anomaly cancellations in supersymmetric D = 10 gauge theory and superstring theory". Physics Letters B. 149: 117.\\
+
+
+
+\bibitem{Friedman} Friedman W. et al, The Carnegie-Chicago Hubble Program. VIII. An Independent Determination of the Hubble Constant Based on the Tip of the Red Giant Branch, arxiv : 1907.05922.\\
+
+\bibitem{Eddington} Eddington A, ``Fundamental Theory'', Cambridge University Press (1949).\\
+
+\bibitem{Bekenstein} Bekenstein J. ``Black holes and entropy'', Phys. Rev. D 7:2333-2346 Issue:8. DOI:10.1103/PhysRevD.7.2333 (1973) \\
+
+\bibitem{Quinn} Quinn T, Speake C, Parks H, Davis R. 2014 The BIPM measurements of the Newtonian constant of gravitation, G. Phil.Trans. R. Soc. A372: 20140032. https://royalsocietypublishing.org/doi/10.1098/rsta.2014.0032 \\
+
+
+\bibitem{Koide} Koide Y., Fermion-Boson Two-Body Model of Quarks and Leptons and Cabibbo Mixing  Lett. Nuovo Cimento 34, 201 (1982).\\
+
+\bibitem{Salingaros} Salingaros N., Some Remarks on the Algebra of Eddington's E Numbers. Foundations of Physics, June 1985, Volume 15, 6, pp 683–691.\\
+
+\bibitem{Taylor} Taylor John G., "The New Physics", American Journal of Physics, Vol.41, p 1381--1382, DEC.1973,doi: 10.1119/1.1987588. \\
+
+\bibitem{Alcina} Alcina C., "la secte des nombres. Le thèorème de Pythagore", Images des Maths, p. 147 (2013). \\
+
+
+\bibitem{Sanchez3} Sanchez F. M. A Coherent Resonant Cosmology Approach and its Implications in Microphysics and Biophysics, Progress in Theoretical chemistry and Physics, Springler, v. 30, 375-407 (2017), DOI 10.1007/978-3-319-50255-7-23. \\
+
+
+\end{thebibliography}
+
+
+
+\pagebreak
+\begin{appendix}
+
+
+
+%\listoftables{}   % table list
+%\listoffigures{}  % figure list
+%\section{Tables}
+%\end{appendix}
+%\end{document}
+
+
+\bash[stderr]
+pdflatex periodictable
+\END
+\includepdf{\periodictable.pdf}
+
+%\end{filecontents*}
+%\usepackage{pdfpages}
+%\immediate\write18{pdflatex \periodictable}
+%\begin{document}
+%\includepdf{\periodictable.pdf}
+\end{appendix}
+\end{document}
+
+
+
+\begin{table}
+%\label{tab:5:table5}
+\caption[Table \ref{tab:5:table5}: Cosmologie Holique.]{Cosmologie Holique}
+\label{tab:5:table5}
+  \hskip-2.0cm\begin{tabular}{lllll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+    $m_G$ & $m_{\hbar}^2$    & $r = \hbar^2/Gm_G m_{\hbar}^2$  & Propriété arithmétique & masse associée $m_P^4/m_G m_{\hbar}^2$ \\
+    \midrule
+    
+    
+    $m_N $ & $m_N^2$   & $R_N/2$ demi-rayon holographique du Cosmos & $R_N/\lambdabar_e \approx (3^3)^{3^3}$&  $m_P^4/m_G m_{\hbar}^2 = M_N$ \\
+    $m_{bc} $ & $m_{bc}^2$   & $2l_{cc}$ double longueur non-Doppler & $ l_{cc}/\lambdabar_e \approx \pi^{50}$&  $m_P^4/m_{bc}^3 = m_{ph} = a_w m_{gr}$  \\
+    $m_Pa^3 $ & $m_pm_H$   & $\lambda_{Wn}$ longueur d'onde de Wien du rayonnement de fond & $\lambda_{Wn}/l_P \approx \pi^{64}$& $m_P^4/m_Pa^3m_pm_H$ \\
+    $m_e $ & $m_pm_H$   & $R/2$ demi-rayon de l'Univers & $R/\lambdabar_e \approx g(6) \approx 2^{128}\approx (2R/R_N)^{210}$   & $m_P^4/m_em_pm_H = M$ \\
+    
+    $m_{bc}R/R_N $ & $m_{ph}m_{gr}$   & $R_C$ rayon du Cosmos & $ R_C/\lambdabar_e \approx 3^{128}$&  $m_P^4/m_{bc}(R/R_N)m_{ph}m_{gr} = M_C $ \\
+    
+  
+         
+   \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+\begin{table}
+%\label{tab:6:table6}
+\caption[Table \ref{tab:6:table6}: 15 Hubble radius formulas]{15 ppb precise formula for $R \approx 13.8119768$ Gly}
+\label{tab:6:table6}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    \multicolumn{3}{c}{}                   \\
+    \cmidrule(r){1-3}
+    \#     & Formula  & Remarks \\
+    \midrule
+ 
+ 
+ 15 &  $(2\pi_R a^3)^5 \lambdabar_{e}^2/6\lambdabar_H  $ &  $\pi_{R} = 3+1/(7 + 1/(16 + 2/e^{2e})$  \\ 
+ 
+  14 & 2 $\lambdabar_{e} (a/137) (p/6) (pH)^6\pi_{synth}^5= /a_s (1+a^2/F) $ & Eddington's Eq 4 coupling forces:  $\pi_{synth} = 3+1/(7 + 1/(16 -(a-137) +2/a_s\pi_5$  \\ 
+        
+ 
+  13 & $ 8\pi l_P (R_N/\lambda_{CW})^2 (\sqrt{(137^2 + 1/4 + 2/127)}/\pi^{2/3})   $ & confirms the Cosmos temperature   \\  
+   
+    12 & $ 8\pi l_P (R_N/\lambda_{CW})^2 (137/\pi_0)^{1/3}   $ & with $\pi0 = 3+1/(7+1/(16+1/12^2))$ confirms the Atiyah's symmetry $a--\pi$    \\
+  
+   11 & $(6p_W/5p)\lambdabar_{e} a^{16 \sqrt a_s} e^{-1/f(10)}$ & from the Cosmos radius $R_C$ with $\pi_{44\pi} = 3+1/(7 + 1/(16 + 1/3\sqrt{44\pi})$  \\
+  
+   10 & $\lambdabar_{e} ((44\pi_{44\pi} -a) R_C^{1/(1+ a^{1/2} /e^2)}$ & from the Cosmos radius $R_C$ with $\pi_{44\pi} = 3+1/(7 + 1/(16 + 1/3\sqrt{44\pi})$  \\ 
+        
+     9 & $ \lambdabar_{e} (3^3)^{3^3} e^{\pi_1^2/2}/139  $ & from the Cosmos holographic radius $R_N$ with $\pi_1 = 3+1/(7 + \beta a/137\times 16$  \\
+    
+            
+     8 & $ \beta ^(1/4) (2p/H)^4 \lambdabar_{e} \pi_5^{16}/(a_0 - 2) $   & confirms the central role of $\pi_5$ \\
+    
+      7 & $ \sqrt{137p/an} R_C/P^2 a^6 6\pi_d^5 $   & with $\pi_d = 3 + (1/(7+1/(15 + d_e)))$  \\           
+      6 & $2 N_L\lambdabar_{e} a^5((e-\pi/2)/137p_W)^2$   & pertinence of the relation $e \approx \pi/2 + ln\pi$  \\       
+     
+  
+      
+      5 & $\lambdabar_{e} g(6)/(1+\sqrt(137^2+\sqrt(136))/jn)$  & Confirms $137=136+1$, with the scale constant $j = 8\pi^2/ln2 $ \\
+      4 & $(\lambdabar_{e} 2^{128})(1-(137^2+\pi^2+e^2)/pH)$ & shows a symmetry between $\pi$, e and 137, prolongating $ a \approx (137^2 + \pi^2)^{1/2}$ \\
+       3 & $2\lambdabar_{e} (pn/H^{2})(g(5)/\ln(2-1/ja^2))^2$   & confirms the Topological axis $g(5)^2/g(6) = 25/6 \rightarrow \ln(2) \approx 2\sqrt(3/5)$  \\    
+      2 & $(\lambdabar_{e} 2^{137})(\gamma^2 n^6 / 137^2 \Gamma^{11})$ & superstring liaison 11D-9D, with $\Gamma$, the Atiyah constant \\
+      1 & $(\lambdabar_{e} 2^{128}/d_e^2(m_H/m_p)^6$  & empiric [5], separates the neutron from $\Gamma \gamma^2 d_e^2 \approx (p\Gamma^2 \sqrt(137)/2 \sqrt(2) Hn)^6 \approx a_s$ \\
+    
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+% \section{Periodic Table}
+%^^^^^^^^^^^^^^^
+% \input{periodic-table}
+%\end{appendix}
+%\end{document}
+
+
+
+
+
+
+
+
+
+\begin{table}
+%\caption[Table \ref{tab:9:table9}: Feynman Diagram example.]{Feynman Diagram}
+\begin{tikzpicture}
+  \begin{feynman}
+    \vertex (a) {\(\mu^{-}\)};
+    \vertex [right=of a] (b);
+    \vertex [above right=of b] (f1) {\(\nu_{\mu}\)};
+    \vertex [below right=of b] (c);
+    \vertex [above right=of c] (f2) {\(\overline \nu_{e}\)};
+    \vertex [below right=of c] (f3) {\(e^{-}\)};
+
+    \diagram* {
+      (a) -- [fermion] (b) -- [fermion] (f1),
+      (b) -- [boson, edge label'=\(W^{-}\)] (c),
+      (c) -- [anti fermion] (f2),
+      (c) -- [fermion] (f3),
+    };
+  \end{feynman}
+\end{tikzpicture}
+%\label{tab:9:table9}
+\end{table}
+
+
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=5cm,height=5cm]{./figure/bloch-redfield.png}
+\caption[Example Bloch Sphere]{Bloch Sphere based on Bloch-Redfield master eq.} 
+\end{figure}
+
+
+
+\begin{table}
+\caption{Cosmic constants}
+%\label{tab:3:table3}
+  \hskip-2.0cm\begin{tabular}{lllll}
+    \toprule
+    %\multicolumn{5}{c}{}                   \\ 
+      \cmidrule(r){1-5}
+     name & Symbol   & unit   & Value & imp (ppb) \\
+ \midrule
+       
+   Official Hubble-Lemaitre so-called "present" constant & $c/H_0$ & Gly & 13.80(2)    & $1.5 \times 10^6$ \\  
+   Critical Universal radius $2\hbar^2/Gm_em_pm_H=2GM/c^2=2a_G\lambdabar_{e}$ & R &  Gly & 13.81197677  & this work ppb\\   
+   Universal mass $Rc^2/2G = m_P^4/m_em_pm_H$ & M & kg & $8.796524777 \times 10^{52}$ & this work ppb \\    
+   Universal energy density & $u_U$ & $J/m^3$ & $8.459065716 \times 10^{-10}$ & this work ppb \\   
+   Cosmos hologram Nambu radius & $R_N$ &  m & $1.712894163 \times 10^{26}$ & this work ppb\\   
+   Cosmos radius & $R_{GC}$ &  m & $9.075773376 \times 10^{86}$ & this work ppb \\   
+   Universal mono-electron radius & $R_1$ &  m & $1.492365473 \times 10^{26}$ & this work ppb \\    
+   Official CMB temperature & $T_{CMBoff}$ & K & $2.7255(6)$ & $2 \times 10^5$ \\    
+   Cosmos (CMB) temperature & $T_{C}$ & K & $2.725820138$ & this work ppb \\
+   Cosmos (CMB) thermal reduced wavelegth & $\lambdabar_{C} = \hbar c/ k_B T_C $ & m & $8.400716621 \times 10^{-4} $ & this work ppb \\ 
+   
+   Cosmos (CMB) thermal Wien wavelegth & $\lambda_{CW} = \hbar c/ w $ & m & $8.400716621 \times 10^{-4} $ & this work ppb \\ 
+   
+   
+   Neutrino temperature  $(CNB)T_{CMB}/ (4/11)^{1/3}$ & $T_{CNB}$ & K & $1.945597343$ & this work ppb \\ 
+   CMB energy density $(\pi^{2/15})\hbar c/ \lambdabar_{CMB}^4 \approx (2a_s^2)^2 u_U$ & $u_{CMB}$ & $J/m^3$ & $4.176762758 \times 10^{-14}$ & this work ppb\\ 
+   CMB photon density $16 \pi \zeta (3)/\lambda_{CMB}^3$  & $l_{ph}^{-3}$  & $m^{-3}$   & $410.871743 \times 10^6 m^{-3}$ & this work ppb \\ 
+   CNB energy density $u_{CMB} = (3\times (7/8) \times (4/11)^{4/3})$ & $u_{CNB}$ & $J/m^3$ & $2.84572016\times 10^{-14}$ & this work ppb \\  
+   Non-Doppler quasar period & $t_{Kmes} = l_K/c$ & sec & 9600.60(1) & 1000 \\  
+   Optimized Non-Doppler quasar period $\lambdabar_e (a_Ga_w)^{1/2}/c$ & $t_{K}$ & sec & 9600.591457 & this work ppb \\ 
+   Equivalent number of neutrons in the critical sphere & $n_n$ & - & $5.251883912 \times 10^{79}$ & this work ppb \\ 
+   Number of photons in the critical sphere  & $n_{ph}$ & - & $3.840045866 \times 10^{87}$ & this work ppb \\ 
+   Number of photons in the Cosmos  & $N_{ph}$ & - & exp(621.949984) & this work ppb \\ 
+   Equivalent number of Hydrogen atoms in the Cosmos  & $N_H$ & - & exp(603.8432382) & this work ppb \\
+ \bottomrule
+  \end{tabular}
+\end{table}
+ 
+ 
+ 
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.50, line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:15:table15}
+\tkzDefPoint(-0.236,0.0){A} \tkzDefPoint(0.0,0.944){B} \tkzDefPoint(3.764,0.){C} \tkzDefPoint(0.0,0.0){D} \tkzDefPoint(0.882,0.0){D'} \tkzDefPoint(0.882,-1.764){E}
+\tkzDrawPoints(A,B,C,D,D',E)
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,D,C)
+\tkzMarkRightAngle(E,D',C)
+\tkzMarkRightAngle(A,E,C)
+\tkzLabelPoints[below](A,C,D,E)
+\tkzLabelPoints[above](B,D')
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[below](O)
+\tkzDrawPoints(O)
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,O,D)
+%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](O,E,D')
+\tkzLabelAngle[pos=0.6](B,O,D){$\theta$}
+\tkzLabelAngle[pos=0.6](O,E,D'){$\theta$}
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+\draw[step=1cm,gray,very thin] (-1,-3) grid (4,3);
+
+\draw[color=green] (-0.236,0.) -- (0.882,-1.764);
+%\draw[color=green] (-1.764,0.) -- (0.,0.0);
+\draw[color=green] (-0.236,0.) -- (3.826,0.);
+\draw[color=green] (0.882,-1.764) -- (3.826,0.);
+\draw[color=blue] (0.882,0.) -- (0.882,-1.764);
+% 1st triangle
+\draw[color=red] (-0.236,0.) -- (0.,0.944);
+\draw[color=red] (0.944,0.) -- (0.,0.0);
+\draw[color=red] (-0.236,0.) -- (3.764,0.);
+\draw[color=red] (0.,0.944) -- (3.764,0.);
+\draw[color=blue] (0.,0.) -- (0.,0.944);
+\draw[color=blue] (B) -- (O);
+\draw[color=blue] (E) -- (O);
+\draw[blue, dotted]
+      let \p1 =  ($(-0.236,0)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+
+
+%\node [anchor = east] at (0.,1.5) {$h$};
+%\node [anchor = east] at (2.,2.0) {$\approx 5$};
+%\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
+%\node [anchor = north] at (0.,-0.7) {$\approx \phi^{4}$};
+%\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.2,-0.1) node[right]{};
+%\draw [<->] (0.2,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
+%\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
+  %\draw [decoration={markings,mark=at position 1 with
+   % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
+%\node [anchor = east] at (2.,-0.35) {$\omega$};
+%\node [anchor = east] at (-1.,-0.35) {$z$};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
+%\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
+%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
+%\draw (0.,6.)-- (-4.32,0.);
+%\draw (6.,5.52)-- (-4.32,0.);
+%\draw (6.,0.)-- (6.,5.52);
+%\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
+%\draw[color=gray] (0.34,0.33);
+%\tkzMarkRightAngle[fill=blue!20](B,F,C)
+\end{tikzpicture}
+\caption[The holographic Triangle properties.]{Holographic triangle is caracterized by $S=h=\sin\theta$; the height h and the area S are both equal to $\sin\theta$.}
+\end{figure}
+
+
+
+ 
+ 
+
+\begin{table}
+\caption{53 formulas for the Hubble radius, with better precision than 1 \%}
+\label{tab:10:table10}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+   \#     & Formula     & Value~~(Gly) & Remarks \\
+    \midrule
+    
+    
+    1 & $(20/3)N_{Edd}Gm_H/c^2$ & 13.79 & Confirms Eddington Large number and black matter existence [3] \\
+    2 & $2\hbar^2/Gm_em_pm_n$ & 13.80 & obtained in a 3 minutes calculation (1997) by dimensional analysis without c \\
+    3 & $2\hbar^2/Gm_em_p^2$ & 13.82 & theoretical radius of a mono-atomic star \\
+    4 & $\lambdabar_{e} g(6)$ & 13.82 & with the topological function $g(k)=exp(2^{k+1/2})/k$ for k=6 (d=26, critical dimension) \\
+    5 & $\lambdabar_{e} (\tau/\mu)^{32}/w$ & 13.83 & $6g(6) = g(1)^{32}$\\     
+    6 & $(2\lambdabar_{e}/3)(\lambdabar_{CMB}/\lambdabar_{H2})^3$ & 13.90 & 3D holographic term in $2\pi R/\lambdabar_{e} \approx 4\pi (\lambdabar_{p}/l_P)^2 \approx (4\pi /3) (\lambdabar_{CMB}/\lambdabar_{H2})^3$ \\
+    7 & $\lambdabar_{e} S_4^5$ & 13.80 & holographic 5D extension \\
+    8 & $\lambdabar_{e} \Gamma^{55/2}$ & 13.80 & implies $s_4 \approx \Gamma^{11/2}$ \\
+    9 & $\lambdabar_{e} exp(j\sqrt (137/a) - \Gamma)$ & 13.82 &confirms the Atiyah and Sternheimer constants \\ 
+    10 & $\lambdabar_{e} exp((p^2-p_{W,a,137}^2 - j/\pi)$ & 13.81 & with $p_{W,a,137} = 6(a^2 - 137^2)^{5/2} \approx 1833.99827$~~ confirms Wyler's theory\\ 
+    11 & $\lambdabar_{e} exp(\sqrt (p^2-p_{W,a,137}^2)/d_e^2)$ & 13.81 & with $p_{W,a,137} = 6(a^2 - 137^2)^{5/2} \approx 1833.99827$ ~~ confirms Wyler's theory\\ 
+    12 & $\lambdabar_{p} {(WZ)}^{4}$ & 13.80 & specifies the Carr and Rees relation $a_G \approx W^8$ [5] \\
+    13 &  $(2l_K^3/r_e)^{1/2}$ & 13.75 & from holographic relation $\pi(R/l_K)^2 approx 2\pi l_K/r_e$  \\
+    14 &  $l_K(3(r/l_P)^2)^{1/3}$ & 13.69 & from holographic relation $(4\pi/3) (R/l_K)^^3  approx 4\pi (l_K/r_e)^2$ \\
+    15 &  $(R_{C}r_e^2)^{2/3}/l_k$ & 13.70 & from the empiric $\sqrt(3) l_K^3  \approx R_{C}r_el_P$ \\
+    16 & $\lambdabar_{e} ^{11/3}/l_P^2 \lambdabar_{CMB}^{2/3}$ & 13.87 & confirms the thermal photon background \\
+    17 & $2\lambdabar_{CNB}^6/\lambdabar_e ^3 \lambdabar_{CMB}^2$ & 13.83 & confirms the statistical neutrino background \\
+    18 & $2\lambdabar_{e} a_s^2 W^7$ & 13.86 & confirms the Holic Principle \\
+    19 & $2\lambdabar_{e} (FZ)^{7/2}$ & 13.95 & confirms the Holic Principle \\
+    20 & $\lambdabar_{e} 2^{128}$ & 13.90 & $R/2 \approx 2^{127}$ Lucas Large Number, last term of the Combinatorial Herarchy\\
+    21 & $\lambdabar_{e} \pi^{155/2}$ & 13.80 & $\pi$ as a calculation basis (Riemann series): $2^{1/155} \approx \pi^{1/256} \approx (2\pi)^{1/(3\times 137)}$ \\
+    22 & $4P^3\lambdabar_{e} l_{WCMB} /R_N$ & 13.82 & from the Holo-thermal holographic relation : $e^a \approx 4\pi (R_N/l_{WCMB} )^2 \approx (2\pi /3) (r_p/l_P)^3$  \\
+    23 & $(2\pi^{32}P\lambdabar_{e})^2 /R_N$ & 13.80 & ties to $l_{WCMB}/l_P \approx \pi^{64}$ \\        
+    24 & $R_N a^a/\Pi_{hap} (R_{C}/l_P)^3/\Pi_{26}$ & 13.81 & ties the Grandcosmos hologram radius to the 20 happy family sporadic groups \\  
+    25 & $R_N (R_{C}/l_P)^3/\Pi_{26}$ & 13.79 & ties the Grandcosmos to the 26 sporadic groups \\   
+    26 & $\lambdabar_{F} P^3 /p^7$ & 13.80 & P and p computation bases \\      
+    27 & $\lambdabar_{F} P^2 e/8$ & 13.81 &  related to $\sqrt a  \approx 32/e$ \\     
+    28 &  $\lambda_{e} O_M^{7/10}$ & 13.94 &  related to $O_M^{7/10} \approx 496$, dimension of the superstring SO32 gauge group  \\
+    29 & $(\lambdabar_{Ryd} n^{4})^2/\lambdabar_p$ & 13.81 & tied to $ct_K/\lambdabar_e \approx aFWZn$ \\ 
+    30 & $(\lambda_{CMB}/(j+1))^2/l_P$ & 13.80 & yieds to the central cosmo-biologic relation [5]: $\sqrt(Rl_P) \approx \lambda_{mam}$ \\
+    31 & $(\lambda_{CMB}^4/j\sqrt{E_3})^{1/2}/l_P$ & 13.84 & implies $j/a \approx \sqrt{ln2} \approx 1/\zeta(3)$\\ 
+    32 & $(\lambdabar_{e} (2R/R_N)^{210})$ & 13.85 & Confirms the Holic Principle and the  Grandcosmos hologram with radius $R_N$  \\
+    33 & $(\lambdabar_{e} F^{p_{W, a, 137}/2a}$ & 13.88 & confirms the Fermi ratio $F$ as basis  \\
+    34 & $R_N(R_N \pi^{1/3}/O_M\lambdabar_{e})^{1/127}$ & 13.77 & Confirms the Monster  \\
+    35& $\lambdabar_{e} (\tau /p)^{140}/2$ & 13.77 & confirms the Eddington's proton-tau symmetry \\
+    36& (3/10) $\lambdabar_{e} (\tau /p)^a$ & 13.83 & confirms the dark matter existence \\
+    37& $R_N (O_M O_B/n_{ph})^2$ & 13.77 & confirms the large spradic groups. $(O_M O_B/2)^{-1/a} \approx sin^2\theta \approx ln^42$ \\
+    38 & $R_N (\pi O_M O_B/3)^2 / exp(e^6)$ & 13.90 & confirms the pertinence of $e^6 \approx \pi^4 + \pi^5  \approx sin^2\theta \approx ln^42$ \\
+    
+    39 & $\lambdabar_{e} e^{a/d_e^2 ln\delta} $ & 13.87 & pertinence of the Feigenbaum bifurcation constant $\delta$ \\   
+    40 & $\lambdabar_{e} a^{a/137(a-137) ln\delta} $ & 13.82 & pertinence of the Feigenbaum bifurcation constant $\delta$ \\
+    41 & $O_B^{n/ a^{3/2}}$ & 13.93 & Confirms the Baby Monster Group \\
+    42 & $ \lambdabar_{p} PF^6/(3a^7/2)$ & 13.81 & Confirms the radiative term $3a^7/2$ \\
+    43 & $(\sqrt{3}/2)\lambdabar_{e}g_3^{8a_s}$ & 13.84 & Confirms the Lucas-Lehmer series $g_ 3^{2^n}$ \\
+    44 & $2\lambdabar_{e} N_R^{1+\sqrt{137}}/(R_N/l_P)^3$ & 13.86 & Confirms the Ramanujan Number pertinence \\
+    45 & $R_{C} (e^\gamma/R_N^7)^{1/2}$ & 13.81 & Confirms the Superspeed ratio $C/c = R_{GC}/R$\\
+    46 & $\lambda_{e} \sqrt(a) \times j_0 ^{\sqrt(163)}$   & 13.78 & Confirms the  liaison Modular-sporadic $O_B \approx 744^{ \sqrt(137)}$ \\ 
+    47 & $ 6\lambda_{e} lnS_{125} $   & 13.81 & confirms the Lucas-Lehmer number: $lnS_{125}  = 2^{125} \ln(g_3) $ \\    
+    48 & $ \lambdabar_e (1/ln\Phi)^{2\sqrt{2n}}  $   & 13.75 & confirms the term $(ln\Phi)^2 \approx sin^2\theta_{eff}$  \\     
+    49 & $ (3/2) \lambdabar_e (2\pi p \Pi_0^2)^{\sqrt{a/e}e}  $   & 13.79 & confirms the term $\sqrt a /e$  \\     
+    50 & $ (3/2) \lambdabar_e (H \Pi_+ a^{3/2})^{\sqrt{a/e}}  $   & 13.79 & confirms the term $\sqrt a /e$  \\    
+    51 & $ (3/2) \lambdabar_e (H \Pi_+ a^{3/2})^{\sqrt{a/e}}  $   & 13.79 & confirms the term $\sqrt a /e$  \\     
+    52 & $ (3/2) \lambdabar_e (a^3 F/p_G)^{\sqrt{a/e}}  $   & 13.80 & confirms the term $\sqrt a /e$  \\   
+    
+    
+    53 & $ r_e  n p_+ p_- (f(10 f(11) f(14))^3   $   & 13.86 & confirms the Topological Axis  \\ 
+    
+  
+    
+    
+    \bottomrule
+  \end{tabular}
+  % \label{tab4:table4}
+\end{table}
+
+
+
+\begin{table}
+\caption{51 formulas for the Hubble radius, with better precision than 0.1 \%}
+\label{tab:5:table5}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+   \#     & Formula     & Value~~(Gly) & Remarks \\
+    \midrule
+    
+   1 & $\lambdabar_{e} ((a-136)E_3^{\sqrt a})^{1/2}$ & 13.814 & $E_3 = e^{e^e} \approx E_4^{1/ap} \approx e^{3e+7}\approx \tau \times 8a \rightarrow a\approx e^7/8$ \\
+   2 & $ \lambdabar_{e} \sqrt{a -136} e^{e^e \sqrt a}$ & 13.810 & confirms the basis e \\
+   3 & $(l_P^2 \lambdabar_{e})a_s^2 N_L (\lambdabar_{CMB}/r_H)^6$ & 13.810 & confirms the cosmic role of the strong coupling $a_s$ \\
+   4 & $\lambdabar_{e} \Pi_{26}^{1/9}/(j+e)$ & 13.813 & with the product of the 26 sporadic group orders\\
+   5 & $(\Pi_{26}^2(\lambdabar_e/j)^{18}R_N/2)^{1/19}$ & 13.813 & $j^{18} \approx a^{17} lna$\\
+   6 & $\lambdabar_{e} a^{5a/38}$ & 13.812 & a computation basis\\
+   7 & $\lambdabar_{e} (D/3 - a)^8$ & 13.813 & empiric $D/3 -a -1 \approx 2\mu p_{hol}a^{-1/2}$\\ 
+   8 & $R_1 a_s a^3 N_L e^{-2}P^{-2}$ & 13.813 & by comparison with $Gm/c^2$\\
+   9 & $R_C d_e^{-e^3}/e^{(5)}(-a^3/p_K^2)$ & 13.811 & confirms the singularity of $R_C/R$ = C/c\\
+  10 & $R_1 (8/\sqrt{3a})^{1/7}$ & 13.812 & from relations between photon numbers \\
+   11 & $\lambdabar_{e} ((e^{4e-1/a} - ln^2(P^4/a^3))/2)^{1/2}$ & 13.812 & from the geo-dimensional couple Universe-Cosmos\\
+   12 & $\lambdabar_{F} e P^2E_2^4(pn)^{-1/2}$ & 13.813 &tied to $H/8 \approx E_2^2 = e^{2e}$\\
+   13 & $(\lambdabar_{e}^2/l_P) (j/16)^{16}E_2^2 d_e \sqrt 2$ & 13.812 & liaison j-matrix $16 \times 16$\\
+   14 & $3^{1/137} R_{C}^{2/3} r_e^{4/3} /l_K$ & 13.812 & confirms the liaison Cosmos-sun-quasar period\\
+   15 & $O_M^{d_e pH\sqrt\beta / 24D}$ & 13.811 & confirms the monster and its dimension D\\
+   16 & $\lambdabar_{e} \Phi ^{4\pi\sqrt{2\pi a}} $ & 13.821 & confirms the golden ratio as calculation basis\\
+   17 & $\lambdabar_{e} (eP/2)^{1/(\sqrt a/e^2 - 1)} $ & 13.813 & confirms the natural calculation basis\\
+   18 & $\lambdabar_{e} (n/p)^{12} (1/ln{\Phi}) ^{2\pi\sqrt{e a}} $ & 13.813 & confirms the golden ratio logarithm as calculation basis\\
+   19 & $\lambdabar_{e} (1/ln2)^4\sqrt{60 \times 61+2} $ & 13.813 & confirms the Shannon $ln2$ as calculation basis\\
+   20 & $\lambdabar_{e} (n/p^2) (6/\pi)^{aH/p}$ & 13.814 & confirms the Hydrogen ratio $r_H/\lambdabar_e = aH/p$\\    
+   21 & $\lambdabar_{e} e^{89}  a^3/p{Ed}^3$ & 13.815 & empiric with Fibonacci number 89\\    
+   22 & $ \lambda_{e} (7/6) a_s^{a_s^{a_s}/eF}  $   & 13.81 & confirms the strong coupling constant as a calculation basis \\       
+   23 & $(\lambdabar_{e}^2/R_N) (137/(16 \times 136)) g_3^a$ & 13.815 & confirms the Lucas-Lehmer generator $g_3 ; g_3 +1/g_3 = 4$ \\
+   24 & $\lambdabar_{e} e^a/p^6\Gamma $ & 13.815 & confirms the natural calculation basis $e$ \\    
+   25 & $\lambdabar_{e} (lnP)^{ln((P/d_e^2 p)+1)/2} $ & 13.815 & $lnP$ calculation basis \\
+   26 & $  \sqrt{\lambdabar_{p} \lambdabar_{H}} (WZ)^4 \approx \sqrt{\lambdabar_{p} \lambdabar_{H}}  (HK_+/p)^{14} $ & 13.818 & confirms the Holic Principle \\
+   27 & $ (3/\pi d_e)\lambdabar_{n} (K_0 K_+)  $ & 13.813 & confirms the Holic Principle \\
+   28 & $ (20/9)\lambdabar_{e} P^{\sqrt a - 10 }  $ & 13.810 & from $ N_H approx P^{\sqrt a} $  \\    
+   29 & $ (\sqrt{5/2}/3) ( \Pi_0^3 \Pi_+)^4 $ & 13.812 & confirms the topological axis  \\
+   30 & $ R_N (1834^2/pH) ( \Pi_0 /\Pi_+)^8 $ & 13.812 & confirms the Cosmos holographic radius $R_N $  \\
+   31 & $ (\lambdabar_e ^2R_N (21/20)^{\pi aas})^3$ & 13.812 & confirms the Cosmos holographic radius $R_N $  \\ 
+   32 & $ (24/25) \lambdabar_e (21/20)^{aa_w/W^2} $ & 13.812 & confirms the holic factor $21/20$  \\
+   33 & $ \sqrt2 \lambda_e (137 e^a_s/2a\pi^2)^{16} $ & 13.814 & confirms the strong coupling constant  \\     
+   34 & $ \lambda_{e} a^{-sin^4\theta}/\sqrt {j_0}  $   & 13.94 & confirms the weak mixing angle \\ 
+   35 & $7R_1/8  $   & 13.80 & confirms the mono-electron radius $R_1$ \\   
+   36 & $ (7/6d_e) \lambdabar_{e} a^{18} $ & 13.814 & confirms the basis $a$ \\
+   37 & $\lambdabar_{e} \Pi_0^{16} \tau/\pi H $ & 13.81 & charged Pion as calculation basis \\    
+   38 & $\lambdabar_{e} \Pi_+^{16} /\sqrt 8 $ & 13.84 &  neutral Pion as calculation basis \\
+   39 & $ 4 \lambdabar_{e} K_+^{\sqrt a + 1} $ & 13.84 & charged Kaon as calculation basis \\
+   40 & $3.6 \lambdabar_{e} K_0^{\sqrt a + 1}$ & 13.78 & neutral Kaon as calculation basis \\
+   41 & $ \lambdabar_{e} sin^2(\theta) (4\pi)^{24} 137^6 $ & 13.84 & $4\pi$ and 137 as computation basis \\
+   
+    42 & $ \lambdabar_{e} e^{2^6} a_w n/6p_{hol} $ & 13.813 &  optimal computation basis \\
+    
+    43 & $ \lambdabar_{e} (e^{4^7+2}/7)^4 /e^{7+1/2}$ & 13.800 &  optimal computation basis \\
+    
+    44 & $ (c/C)\lambdabar_{e} (1/ln\Phi)^{F \sqrt{a/p_G} \sqrt{137}}$ & 13.785 &  confirms a liaison Cosmos-Golden Ratio\\
+    45 & $ (n/p)\lambdabar_e) M_{24} $ & 13.81282 & confirms the largest Mattieu group $M_{24} = 244823040 $\\   
+    46 & $2N_{Ed}(l_P^2/\lambdabar_e) (F/Z) (a/\pi)^2 d_e^{\sqrt{10}} $ & 13.81186 & confirms the Atiyah ratio $a/\pi$\\ 
+    47& $\lambda_{e} (e^{2a}2H/3p^2)^{1/3}$ & 13.81145 & natural base e\\
+    48& $4r_e (p_W/p) (2j^2 7^{137})^{1/3} $ & 13.81120 & unambigous base 7 \\
+    49& $ \sqrt{R_N \lambda_{e} /2d_e} e^{P/2AD} $ & 13.81120 & pertinence of the Monster dimension $D$ \\
+    50& $ 2\lambda_{H} 2^{210} (a_w/P)^2 $ & 13.81110 & pertinence of the holic term $2^{210}$ \\
+    51& $(1+3/4\pi^4)^{-1/2}  2\lambda_{H} 2^{4\times210}/P^3 a^{135/2}  $ & 13.81210 & pertinence of the holic term $2^{210} $\\
+    
+    
+    
+    
+    
+     
+    \bottomrule
+  \end{tabular}
+  % \label{tab4:table4}
+\end{table}
+
+
+
+\begin{table}
+\caption{52 formulas for Hubble radius, with better precision than $6 \times 10^{-5}$}
+\label{tab:6:table6}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+   \#     & Formula     & Value~~(Gly) & Remarks \\
+    \midrule    
+    
+     1 & $ ((a^3/\pi pH) \lambdabar_{e} l_P e^{e^{2e}+1} (\pi/2)^{1/135})^{1/2} $ & 13.81190 & confirms the Topological Axis and the Cosmical Holography  \\  
+    2 & $ (c/C) \lambdabar_{e} (4P)^4 e^{e^{e}+2}  $ & 13.81190 & confirms the Cosmos radius  \\
+    3 & $ \lambdabar_{e} (2^6)^{2^6/3} (p_W/n)^4  $ & 13.81197 & Economic form for the Universe volume \\    
+    4 & $ \lambdabar_{e} ((51/50)^{210\times 2^6}/(15^2-1))^{1/3}  $ & 13.81197 & Holic form for the Universe volume \\    
+    5 & $ \lambdabar_{e} \sqrt{n/H} (2\lambdabar_{CMB})^4 / (1+\mu/\tau) $ & 13.81203 & confirms the Cosmos (CMB) temperature \\   
+    6 & $ \lambdabar_{e} 15(a_0+1/2)/(a_0-1/2) (\lambdabar_{CMB})^4  $ & 13.81198 & confirms the Cosmos (CMB) temperature \\    
+    7 & $ \lambdabar_{e} (50/51) (\lambdabar_{CNB} \sqrt2)^4  $ & 13.81268 & confirms the Neutrino background \\   
+    
+    8 & $    \lambda_{e} (ln\Phi)^2 p^{10} p_G^2 $ & 13.81112 & proton ratio as coputation basis \\
+    9 & $    \lambda_{e} (ln\Phi)^2 (pa/137)^{12} /d_e^7 $ & 13.81112 & proton ratio as computation basis \\
+   10 & $\lambda_{e} (3j^j/2H)^{1/6}$ & 13.81199 & $j$ and $a$ : related computation bases \\
+   11 & $\beta F P^{3/2} (n/p)^{7/2} 2 \pi$ & 13.81198 & proton-neutron symmetry  \\ 
+   12 & $(45\lambdabar_{CMB}^7/4(p+5)/\lambda_{CNB}^3)^{1/2}/l_P$ & 13.81197 & confirms $T_{CMB} and p+5 \approx n^2/p \approx H^5/p^4$\\
+   13 & $4l_Kp^4 \sqrt{p/H}/\beta d_e$ & 13.81198 & confirms the non-Doppler sun-quasar period \\
+   14 & $\lambdabar_{e} e^{(4)}(1/ln{\sqrt a}) (a^3/pH) (a/\pi)^{-2/p}   $ & 13.81199 & confirms $R_N = R pH/a^3$ and the economic function $e^{(4)}(x)= e(e(e((x))))$\\
+   15 & $g(6)^{1/(1-1/\pi e)}/N_L^{1/(\pi e-1)}$ & 13.81198 & confirms the topogical term g(6) \\
+   16 & $(n/p^{1/4)}  \lambdabar_{e} \phi ^{3\times 64}/(2\pi)^2   $ & 13.81206 & confirms the golden ratio as computation basis \\
+   17 & $2 N_L r_e (16\pi e)^2/137  $ & 13.81193 & confirms the Combinatorial Hierarchy \\
+   18 & $\lambdabar_{e} e^{a/ln\delta} n/\sqrt{2a^3}  $ & 13.81155 & confirms the Feigenbaum constant $\delta$ \\
+   19 & $ 1834\sqrt 2 \lambdabar_{e} (exp(e^{\pi})/P^10)^4  $ & 13.81155 & confirms the large term $exp(e^{\pi})$ \\
+   20 & $ (n/p)^2\sqrt {2R_N \lambdabar_{e}} ((a/e)^a/P^10)^2  $ & 13.81155 & liaison between the basis $a$ and $e$ \\
+   21 & $((3+1/e^2)/6) \lambdabar_{e} (ln(2O_B))^{2a^2/p_G} $ & 13.81496 & confirms the central role of the Baby Group order $O_B$\\   
+   22 & $ (2c/3C) \lambdabar_{p_{Ed}} {2a^2/p_G}^(ln(2O_B)) $ & 13.81667 & confirms the symmetry Universe-Cosmos\\ 
+   23 & $\lambdabar_{e} a^{a/16} /Z^4$ & 13.81111 & confirms the cenral role of $Z$ and $a^a$\\
+   24 & $(R_N n/ (n/p^2) (a_s^{2\pi/z\sqrt a}$ & 13.81113 & confirms strong coupling constant $a_s$\\
+   25 & $ \lambdabar_{e} \sqrt{a/137} j_0^{2ep\beta/j_0}$ & 13.81139 & confirms the modular number as calculation basis\\ 
+   26 & $\lambdabar_{e} a^{a_s} 2P/e^5d_e^3$ & 13.81189 & confirms the computing character of $a$ and $a_s$ \\
+   27 & $\lambdabar_{e} j_0^{n/a}$ & 13.81189 & confirms the modular number as calculation basis\\
+   28 & $(2-1/11)^{2\times 7^3/5}$ & 13.81187 & confirms the Archimedes $\pi_{Arch} = 22/7~~~~ 6/\pi_{Arch} =2-1/11$\\
+   %27 & $(a 137^{-1/2}(4\pi F)^{-2} \lambdabar_{e}^4 l_{ph}^3 (\lambdabar_{CMB})/l_P^8)^{1/7}$ & 13.81189 & comes from $\sqrt{2n_{ph}/n_n} \approx (u^U)/(u_{CMB}+u_{CNB})$\\
+   29 & $ (W^2/3^6)\lambdabar_{e} (\lambdabar_{e}^4 l_{ph}^3 (\lambdabar_{CMB})/l_P^8)^{1/7}$ & 13.81224 & comes from $\sqrt{2n_{ph}/n_n} \approx (u^U)/(u_{CMB}+u_{CNB})$\\ 
+   30 & $\lambdabar_{e} x_1^{34} /(1+1/e^5)$ & 13.81206 & confirms the Eddington's equation\\
+   31 & $R_N /\sqrt {e-1}$ & 13.81207 & empiric\\
+   32 & $\lambdabar_{e} a^{2a_s} \sqrt{nH}/6d_e^6 $ & 13.81253 & confirms the computing character of $a$ and $a_s$\\
+   33 & $\lambdabar_{e} a^{\tau / \mu} (137/2\sqrt a)^4 /3 $ & 13.81115 & confirms the computing character of $a$, $\tau$ and $\mu$\\
+   34 & $R_N exp(-2/e^2)$ & 13.81195 & empiric\\
+   35 & $(R_N/2)(n/H)(a/137)^2 \pi^{1/e}$ & 13.81201 & empiric\\ 
+   36 & $(R_N/2)(n^2/pH)a^{1/\sqrt a}$ & 13.81255 & from central relation\\
+   37 & $(4\beta^2 \pi_{Arch}^4 /3) (R_C)/P) (O_B/O_M)^2$ & 13.81196 & implies the 2 largest sporadic groups, with $\pi_{Arch} =
+  22/7$\\  
+   38 & $(p/n) \lambdabar_{e} 3^{209} \sqrt2/\pi$ & 13.81292 & confirms the canonic speed ratio and Holic Principle\\   
+   39 & $(p/H)^2 \lambdabar_{e} (9\Phi^{2^{10}}c/C)^{1/4}$ & 13.81292 & confirms the canonic speed ratio\\   
+   40 & $(p/n)^2 \lambdabar_{e} (9\pi^{\pi \sqrt{137a}}c/C)^{1/4}$ & 13.81344 & shows a liaison $137-a-\Phi$\\  
+   41 & $(p/p_{hol}) \lambdabar_{e} (n/2)^{65}$ & 13.8099 & shows a liaison with the Higgs number 495\\  
+   42 & $ \lambdabar_{\tau} (n/\mu d^{3/2})^{65} $ & 13.8057 & confirms the cosmic role of the Tau lepton \\
+   43 & $(\lambdabar_{e} ^2/l_K)(O_B \pi^4 a_s^2 p/FH)^2$ & 13.81114 & implies the Baby Monster group\\
+   44 & $N_{Ed}(l_P^2/ \lambdabar_n) a^{11}/137^8 (2\pi)^7   $ & 13.81294 & confirms 137, $a$ and $2\pi$ as computation basis\\
+   45 & $2\beta \lambdabar_{e} j^{17} (4\pi)^2 \sqrt{137}$ & 13.81198 & j calculation basis \\
+   46 & $ 2^{136}\lambdabar_{F}137 a/a_s $ & 13.81200 & symmetry among the coupling constants \\
+   47 & $ (4/3)\lambdabar_e \phi^{\sqrt {n\sqrt{pH}/\beta}} $ & 13.81200 & confirms the golden ratio as calculation basis \\ 
+   48 & $N_{Ed}(l_P^2/\sqrt(\lambdabar_p \lambdabar_n)) (r_H/\lambdabar_e)^3 (H/p)^2 / (2\pi)^8  $ & 13.81200 & confirms the computational role of $2\pi$\\ 
+   49 & $2N_{Ed}(l_P^2/\lambdabar_{\tau}) (e/(\pi-e)) (2\pi)^3 136/d_e(a-1) $ & 13.81200 & confirms the role of $\pi - e$\\
+   50 & $2N_{Ed}(l_P^2/\lambdabar_e) (W/F) (an/\pi p)^2 \sqrt{137} $ & 13.81206 & confirms the Atiyah ratio $a/\pi$\\
+   51 & $ \lambdabar_e (1/ln\phi)^{2\sqrt {2(H/p)n\sqrt{nH/\sqrt\beta}}} $ & 13.81209 & confirms the golden ratio logarithm as calculation basis \\ 
+   
+    \bottomrule
+  \end{tabular}
+  % \label{tab5:table5}
+\end{table}
+
+
+
+
+\begin{table}
+\caption{52 formulas for Hubble radius, with better precision than $6 \times 10^{-5}$}
+\label{tab:7:table7}
+  \hskip-2.0cm\begin{tabular}{llll}
+    \toprule
+    %\multicolumn{4}{c}{}                   \\
+    \cmidrule(r){1-4}
+   \#     & Formula     & Value~~(Gly) & Remarks \\
+    \midrule    
+    
+  1 & $ (c/C) \lambdabar_{e}  6^{128}/(1+1/\sqrt2)  $ & 13.8114 & confirms the Cosmos and the basis 6 \\
+  
+    2 & $(c/C) \lambdabar_{e}  5^{137} (p_G H^2/6ap)  $ & 13.8114 & confirms the Cosmos and the basis 5 \\
+    
+    3 & $ (1+1/\sqrt{e^{e e}})^{-1} R_N a_0^{a_0} / (R_C/\lambdabar_e)^3 $ & 13.8258 & confirms the Cosmos and the basic term $a_0 = i^\pi/i$ \\
+  
+  
+  4 & $2N_{Ed}(l_P^2/\lambdabar_n) (r_H/\lambdabar_e)^3/ \pi 496^2 $ & 13.81207 & confirms the superstring 496\\
+    5 & $ \lambdabar_{e} (d_e^8(a/e)^a/a)^{1/6}  $ & 13.81200 & liaison between the basis $a$ and $e$ \\
+     6 & $ (p/H)^2\lambdabar_{e}(75/64)^{2\sqrt{137 a}}exp(2^{22/4})  $ & 13.81168 & confirms the Topological function \\
+    7 & $2 N_L \lambdabar_{e} (3p_K/2)^2 \times 137/F\sqrt{pH\beta}  $ & 13.81198 & confirms the Koide factor \\
+    8 & $2 N_L \lambdabar_{e} (1-a^{7/2}/137^{3/2}pH  $ & 13.81198 & both $a$ and 137 are computional basis \\
+    9 & $2 N_L \lambdabar_{e} (p_W/n)^4  $ & 13.81197 & both $n$ and $p_W$ are computional basis \\
+    10 & $ 2R_Np(\beta^4/ln\pi)^2/H $ & 13.81197 & confirms cosmos hologram radius $R_N$ \\
+    11 & $4 \lambdabar_{e} e^{139\pi /5} (2(a-136))^{-1/a}  $ & 13.81197 & confirms the basis $e^\pi$ \\
+    12 & $ \lambdabar_{e} ((R_C/l_{ph})^3 \sqrt{n(1+\sqrt3)/p})^{1/7} $ & 13.81198 & confirms the Universe as Cosmos gauge boson \\
+    13 & $ (137/a)\lambdabar_{e} (e^{3\mu}d_e^{p_{hol}/3} )^{1/7} $ & 13.81197 & confirms the Universe as Cosmos gauge boson \\
+    14 & $ (p/H)^4 \lambdabar_{e} (e^{3\times 210}/O_1)^{1/7} $ & 13.81177 & confirms the role of the Matthieu group$ O_1$ \\
+    15 & $ \lambdabar_{p} g(6) 2^{256} p_W /e^{e^{e}/2} p_{hol}^2 O_B^2 $ & 13.81198 & confirms the role of the Monster groups \\ 
+    16 & $ \lambdabar_{p} O_M p_W /a \sqrt{2p^3/H} e^{e^{e}/2} p_{hol}^2 O_B^2 $ & 13.81197 & confirms the role of the Monster groups \\ 
+    17 & $ 4 \lambdabar_{p} (c/PC) p_{Ed} \sqrt{a/137} O_M O_B^2 $ & 13.81188 & confirms the Cosmos and Monster groups \\   
+    18 & $ \lambdabar_{e} a_0^{21/2} a^{15/2}   $ & 13.81192 & confirms the liaison $a-a_0$ \\
+    19 & $ \lambdabar_{e}(a_0-a)^{137^2-40}/g_3   $ & 13.81157 & confirms the symmetry $a-a_0$ \\
+    20 & $ \lambdabar_{e}(a_0-a)^{136^2-41}   $ & 13.80857 & confirms the symmetry $a-a_0$ \\
+    21 & $ 2 \lambdabar_{e} a^{15} (2pa/3\times 137)^2   $ & 13.81195 & confirms the computation basis $a$ \\
+    22 & $ 2 \lambdabar_{e} a^{15} n \tau^2 /4n  $ & 13.81187 & confirms the computation basis $a$ \\
+    23 & $ 2 \lambdabar_{\Pi_+} 2^{136+1/\sqrt{137}} n \tau^2 /4n  $ & 13.81230 & confirms the computation basis $2$ \\
+    24 & $ 2 \lambdabar_{\Pi_0} 2^{a-1/d_e} $ & 13.81235 & confirms the computation basis $2$ \\
+    25 & $  \lambdabar_{p} 26^{30} (a/\pi)^{-2/5} $ & 13.81209 & confirms the computation basis $26$ and Holic dimension 30 \\
+    26 & $ 2^{125/2} \lambdabar_p l_P (\lambda_C \lambdabar_C/ r_e^2)^2/137\beta  $ & 13.81193 & confirms the Cosmos (CMB) temperature\\
+    27 & $ 4 \lambdabar_{e} ((\pi^2 a/2 \times 137^{3/2})\sqrt{N_H N_{ph}})^{1/7} $ & 13.81197 & confirms the Universe as Cosmos gauge boson \\
+    28 & $ (a/137)^{1/4} \lambdabar_{e} (H/2\pi)^{}16/a_s  $ & 13.81201 & confirms the strong coupling $a_s$  \\
+    29 & $ (ln(\sqrt3+d_e^2 H/p)lnP) \lambdabar_{e} ((5^4-137)/(4^4-137))^{2^6}  $ & 13.81197 & confirms the transition 4D-5D  \\
+    30 & $ \lambdabar_{e} e^{(a_0-3)/2} (2(a_0-2)(a-136)e^{a/\Gamma})^8  $ & 13.81198 & confirms the symmetries $a \approx a_0 - 2$ and $a/\Gamma = \pi/\gamma $  \\
+    31 & $ \lambdabar_{e} (16a_s/d_e \sqrt \beta)^{1/3} e^{16\Gamma/a}   $ & 13.81198 & confirms the symmetry $a/\Gamma = \pi/\gamma$  \\
+    32 & $  \lambdabar_{e} (e^{16}\pi^4/60 \zeta(3))^{a/\Gamma} /d_e  $ & 13.811201 & $e^e$ calculation basis \\
+    33 & $ d_e \lambdabar_{e} (R_N d_e/r_e)^{1/4} e^{24e}   $ & 13.81198 & $e^e$ calculation basis \\
+    34 & $ \lambdabar_{e} (d_e^5 pH/a^2)^{1/3} e^{32e}   $ & 13.81198 & $e^e$ calculation basis \\
+    35 & $ \lambdabar_{e} ((a_0-a)/2\eta)^{210 \times 137^2-16^2/3}   $ & 13.81198 & confirms the Holic Principle and the symmetry $a_0 - a \approx 2\eta a $ \\
+    36 & $ (10/3d_e^{e^3})\lambdabar_{e}  (P/a_w)^{7/2} $ & 13.81198 & confirms the power 7 of Holic Principle \\
+    37 & $\lambdabar_{e} (6/\pi_1)^{r_H/\lambdabar_e} $ & 13.81198 & with $\pi_1 = 3 + 1/ (7+2\times137^2/F)$ \\
+    38 & $\lambdabar_{e}^2/l_K  a^{31} (3/8\pi_0^2)^2 $ & 13.81198 & with $\pi_0 = 3 + 1/ (7+1/\pi_0^2)$ \\
+    39 & $(p_W/p) \lambdabar_{n} S^{4/\sqrt a}   $ & 13.81197 & confirms the central role of the diametral entropy  $ S = \pi (R/l_P)^2$ \\ 43 & $  (n/p)^{1/3} R_C Ppu_U/O_M O_B H u_{CMB}   $ & 13.81197 & overall confirmation  \\
+    
+    
+     40 & $ \lambdabar_{e} (O_M O_B)^{\pi_0 /2} /a^{16\sqrt a_s}   $ & 13.81197 & confirmation of strong coupling $a_s$, with $\pi_0 = 3 +2aH^3/np^3$  \\
+    
+    
+     41 & $  (2^{11^2} a p P^2/n^2)^{1/3} R_C/O_M O_B   $ & 13.81197 & confirmation of liaison Cosmos-Monter groups  \\
+     
+     
+       42 & $ \lambdabar_{e} (a/137) (O_M O_B)^{anH^2/Fp^2}   $ & 13.81254 & confirmation of liaison Universe-Monter groups  \\
+    
+    
+    43 & $ \lambdabar_{e} \beta^2 (a/137)^{(8\pi)^2 137 \sqrt a/3 -2}   $ & 13.81194 & confirmation of the symmetry a/137  \\
+    
+    
+    44 & $ \lambdabar_{e} e^{-\pi/(136+\Phi)} \Phi^{(9\mu /a)^2}   $ & 13.81198 & confirms the Golden Ratio $\Phi$ \\
+    
+    
+    45 & $ R_C \Phi^{-pn/2\pi Hd_e^4} H^2/pp_W   $ & 13.81198 & confirms the Golden Ratio $\Phi$ \\
+   
+    
+   46& $ (c/C) \Phi^{a/4\pi^2} (3n/2p)^2 \sqrt(a/137)  $ & 13.81183 & confirms the Golden Ratio $\Phi$ \\ 
+    
+    
+    
+    
+    47 & $ \lambdabar_{e} (p/p_W)^{ad_e^4(1834+\Phi)/ln^4(\Phi)}   $ & 13.81198 & confirmation of the symmetry $p/p_W$  \\
+    
+    
+    48 & $  (n/p)^{1/3} R_C Ppu_U/O_M O_B H u_{CMB}   $ & 13.81197 & overall confirmation  \\
+    
+    49 & $ \lambdabar_{e}^2/l_P (4/3) a^{15/2}   $ & 13.81210 & remarkable simple confirmation  \\
+    
+    
+    50 & $ 2l_P e^a (2r_H \beta^2 \ d_e^2 \lambda_e)^{2/3}   $ & 13.81198 & confirms the role of $e^a$  \\
+        
+    51 & $ r_e (1/ln\Phi)^{2^7 + 1/60}   $ & 13.81199 & confirms the role of $ln\Phi$  \\
+    
+    52 & $ \lambdabar_{H} (elnP-\sqrt{aa_0})^{2^7 + 1/60} 1836 \sqrt{aa_0} a/(2\Gamma^3)   $ & 13.81202& confirms the role of the Atiyah's constant $\Gamma$  \\
+    53 & $ 2(l_K/F)^2/\lambdabar_{e}$ & 13.81198(3) & from elimination of $c$ between gravitational and electroweak couplings \\
+   
+  
+    \bottomrule
+  \end{tabular}
+  % \label{tab5:table5}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+  \clip(-2.19,-2.49) rectangle (2.66,2.58);
+  \draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (56.7:0.4) arc (56.7:90.:0.4) -- cycle;
+  \draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (-135.7:0.4) arc (-135.7:-33.2:0.4) -- cycle;
+  \draw(0,0) circle (2cm);
+  \draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+  \draw (0,0)-- (0.70,1.07);
+  \draw [->] (0,0) -- (0,2);
+  \draw [->] (0,0) -- (-0.81,-0.79);
+  \draw [->] (0,0) -- (2,0);
+  \draw [dotted] (0.7,1)-- (0.7,-0.46);
+  \draw [dotted] (0,0)-- (0.7,-0.46);
+  \draw (-0.08,-0.3) node[anchor=north west] {$\varphi$};
+  \draw (0.01,0.9) node[anchor=north west] {$\theta$};
+  \draw (-1.01,-0.72) node[anchor=north west] {$\mathbf {\hat{x}}$};
+  \draw (2.07,0.3) node[anchor=north west] {$\mathbf {\hat{y}}$};
+  \draw (-0.5,2.6) node[anchor=north west] {$\mathbf {\hat{z}=|0\rangle}$};
+  \draw (-0.4,-2) node[anchor=north west] {$-\mathbf {\hat{z}=|1\rangle}$};
+  \draw (0.4,1.65) node[anchor=north west] {$|\psi\rangle$};
+  \scriptsize
+  \draw [fill] (0,0) circle (1.5pt);
+  \draw [fill] (0.7,1.1) circle (0.5pt);
+\end{tikzpicture}
+\caption[Bloch sphere.]{The Bloch sphere is a geometrical representation of the Quantum state in QC.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=5cm,height=5cm]{./figure/bloch-redfield.png}
+\caption[Bloch Sphere]{Bloch Sphere based on Bloch-Redfield master eq.} 
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.5,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:15:table15}
+\tkzDefPoint(-3.21,0.0){A} \tkzDefPoint(0.0,3.42){B} \tkzDefPoint(3.64,0.){C} \tkzDefPoint(0.0,0.0){D}
+\tkzDrawPoints(A,B,C,D)
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,D,C)
+\tkzLabelPoints[below](A,C,D)
+\tkzLabelPoints[above](B)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[above](O)
+\tkzDrawPoints(O)
+\tkzLabelSegment[sloped,above,text=red](A,B){$\approx \sqrt{22}$}
+\tkzLabelSegment[sloped,above,text=red](B,C){$\approx 5$}
+%\tkzLabelSegment[sloped,below,text=red](A,C){$\approx \phi^{4}$}
+\draw[blue, dotted]
+      let \p1 =  ($(B)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\draw[color=red] (B) -- (O);
+\tkzDefMidPoint(B,O) \tkzGetPoint{F}
+\tkzLabelSegment[sloped,above,text=red](B,O){$\sqrt{\sqrt{a_1}}$}
+\draw[color=blue] (B) -- (D);
+\tkzDefMidPoint(B,D) \tkzGetPoint{G}
+\tkzLabelSegment[sloped,below,text=blue](B,D){$\sqrt{\sqrt{a_0}}$}
+\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
+\draw[color=red] (-3.21,0.) -- (0.,0.);
+\draw[color=red] (3.64,0.) -- (0.,0.0);
+\draw[color=red] (-3.21,0.) -- (0.,3.42);
+\draw[color=red] (0.,3.42) -- (3.64,0.);
+\draw[color=blue] (0.,0.) -- (0.,3.42);
+%\node [anchor = east] at (0.,1.5) {$\sqrt{\sqrt{a_1}}$};
+%\node [anchor = east] at (2.,2.0) {$\approx 5$};
+%\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
+\node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
+\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.1,-0.1) node[right]{};
+\draw [<->] (0.0,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
+\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
+  %\draw [decoration={markings,mark=at position 1 with
+   % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
+\node [anchor = east,text=blue] at (2.,-0.35) {$\omega$};
+\node [anchor = east,text=blue] at (-1.,-0.35) {$z$};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
+%\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
+%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
+%\draw (0.,6.)-- (-4.32,0.);
+%\draw (6.,5.52)-- (-4.32,0.);
+%\draw (6.,0.)-- (6.,5.52);
+%\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
+%\draw[color=gray] (0.34,0.33);
+%\tkzMarkRightAngle[fill=blue!20](B,F,C)
+\end{tikzpicture}
+\caption[The Golden Sanchez Triangle.]{Golden Sanchez Triangle.}
+\end{figure}
+
+ 
+ \begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.25]
+%\tkzInit[xmax=6.4, zmax=3.4]
+\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
+\tkzDrawPoints(A,B,C,q)
+\tkzDefMidPoint(B,q) \tkzGetPoint{D}
+%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
+%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
+%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
+%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
+\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
+\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
+\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
+\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,q,C)
+\tkzLabelPoints[below](A,B,C)
+\tkzDrawSegments[red](B,q)
+%\tkzLabelPoints[above right](q)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
+    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
+    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
+    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
+  -- (a)  ;
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
+  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$\approx 4\sqrt 3$} (4.9,1.,4.6);
+  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
+  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  \draw [decoration={markings,mark=at position 1 with
+    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
+  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
+  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
+  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
+  %\node [label=45:C] at (c) {};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\end{tikzpicture}
+\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
+\end{figure}
+
+
+%\bibitem{Hirzebruch} Hirzebruch F. Topological methods in algebraic geometry. Springer 1966.\\
+%\bibitem{Bott} M. Atiyah, R. Bott, V. Patodi, "On the heat equation and the index theorem" Invent. Math. , 19 (1973) pp. 279--330.\\
+%\bibitem{Singer} M. Atiyah, I. Singer, "The index of elliptic operators IV" Ann. of Math. , 93 (1971) pp. 119--138. \\
+%\bibitem{Alvarez} L. Alvarez-Gaume, "Supersymmetry and the Atiyah Singer index theorem" Comm. Math. Phys. , 90 (1983) pp. 161--170.\\
+
+
+%\bibitem{Frenkel} I. B. Frenkel, J. Lepowsky, and A. Meurman, “A Natural Representation of the Fischer-Griess Monster With the Modular Function J As Character,” Proc. Natl. Acad. Sci. USA 81 (1984) 3256-3260. 
+
+%\bibitem{Witten} Witten E., Three-Dimensional Gravity Revisited arxiv.org/abs/0706.3359 
+
+
+
+%\bibitem{deVries} Hans de Vries. http://www.chip-architect.com/news/2004/10/04. The Electro-Magnetic coupling constant.html, An exact formula for the Electro Magnetic coupling constant, web page, 2004 Oct 4.\\ 
+
+
+%\bibitem{Atiyah1} Atiyah M. Private Communication (december 2018).\\
+
+%\bibitem{Conway} Conway, John Horton; Norton, Simon P. (1979). "Monstrous Moonshine". Bull. London Math. Soc. 11 (3): 308--339.\\
+%\bibitem{Borcherds} Borcherds, Richard (1992), "Monstrous Moonshine and Monstrous Lie Superalgebras", Invent. Math., 109: 405--444.\\
+
+%\bibitem{Shannon} Shannon C.E. « A Mathematical Theory of Communication » Reprinted with corrections from The Bell System Technical Journal, Vol. 27, p. 379–423, 623–656, July, October, 1948.)\\
+%\bibitem{Stark} Stark H.M. A complete determination of the complex quadratic fields of class-number one, Michigan Math. J., vol. 14,‎ 1967, p. 1-27  \\
+%\bibitem{Lovelace} Lovelace C. (1971) Pomeron form factors and dual Regee cuts, Physics Letters B34 (6) 500-506.\\
+%\bibitem{Apostol} Apostol T. Modular functions and Dirichlet Series in Number Theory. Springler-Verlag. New-York (1990).\\
+
+%\bibitem{Shlay} Shray J. (1994) Octonions and Supersymmetry, PhD thesis.  http://ir.library.oregonstate.edu/xmlui/handle/1957/35649. \\
+ 
+%\bibitem{Hooft} Hooft 't Th Holographic Principle. ArXiv: hep-th/003004 (2000). \\
+%\bibitem{Bousso} Bousso R., The Holographic Principle, Review of Modern Physics, vol 74, p.834 (2002).\\
+ 
+%\bibitem{Durham} Durham I.T. 2006, Sir Arthur Eddington and the Foundations of Modern Physics arXiv:quant-ph/0603146v1  p.117.
+%\bibitem{Sanchez2} Sanchez F.M., Kotov V. and Bizouard C., 'Towards a synthesis of two cosmologies: the steady- state flickering Universe'. Journal of Cosmology, vol 17. (2011).\\
+
+
+%\bibitem{Carr} Carr B.J. and Rees M. J. , “The anthropic principle and the structure of the physical world”, Nature 278, 605-612 (1979).\\
+%\bibitem{Sanchez3} F.M. Sanchez. Coherent Cosmology Vixra.org,1601.0011. Springer International Publishing AG 2017. A. Tadjer et al. (eds.), Quantum Systems in Physics, Chemistry, and Biology, Progress in Theoretical Chemistry and Physics 30, pp. 375--407. \\ 
+%\bibitem{LaGuer} Gueroult.L, 49 methods for computing the Hubble Radius with Jupyter https://mybinder.org/v2/gh/LaGuer/hubble-radius/master \\
+
+%\bibitem{Lenz} Friedrich Lenz, The Ratio of Proton and Electron Masses, Phys. Rev. 82, 554 - 1951.\\
+
+%\bibitem{Lecompte} Sanchez, F and Lecompte, C, ``Q-Switched $Nd^{3+}$ Glass Laser of Variable Temporal Coherence, Applied optics'', vol.13, p1071-6, 05.1974, DOI: 10.1364/AO.13.001071 \\
+
+
+%\bibitem{Mainfray} Lecompte, C. and Mainfray, G. and Manus, C. and Sanchez, F., ``Laser temporal-coherence effects on multiphoton ionization processes'', Phys. Rev. A, vol.11, 03.1975, DOI: 10.1103/PhysRevA.11.1009 \\
+
+%\bibitem{Manus} Mainfray, G. and Manus, C. and Sanchez, F., ``Experimental Demonstration of Laser Temporal Coherence Effects on Multiphoton Ionization Processes'', Quantum Electronics, IEEE Journal of, vol.QE10, p707, 10.1974, DOI:0.1109/JQE.1974.1068290 \\
+
+
+%\bibitem{SanchezF} Sanchez, F., ``High-order multimode radiation statistics of aTEM00Q-switched neodymium laser'', Il Nuovo Cimento B, vol.27, p305--322, 06.1975, DOI:10.1007/BF02738949 \\
+
+
+%\bibitem{Nist} ``2018 CODATA Value: Newtonian constant of gravitation''. The NIST Reference on Constants, Units, and Uncertainty. NIST. 20 May 2019. Retrieved 20 May 2019. https://www.physics.nist.gov/cgi-bin/cuu/Value?bg \\
+
+%\bibitem{Haramein} Haramein N. ``The Schwarzschild Proton'', 2011, p95--100, vol.60, DOI: 10.1063/1.3527190. \\
+
+%\bibitem{Haramein} Haramein N., Val Baker A. ``Resolving the Vacuum catastrophe. A Generalised Holographic Approach. Journal of High Energy Physics, Gravitation and Cosmology'', 2019, 5, 412-424 \\ 
+
+%\bibitem{Val} Val Baker A. ``The puzzle of the proton'', DOI : 1031219/osf.io/myfxh \\
+
+%\bibitem{Maruani} Jean Maruani. ``The Dirac Electron: From Quantum Chemistry to Holistic Cosmology'' in Journal of the Chinese Chemical Society, vol.63 issue 1, Taipei, Wiley VCH Verlag GmbH, 2016, 33--48 p. DOI: https://doi.org/10.1002/jccs.201500374 \\
+
+%\bibitem{oeis1} OEIS Foundation Inc. The on-line encyclopedia of integer sequences,https://oeis.org/A180873, Sep 22 2010.
+
+%\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l'espace E^{n} . (Number of types of crystallographic point symmetry operations of space E^{n} )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
+
+%\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry Operations of space E n" AAECC 5, 53–70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
+
+
+

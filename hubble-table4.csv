@@ -1,0 +1,11 @@
+LaTeXFormula, PlainFormula, gly, m, kg
+$$R_N.(OM.OB/n_{ph})^2$$, R_N*(OM*OB/n_ph)**2, 13.852678233132401e+9, 1.3105645508705246e+26, n/a
+$$ƛ_e 2^{128} / d_e^2 (m_H /m_p )^6$$, lambdabare*2**128 / d_e**2 * (H /p )**6, 13.902512037712901e+9, 1.3152791928061182e+26, n/a
+$$exp(2^{6+1/2})/6$$, (constants.hbar/(constants.m_e*constants.c))*np.exp(2**(6+(1/2)))/6, 13.821014095558315e+9, 1.307568892158173e+26
+$$R_N=\frac{2.\hbar^2}{G.(m_N)^3}$$, R_N=2*constants.hbar**2/(G_s*((a)*constants.m_e)**3), 18.10530562420883e+9, 1.7128941663434102e+26, n/a
+$$ƛe.exp((\pi^2/6-1).(aH/p) + 1 - \gamma )$$, (np.exp(((a*((1+1/p))*(((np.pi**2)/6)-1))+1)-gamma))*lambdabare, 15.774315383368366e+9, 1.4923654623153317e+26, n/a
+$$ƛ_e 2^{128} (1 - (137^2 + \pi^2 + e^2 )/pH)$$, lambdabare*2**128*(1 - (137**2 + np.pi**2 + e**2 )/p*H), , , n/a
+$$R_{GC}=R_N^2/(2l_P)$$, R_N**2/(2*l_P),9.59310005329329e+61 , 9.075773400070832e+86, n/a
+$$ƛ_e2^{128}((137^2 + \pi^2 + e^2 )/pH)$$, lambdabare*2**128/(1+(137**2 + np.pi**2 + e**2)/(H*p) ), 13.81240522506028, 1.3067544301236205e+26, n/a
+$$\frac{m_P^4}{m_e\cdot m_p\cdot\ m_n} = M_U$$, M_U=(m_P**4)/(constants.m_e*constants.m_p*constants.m_n), n/a, n/a, 8.792233511611562e+52 
+
