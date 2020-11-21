@@ -14,7 +14,7 @@
 %\usepackage{bashful}
 %\immediate\write18{pdflatex \periodic-table.tex}
 
-%\usepackage{graphicx}
+
 %\usepackage{pstricks,pst-node}             % Pstricks
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
@@ -1498,7 +1498,7 @@ These recurrence rules are non sufficient to defines the series. This implies to
     
     $N_d$ & 2 & 6 & 10 & 24 & 38 & \underline{78} & 118 & 224 & 330 & 584 & 838 & 1420 & 2002  \\
        
-    $K_d$ (positive $PSO_{Cr}$)  & 1 & 5 & 5 & 19 & 19 & \underline{59} & 59 & 165 & 165& 419 & 419 & 1001 & 1001 \\
+    $K_d$ (positive $PSO_{Cr}$)  & 1 & 5 & 5 & 19 & 19 & \underline{59} & 59 & 165 & 165& \underline{419} & 419 & 1001 & 1001 \\
     
     
     
@@ -1512,7 +1512,7 @@ These recurrence rules are non sufficient to defines the series. This implies to
     
     $T_d =\sum_{d-1}^{d+1}K_d$   & 7 & 11 & 29 & \underline{43} & 97 & \underline{137} & 283 & 389 & 749 & 1003 & \underline{1839} & 2421 & 4259 \\
     
-    $S_d=\Sigma_1^d (N_d/2)$   & 1 & 4 & 9 & 21 & 40 & 79 & \underline{138} & 250 & 415 & 707 & 1126 & \underline{1836} & 2837 \\
+    $S_d=\Sigma_1^d (N_d/2)$   & 1 & 4 & 9 & 21 & 40 & 79 & \underline{138} & 250 & \underline{415} & 707 & 1126 & \underline{1836} & 2837 \\
     
     
      $q_d=\binom{3+d}{4}$ (pentapope nbrs)  & 1 & 5 & 15 & 35 & 70 & 126 & 210 & 330 & \underline {495} & 715 & 1001 &\underline{1365}& \underline{1820}\\
@@ -1544,8 +1544,7 @@ These recurrence rules are non sufficient to defines the series. This implies to
   \end{tabular}
 \label{tab:4:table4}
 \caption{
-Crystallographic Ponctual Symmetry Operation numbers $N_d$ and the positive ones $K_d$. With the sum of primes including unity $\sigma_n$ (EOIS A014284) $N_6 = \sigma_9$ and $K_6 = \sigma_8$. The sum $N_6+K_6 $ is the Eddington-Atiyah constant 137. Identifyin $9 = (6/2)^2$, the corresponding sum for $d =10$, the supersymmetric dimension, is 1839, the integer closest to the neutron-electron mass ratio. The same numbers 137 and 1839 are given for a triplet combinaison of nearby $K$, for $d= 6$, and $d = 11$, the supergravity dimension. The sum of $N_d$ for $d = 12$ (half the 24 transverse dimensions) is 1836, the integer closest to the proton-electron mass ratio. For $d=9$, the number of compactified dimensions in string theory, $N_9 + K_9$ identify both with 495, the square root of the Higgs boson-electron mass ratio and the $9^{th}$ pentapope number. The natural extension of the $13^{th}$ pentapope number, where 13 is half the 26 main bosonic dimensions, is again 1836. The bissection of the Rule 23 Wolfram series shows the dimensions 4 and 11, which are those of the usual Space-time and the Supergravity, $d_1 = 1$ and $d_2 = 4$, with $d_1^2 + d_2^2 = d_8 =137$. Reducing the dimensions by a 2 factor
-shows that $u_{22}= 991 = 495 + 496$, the third "perfect couple", where 496 is the dimension of the SO(32)group, while $11 = 5 + 6$ is the first 
+Crystallographic Ponctual Symmetry Operation numbers $N_d$ and the positive ones $K_d$. With the sum of primes including unity $\sigma_n$ (EOIS A014284) $N_6 = \sigma_9$ and $K_6 = \sigma_8$. The sum $N_6+K_6 $ is the Eddington-Atiyah constant 137. Identifyin $9 = (6/2)^2$, the corresponding sum for $d =10$, the supersymmetric dimension, is 1839, the integer closest to the neutron-electron mass ratio. The same numbers 137 and 1839 are given for a triplet combinaison of nearby $K$, for $d= 6$, and $d = 11$, the supergravity dimension. The sum of $N_d$ for $d = 12$ (half the 24 transverse dimensions) is 1836, the integer closest to the proton-electron mass ratio. For $d=9$, the number of compactified dimensions in string theory, $N_9 + K_9$ identify both with 495, the square root of the Higgs boson-electron mass ratio and the $9^{th}$ pentapope number. Moreover, the relation $S_9 + 4 = K_{10}$ seems fundamental, connecting the coupling constants. The natural extension of the $13^{th}$ pentapope number, where 13 is half the 26 main bosonic dimensions, is again 1836. The bissection of the Rule 23 Wolfram series shows the dimensions 4 and 11, which are those of the usual Space-time and the Supergravity, $d_1 = 1$ and $d_2 = 4$, with $d_1^2 + d_2^2 = d_8 =137$. Reducing the dimensions by a 2 factor shows that $u_{22}= 991 = 495 + 496$, the third "perfect couple", where 496 is the dimension of the SO(32)group, while $11 = 5 + 6$ is the first 
 "perfect couple". The combined Rule 23 Wofram Series shows 137 for the dimension unity, which was predicted in a Sweeping Universe, and , for $d = 12$, the number 1831, the closest interger to the Lucas gravity proton-electron mass ratio. If the Riemann conjecture is right, the final Euler ideonal number is $s_{65}$ = 1848 = 1836 + 12, which shows dramatic connections with the electric constant $a$, the tau-electron mass ratio, the Topological Function and the DNA mass. The atomic number of a nucleotide and the Fermi mass is close to $s_{53}$  = 312, while $53\approx 2\pi a_s$.
 }
 
@@ -1725,7 +1724,7 @@ Thus the string canonical $9D$ dimension reduction is correlated with the $9D$ c
 With the electric charge $q = Wsin\theta/H^{(0)}$, the computer shows up the following relations, in the ppb domain: 
 
 \begin{equation}\label{Eq32}
- \tau \sqrt{a_w}/ W q \approx K_3 K_5 K_9/3 \\
+ \tau F/ W q \approx K_3 K_5 K_9/3 \\
 \end{equation}
 
 Note that $1 + K_3K_5/3K_9 = 4181 \approx a_w^{1/2}/a$, showing the $19^{th}$ term of the Fibonacci series, the first composite number of order prime.
@@ -1921,7 +1920,7 @@ The sum of the implied dimensions is the same: 23 = 1+2+3+4+13 = 6+8+9.
 
 The other string partition is 26 = 10 + 16. One observes the following precise relations with the 3 couplings, electric, electroweak and gravitational (1 ppb and 10 ppb):
 \begin{equation}\label{Eq45}
-K_{10}/(K_{10}-2) \approx a_w^{5/2}/ P a^3   \approx e^{1/(210-1)}
+K_{10}/(K_{10}-2) = K_{10}/(S_9+2) \approx a_w^{5/2}/ P a^3   \approx e^{1/(210-1)}
  \end{equation}
 
 This could be tied to the two trivial symmetries, identity and point inversion. 
@@ -1973,7 +1972,7 @@ The above variation of one unity, connected to prime numbers, leads to
 which recovers the complete Atiyah sum, including the "real algebra" term $2^0$, and, since the last "fundamental" term is $2\times 15 = 30$, coming back to the above brute U(1)-SU(2) gauge partition. Note that the four basic primes $p_1 = 2; p_2 = 3; p_3 = 5; p_4 = 7$ enters the following development, particularizing the dimension 4D:
 
 \begin{equation}\label{Eq50}
- 7(N_1 + p_1 + N_ + p_2) + N_3 + p_3 + N_4 + p_4  = 91 + 15 + 31 = 106 + 31 = 137
+ 7(N_1 + p_1 + N_2 + p_2) + N_3 + p_3 + N_4 + p_4  = 91 + 15 + 31 = 106 + 31 = 137
  \end{equation}
 
 This Atiyah series presents an imperfection: the absence of the term $2^1$, corresponding to the complex algebra. One observes that the total sum taking account of the four algebra is $139 \approx i^{\pi/i} = e^{\pi^2/2}$. So the origin of 137 would be the mean between 139 and 135, the latter being the product of the two co-perfect numbers $5$ and $3^3$, very close to $16a_s$. Indeed, one oberves, in the ppb domain:
