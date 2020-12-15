@@ -203,7 +203,7 @@ The Hubble-Table \ref{tab:6:table6} recalls the 14 molecular formula of Jean Per
     %$\pi$ fifth fractional term & $\pi_5$    & 292.63459101440 & "exact" \\ 
     Euler-Mascheroni constant & $\gamma$    & 0.57721566490153 & \\ 
     Golden ratio & $\Phi$    & 1.61803398874990 & \\ 
-    Wien factor $ w_i = hc/k_BT \lambda_{Wien} = 5(1-e^{-w_i})$ &  $w_i$  & 4.96514245  &  \\
+    Wien factor $W_5 = hc/k_BT \lambda_{Wien} = 5(1-e^{-W_5})$ &  $W_5$  & 4.96514245  & $\approx~2.821439372$ \\
     Relative Radiation Ratio $ u_{CMB + CNB}/u_{CMB} = 1 + 3 (7/8) (4/11)^{4/3}\approx p_tn_t/Hp_{W1}$  &  $y$  & 1.681321953  & $p_{W1}$ = 1093 (A001220) \\
     Scale-factor $8\pi^2/ln2$  & $j$ & 113.9106346  & \cite{Sanchez2} \\
     Lucas Large Prime Number & $n_L$    & $2^{127}-1$  & \cite{Bastin}  \\
@@ -215,7 +215,7 @@ The Hubble-Table \ref{tab:6:table6} recalls the 14 molecular formula of Jean Per
     Wyler $ p_W = 6\pi^5 \approx (ap_t/137)^2/H \approx \sqrt p_t (s_{65}\sqrt {p_{00}}/p_{Ed})^3 /H\approx (Hp_{00}^7)^{1/2}/p_t^3$ & $p_W$   & \underline {1836.118109}  & \cite{Wyler} \\ 
     Hydrogen/Electron mass ratio  & $H$  & 1837.15266014  & 0.06 ppb \\
     Relativistic correction factor $1/(H-p_t)$ & $\beta$  & 1.000026597  & 0.1 ppb\\
-    Neutron/Electron mass ratio ~ $n_t \approx (\pi^2w_i/4)^3 \approx  p_t + 1 +1/g_0 $  & $n_t$ & 1838.6836617  & 0.5 ppb \\     
+    Neutron/Electron mass ratio ~ $n_t \approx (\pi^2W_5/4)^3 \approx  p_t + 1 +1/g_0 $  & $n_t$ & 1838.6836617  & 0.5 ppb \\     
     Planck ratio $m_P/m_e \approx 2^{2^6}(a/4\pi)^3 p_t\beta^2/n_t$ &$ P$   & $2.389015907 \times 10^{22}$ & ppb  \cite{Sanchez2}  \\
 Lucas Gravitational Proton/Electron mass ratio $P/\sqrt{n_L} \approx \sqrt 2 (a/137)^2p_t/p_Wq^6 $ & $p_G$    & $ \underline {1831.531181} $ & $\approx \beta u_{30}a/137 $  \\ 
 Bisection of Rule 23 Wolfram series (R23W) $ u_d = 1 + d(2d+1)$ for $d$ = 30  & $u_{30}$    & $ \underline {1831} $ & EOIS(A266438) \\
@@ -295,7 +295,7 @@ Optimised Strong (inverse) coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8
    Optimised CMB temperature & $T_{CMB}$ &$ K$ & $2.7258204$ & \cite{Sanchez2}, $T_{CMB(mes)} $ 2.7255(6)  \\ 
   CMB wavelength $h c/ k_B T_{CMB}$ & $\lambda_{CMB}  $ & $m$ & $5.278325924 \times 10^{-3} $ & \cite{Sanchez2}  $\lambda_{CMB} \approx 2f(18)\lambdabar_{e}((a-136)a/137)^{1/2} $\\
    CMB red. wav. $\lambda_{CMB}/2\pi$ ; $\pi_{CMB} \approx 3+2(a-137^2/a)$ & $\lambdabar_{CMB}  $ & $m$ & $8.4007166 \times 10^{-4} $ & $(4\pi_{CMB}/3)(\lambdabar_{CMB} /\lambdabar_e)^3 \approx e^{\sqrt{137a}}$\\
-   CMB Wien wavelength $\lambda_{CMB}/w_i$ & $\lambda_{WCMB} $ &$ m$ & $1.0630825  \times 10^{-3} $ & \cite{Sanchez2} \\
+   CMB Wien wavelength $\lambda_{CMB}/W_5$ & $\lambda_{WCMB} $ &$ m$ & $1.0630825  \times 10^{-3} $ & \cite{Sanchez2} \\
    CMB photon length $\lambda_{CMB} (16\pi \xi(3))^{-1/3}$ & $l_{phCMB}  $ & $m$ & $1.345131  \times 10^{-3} $ & \cite{Sanchez2} \\
    CMB energy density $(\pi^2/15)\hbar c/\lambdabar_{CMB}^4 $& $u_{CMB} =  $ & $J~ m^{-3}$ &  $4.1767647  \times 10^{-14} $ & \cite{Sanchez2}  \\
    Radiation density energy $ u_{CMB}+u_{CNB}  = y u_{CMB}$ & $u_{rad}  $ & $J ~^{-3}$ &  $7.0224862  \times 10^{-14} $ & \cite{Sanchez2} \\
@@ -564,24 +564,24 @@ The standard theory associates conservation law with symmetry. However, a conser
 \end{equation}
 
     
-where $M_N = R_ec^2/2G $ is the associated critical mass, implying the Nambu mass $m_N = am_e$, central in particle physics \cite{Nambu}. The OCP introduces the "Weinberg-Sanchez" natural geometric extension of the Weinberg triangle \cite{Taylor}, $1/g_0 = 1+g_1^2 +g_2^2 = 1 + (Z/H^{(0)})^2$. With the BE-Higgs scalar boson mass ratio, by respect to electron:  $H^{(0)} = 495^2$ (125.208 GeV)\cite{Sanchez2}, the radius ratio $R_e/R$ obeys the following $10^{-7}$ precise relations, involving $G$ through $p_G = P/2^{127/2}$ (from the Combinatorial Hierarchy \cite{Bastin}) and the Wien factor $w_i$. From the OCP, the following coupling $g_3$ and the electric charge $q$ are proposed: 
+where $M_N = R_ec^2/2G $ is the associated critical mass, implying the Nambu mass $m_N = am_e$, central in particle physics \cite{Nambu}. The OCP introduces the "Weinberg-Sanchez" natural geometric extension of the Weinberg triangle \cite{Taylor}, $1/g_0 = 1+g_1^2 +g_2^2 = 1 + (Z/H^{(0)})^2$. With the BE-Higgs scalar boson mass ratio, by respect to electron:  $H^{(0)} = 495^2$ (125.208 GeV)\cite{Sanchez2}, the radius ratio $R_e/R$ obeys the following $10^{-7}$ precise relations, involving $G$ through $p_G = P/2^{127/2}$ (from the Combinatorial Hierarchy \cite{Bastin}) and the Wien factor $W_5$. From the OCP, the following coupling $g_3$ and the electric charge $q$ are proposed: 
 \begin{equation}
  \left\{
     \begin{array}{ll}
-    1/g_0 = 1+g_1^2 +g_2^2 \approx 2R/R_e \approx 2(H/p_t)(\beta \sqrt {a_s}/w_i)^{1/2}\\
+    1/g_0 = 1+g_1^2 +g_2^2 \approx 2R/R_e \approx 2(H/p_t)(\beta \sqrt {a_s}/W_5)^{1/2}\\
    tg \theta =  g_1/g_2 = g_0/g_3\\
    g_1 cos \theta = g_2 sin \theta = (4\pi_q/a)^{1/2} \approx y\Pi_+/2d_e\sqrt F  ~~~~~;~~~~~  3^{11-1}\approx 6(2\pi_q)^5 \approx \pi a^2   
     \end{array}
 \right.
 \end{equation}
 
-Note that the electric charge is tied to the Mirimanoff prime 11 \cite{Mirimanoff}, showing the connection supersymetry-supergravity 10 = 11 - 1. The small difference between $g_0$ and $g_2$ induces formula in the Hubble and Cosmos Tables. In this manner, the gauge couplings are connected with the  Wien factor $w_i$, whose pertinence is not reckognized in the present standard model. Moreover, there is a direct confirmation, precise to 0.1 ppm, of the invariant CMB temperature:
+Note that the electric charge is tied to the Mirimanoff prime 11 \cite{Mirimanoff}, showing the connection supersymetry-supergravity 10 = 11 - 1. The small difference between $g_0$ and $g_2$ induces formula in the Hubble and Cosmos Tables. In this manner, the gauge couplings are connected with the  Wien factor $W_5$, whose pertinence is not reckognized in the present standard model. Moreover, there is a direct confirmation, precise to 0.1 ppm, of the invariant CMB temperature:
 \begin{equation}
 K_n = (32 \xi(3) /3\pi)^{1/2} R l_P/(\lambdabar_{CMB}^3 \lambdabar_H)^{1/2} \approx K_E (1-1/12^2)^{-1/2} 
  \end{equation}
 
 \textit{This means there is a symmetry between radiation and matter, totally unexpected in the present standard theory. This relation has the same form than that of Eddington : $\sqrt{M/m_e} = R/2\lambdabar_H$, equivalent to Eq. (5)}.
-%1/g_0 = 1+g_1^2 +g_2^2 = 1 + (Z/H^{(0)})^2 \approx (R_e/2R) (p_G/H) = g_2/g_1g_3 \approx 2(H/p_t)(\beta sqrt a_s/w_i)^{1/2}
+%1/g_0 = 1+g_1^2 +g_2^2 = 1 + (Z/H^{(0)})^2 \approx (R_e/2R) (p_G/H) = g_2/g_1g_3 \approx 2(H/p_t)(\beta sqrt a_s/W_5)^{1/2}
  %\end{equation}
 
 \subsection{The Tachyonic Holographic Cosmos}
