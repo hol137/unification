@@ -47,6 +47,428 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+\begin{table}
+
+\centering
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 
+45,x=0.25cm,y=0.25cm]
+\tkzDefPoint(-31.0,-31.0){A} %\tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(31.0,31.0){Y}
+\tkzDefPoint(-28.0,-28.0){B}
+\tkzDefPoint(-20.0,-20.0){C}
+\tkzDefPoint(-12.0,-12.0){D}
+\tkzDefPoint(-12.0,-12.0){E}
+\tkzDefPoint(-8.0,-8.0){R}
+\tkzDefPoint(28.0,28.0){F}
+\tkzDefPoint(-4.25,-4.25){G}
+\tkzDefPoint(4.0,4.0){H}
+\tkzDefPoint(12.0,12.0){I}
+\tkzDefPoint(14.0,14.0){S}
+\tkzDefPoint(-3.0,-3.0){J}
+\tkzDefPoint(16.0,16.0){K}
+\tkzDefPoint(18.25,18.25){L}
+\tkzDefPoint(20.0,20.0){M}
+\tkzDefPoint(29.0,29.0){N}
+\tkzDefPoint(-10.0,-10.0){P}
+\tkzDefPoint[color=red](31.0,31.0){Q}
+\tkzDefPoint(31.0,31.0){Y}
+\tkzDrawPoints(A,B,C,D,F,E,G,H,I,J,K,L,M,N,P,Q,R,S,Y)
+\tkzDefMidPoint(A,Y) \tkzGetPoint{BI-CODON}
+\coordinate (center) at (BI-CODON);
+\tkzDrawPoints(BI-CODON)
+\draw [->] (-31.0,-31.0) node[left]{} -- (-31.,34.) node[right]{}; % scale Y
+\draw [->] (-31.0,-31.0) node[left]{} -- (31.8,-31.0) node[right]{}; % scale d
+\draw [->] (-31.0,-34.) node[left]{} -- (31.8,-34.) node[right]{};   % scale 
+\draw [->] (-34.0,-31.) node[left]{} -- (-34.,34.) node[right]{};   % scale Y'
+%%% Blue Dashed Horizontal lines
+\draw [-,color=green,dashed] (-34.0,-24.) node[left]{} -- (-24.,-24.) node[right]{};   % \sqrt{a_s} horizontal line
+\draw [-,color=green,dashed] (-34.0,-2.8) node[left]{} -- (-2.8,-2.8) node[right]{};   % Scalar Boson horizontal line
+\draw [-,color=green,dashed] (-34.0,0.) node[left]{} -- (0.,0.) node[right]{};   % bicodon horizontal line
+\draw [-,color=red,dashed] (-34.0,31.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos horizontal line
+%%% Blue Dashed Vertical lines
+\draw [-,color=green,dashed] (-28.0,-31.) node[left]{} -- (-28.,-28.) node[right]{};   % String vertical line
+\draw [-,color=green,dashed] (-24.0,-31.) node[left]{} -- (-24.,-24.) node[right]{};   % \sqrt{a_s} vertical line
+\draw [-,color=green,dashed] (-20.0,-31.) node[left]{} -- (-20.,-20.) node[right]{};   % Gluon vertical line
+\draw [-,color=green,dashed] (-12.0,-31.) node[left]{} -- (-12.,-12.) node[right]{};   %  DIAMETER vertical line
+\draw [-,color=green,dashed] (-10.0,-31.) node[left]{} -- (-10.,-10.) node[right]{};   % Kaon vertical line
+\draw [-,color=green,dashed] (-8.0,-31.) node[left]{} -- (-8.,-8.) node[right]{};   % Tau vertical line
+\draw [-,color=green,dashed] (-4.0,-31.) node[left]{} -- (-4.,-4.) node[right]{};   % Half Mean Weak Boson vertical line
+\draw [-,color=green,dashed] (-3.0,-29.) node[left]{} -- (-3.,-3.) node[right]{};   % Scalar Boson vertical line
+\draw [-,color=green,dashed] (-3.0,-31.) node[left]{} -- (-3.,-34.) node[right]{};   % \gamma\Gamma->\pi vertical line
+\draw [-,color=green,dashed] (0.,-31.) node[left]{} -- (0.,0.) node[right]{};   % Bicodon vertical line
+\draw [-,color=green,dashed] (4.1,-31.) node[left]{} -- (4.1,4.1) node[right]{};   % Thermal Photon vertical line
+\draw [-,color=green,dashed] (12.1,-31.) node[left]{} -- (12.1,12.1) node[right]{};   % Boson X GUT vertical line
+\draw [-,color=green,dashed] (14.1,-31.) node[left]{} -- (14.1,14.1) node[right]{};   % Planck Mass vertical line
+\draw [-,color=green,dashed] (16.,-31.) node[left]{} -- (16.,16.) node[right]{};   % Photon vertical line
+\draw [-,color=green,dashed] (18.25,-29.) node[left]{} -- (18.25,18.25) node[right]{};   % Galaxy group vertical line
+\draw [-,color=green,dashed] (20.0,-31.) node[left]{} -- (20.0,20.) node[right]{};   % Gravitonde vertical line
+\draw [-,color=green,dashed] (28.0,-31.) node[left]{} -- (28.0,28.0) node[right]{};   % Super Period vertical line
+\draw [-,color=green,dashed] (29.,-29.) node[left]{} -- (29.,29.0) node[right]{};   % Topon vertical line
+\draw [-,color=red,dashed] (31.0,-35.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos vertical line
+
+\draw[color=blue] (A) -- (Y);
+%\node [anchor = text=blue] at (-8.,35.75) {\LARGE{AXE COSMIQUE} };
+
+\node [anchor = east, text=red] at (34,36.5) {$f(2(\frac {r_H}{\lambdabar_e} /d_e) \approx a^{\sqrt a}\approx \frac {\beta \pi F^5}{a^2} $ };
+
+\node [anchor = text=blue] at (-14,35.75) {\LARGE{AXE ANTHROPOCOSMIQUE} };
+
+\node [anchor = text=black] at (-23,34.5) {\small{Double l'AXE COSMIQUE, qui entoure la loi, pour~ b = e: $f_b = b^{2^{d/4}}$~~~ (1 ppm = $10^{-6}= 10^3$~ppb) }};
+%\node [anchor = text=black] at (-29.5,33.5) {\small{Unités: LONGUEUR: $\hbar /m_e c=\lambdabar_e = ct_e$ TEMPS: $t_e$ (Neuron et Super Période) MASSE :$2\pi m_N$ (Photonde et Gravitonde) }};randeur
+\node [anchor = text=black] at (-28.,-33.5) {\small{Nombres spectroscopiques: $d=4k+2$ de k=~0 à k=~3. Pour k = 6: d = 26 dimension des cordes bosoniques }};
+\node [anchor = east,text=red] at (33.75,31.9) {\LARGE{COSMOS}};
+\node [anchor = east,text=red] at (-31,31) {2e};
+\node [anchor = south] at (-28.,-33.0) {$2$};
+\node [anchor = south] at (-28.,-36.0) {$0$};
+%\node [anchor = north] at (-28.,-28.0) {$CORDE$};
+\node [anchor = south] at (-24.,-33.0) {$4$};
+%\node [anchor = east] at (-24.,-24.0) {$2\sqrt{a_s\Phi}$};
+\node [anchor = south] at (-20.,-33.0) {$6$};
+\node [anchor = south] at (-20.,-36.0) {$1$};
+\node [anchor = east] at (-22,-22.0) {$GLUONS ?$};
+\node [anchor = east] at (-19.5,-20.0) {$f(6) \approx \frac {\tau}{\mu} \approx \Phi^9 sin^2 \theta$};
+%\node [anchor = west,color=blue] at (-24,-25.1) {$ f(\frac {\sqrt{\sqrt p}}{\sqrt 3}\approx \frac {\sqrt u}{q} ) \approx \Phi^4 \approx (2u \approx 4g_0)^2 \approx \sqrt {ag_1}  \approx (\frac {g_3}{g_2} \approx \frac {6}{\pi} = \frac {metre}{coudee})^3   \approx  (g_Z \approx a/100)^6  \approx ( \frac {1}{g_2g_3} \approx \frac {4}{\pi})^8  $};{%
+\node [anchor = south] at (-12.,-33.0) {$10$};
+\node [anchor = south] at (-10.,-33.0) {$11$};
+\node [anchor = south] at (-12.,-36.0) {$2$};
+%\node [anchor = east] at (-12.,-12.) {COUPLE (Pion)-(Muon/g)};
+\node [anchor = west,color=blue] at (-12.,-12.) {$3f(10) \lambdabar_e \approx 2\pi r_H$ (Rayon de l'atome d'Hydrogène) $\approx (\frac{2}{u})^{16} \approx (3570)^{16}/O_M$ };
+
+%\node [anchor = east] at (-10.,-10.) {KAON};
+%\node [anchor = east] at (-8.,-8.) {COUPLE (Proton $\times ~\Phi_0 $) - (Tau $\times ~6/7$)};
+\node [anchor = south] at (-4.25,-33.0) {$14$};
+\node [anchor = south] at (-4.25,-36.0) {$3$};
+%\node [anchor = east] at (-4.5,-4.5) {TRIPLET (Boson faible/2- Higgs/3-Fermi/7};
+%\node [anchor = west,color=blue] at (-4,-4.3){ $ f(14)\approx \sqrt{2a_wt/a} \approx \frac {a_wW}{a^3H^0} \approx (3Z/H^0)\lambdabar_{Ryd}~~~~~t = \frac {T_{CMB}}{T_{CNB} }= (\frac {11}{4})^{\frac {1}{3}} $};
+%\node [anchor = west,color=blue] at (-6.2,-6.3) {$f(\frac{\Delta_{Ed}}{10}) \approx  $~ Long. de Rydberg $\lambdabar_{Ryd} \approx l_P \sqrt{O_M}\approx \sqrt{\lambdabar_p l_1}  $  };
+%\node [anchor = west,color=red] at (-8.2,-8.3) {~~~~~~ $ \frac{l_1}{l_P} \approx \frac{RR_e}{(2ct_1)^2} \approx O_B ( \frac{2ct_1 }{2\pi R_T} = \frac{\Phi^8 }{\pi}) \approx \frac{O_M}{\sqrt{a_G}}  $};
+%\node [anchor = west,color= red] at (-8.2,-10.3) {~~~~~~$ RR_e(2\pi R_T) \approx (2ct_1)^3 O_B \approx l_1^3 ~ e^{a_{00} -1 \approx ~ a + 1}~~~~ a_{00}= i^{-i\pi} = e^{\pi^2/2}$};
+%\node [anchor = west,color= red] at (-18,-17.8) {$ \frac {g ~\approx~  c/annee}{g_1} = \frac{gt_1^2 }{l_1} \approx \sqrt {a_{00}}  sin(2 \theta)= \frac{2Z}{W}S \approx  \pi^2 ~;~ S \approx (\beta e^{\pi}\sqrt g_0)^{1/2} \approx \frac{u}{q})
+
+%~;~ sin(2 \theta)\approx (\frac{\pi 2^{1/12} {4 \zeta (3))^{1/2} \approx \frac{\pi p_K} {2\tau}    $}; \approx \frac{u}{q}
+
+\node [anchor = west,color= red] at (-18,-17.8) {$ \frac {g ~\approx~  c/annee}{g_1} =\frac{gt_1^2 }{l_1} \approx \sqrt {a_{00}}  sin(2 \theta)= \frac{2Z}{W}S \approx  \pi^2; S \approx (\beta e^{\pi}\sqrt g_0)^{1/2} ; sin(2 \theta)\approx (\frac{\pi 2^{1/12} }{4 \zeta (3))^{1/2}} \approx \frac{\pi p_K} {2\tau} \approx \frac{5} {6 d_e\beta^2\tau} $};
+
+
+
+\node [anchor = west,color= red] at (-14.2,-19.8) {$ \frac {ct_1}{0.6l_1} \approx \frac {l_1}{r_{ADN}} \approx \frac {p_{hol}^3}{4\pi} \approx 150^4 \approx p^{8/3}  ~~~~~~~~~ v_T = \frac {2\pi R_T}{Jour} \approx \frac {p_{hol} l_1}{4t_1} ~~~~~~~~~ r_{ADN} \approx 2 nm  $};
+%\node [anchor = west,color= blue] at (-21.2,-19.3) {~~~~~~$f(2\pi) \approx (\frac {3R}{2\lambdabar_e})^{\frac {1}{30}} \approx \frac {t_K}{t_{ST} \approx 495 s}  $};/sqrt~~~~~~~~~  \frac{\pi(1+\mu+\tau)}{4\tau} 
+
+
+\node [anchor = west,color= red] at (-18,-15.8) {~~~~~~$sin \theta \approx \frac {2\pi (a+1)}{H \sqrt{d_e}} \approx \frac {a^3}{ \Phi(1836^2 -(e/sin \theta)^2)} \approx (\frac {1}{\Phi^3} - \frac {1}{\Phi^9})^{1/2} \approx \frac {g_2}{\Phi^{g_2}} ; a_{00} = i^{-i \pi} = e^ {\pi^2/2} \approx \frac {\Phi^{16}}{16} + 1  \approx (\frac {\Phi^{g_1}}{g_1})^4 $};
+
+
+%\node [anchor = west,color= red] at (-18.5,-15.8) {~~~~~~$sin \theta \approx \frac {}{\Phi^3}  (\frac {1}{\Phi^3} - \frac {1}{\Phi^9})^{1/2} \approx \frac {g_2}{\Phi^{g_2}}  \approx \frac {\Phi^{g_1}}{g_1}-1 ~;~a_{00} = i^{-i \pi} = e^ {\pi^2/2}   \approx a + 2 \approx \frac {\Phi^{16}}{16} + 1  \approx (\frac {\Phi^{g_1}}{g_1})^4$} ;
+
+
+
+%\node [anchor = west,color= blue] at (-21.2,-21.3) {~~~~~~$f(6) = \sqrt{f(10)}  \approx \sqrt{2e^{w_5}} \approx 2/g_1^2 \approx 2/a_s \approx\tau/\mu \approx 9g_2/g_1   ~~~~~ w_5 = 5(1-e^{-w_5}) $};
+%\node [anchor = west,color= blue] at (-28.2,-27.6) {~~$f(2)   \approx \frac {\pi u}{\beta d_e} \approx \frac {\sqrt 7}{g_2}  \approx \frac {\sqrt \Gamma}{g_3}  \approx \frac {3}{g_Z}  \approx 2\pi g_0 \approx 9\mu/a \approx 4an_t/H^0 $};
+
+\node [anchor = west,color= blue] at (-21.5,-22) {7\underline {s}+6\underline {p}+4\underline {d} = $ 7\times 2 + 6\times 6 + 4\times 10 + 2\times 14 = 118 $  };
+
+\node [anchor = west,color= blue] at (7,-21.8) {$~;~ \sqrt {a/137}(p_K = \frac {1 + \mu +\tau}{2}) \approx \frac {p_G(N_0^2-1)}{\sqrt {Hp}} \approx  \sqrt {\frac {d_e^2H^{(0)}sin\theta Hp}{6N_0^{\prime}} }   $};
+
+
+
+\node [anchor = west,color= red] at (-21,-23.7) {$ 7\times (\underline {s}+1) + 6\times (\underline {p}+1) + 4\times (\underline {d}+1) + 2\times (\underline {f}+1) = 107 + 30 = 137 \approx a = a cos^2 \theta + a sin^2 \theta$ };
+
+\node [anchor = west,color= red] at (-29,-25.5) { $ \sum_{k=0}^{k=7} (d_k+1) = 2^7 + 2^3 = 136  \approx (\tau^{g_1} \mu^{g_2/g_3} )/2 \approx             \frac {\sqrt3 m_{bc}}{2 \sqrt a m_H}  ~;~ \frac {ln\mu}{ln\tau} \approx g_0 = \frac {g_1g_3}{g_2} \approx \frac {pp_G}{2a^3}  ~;~ \mu^a \approx \tau^{\frac {pp_G}{2a^2}} \approx 3^{665} \approx 2^{1054= 2\times 31 \times 17}   $ };
+
+%\node [anchor = west,color= red] at (-27,-25) {$ \Sigma (d_k+1) = 2^7 + 2^3 = 136  \approx (\tau^{g_1} \mu^{g_2/g_3} )/2 \approx             \frac {\sqrt3 m_{bc}}{2 \sqrt a m_H}  ~;~ \frac {ln\mu}{ln\tau} \approx g_0 = \frac {g_1g_3}{g_2} \approx \frac {pp_G}{2a^3}  ~;~ \mu^a \approx \tau^{\frac {pp_G}{2a^2}} \approx 3^{665} \approx 2^{1054= 2\times 31 \times 17}   $ };
+
+\node [anchor = west,color= red] at (-34,-27.5) {$ 2^{\frac {1}{665}} \approx 3^{\frac {1}{1054}} \approx g_0^{\frac {-9}{2H}} \approx g_1^{\frac {-1}{(2^{10})}}  \approx (\frac {a}{137})^4 \approx 4g_1g_Z \approx \frac {\beta^2 (\pi_q=aq^2/4)}{\pi}) \approx\frac {WZ \sqrt a}{a_w} \approx \frac {2a_w}{a_s \pi W^2} \approx (sin\theta)^{\frac {-3571}{a^3}} \approx S^{\frac {p_G}{a^3}}  ~;~tg\theta  \approx \frac {g_2}{g_1} \approx \frac {\sqrt a}{4g_F} \approx \frac {\tau}{9\mu} \approx \frac {\pi \Phi}{e}$ };
+
+%\node [anchor = west,color= red] at (-34,-27.5) {$ 2^{\frac {1}{665}} \approx 3^{\frac {1}{1054}} \approx g_0^{\frac {-9}{2H}} \approx g_1^{\frac {-1}{(2^{10})}}  \approx (\frac {a}{137})^4 \approx \approx 4g_1g_Z \approx \frac {\beta^2 \p_q}{\pi}) \approx\frac {WZ \sqrt a}{a_w} \approx \frac {2a_w}{a_s \pi W^2\sqrt \beta} \approx (sin\theta)^{\frac {-3571}{a^3}} \approx S^{\frac {p_G}{a^3}}  \approx (\frac {R_C}{\lambdabar_e})^{\frac {2\pi^2 + 1}{e^{16}}}~;~tg\theta  \approx \frac {g_2}{g_1} \approx \frac {\sqrt a}{4g_F} \approx \frac {\tau}{9\mu} \approx \frac {\pi \Phi}{e}$ };
+
+
+
+
+
+\node [anchor = west,color= red] at (-30,-29.7) {$ A = (R_C/\lambdabar_e)^{2\pi^2} \approx (lnA)^{4\pi_a^3/2} \approx 137^{1836} \approx \Phi^{137^2} $ };
+
+\node [anchor = west,color= red] at (-2,-29.7) {Mixage $ =  \frac{u}{q} \approx  S \approx 1/0.231211149~ (0.01 ppm) $  };
+
+
+
+
+
+%\node [anchor = west,color= red] at (5,-27.6) {~~~~~~$ \frac {1}{g_1g_2g_3} \approx g_1\frac {2a^2}{\tau}   \approx \frac {g_2}{2} \sqrt {\frac {H^0}{p}}\approx \frac {H}{\sqrt {H^0}}  $};
+\node [anchor = south] at (-2.75,-31.0) {$\gamma\Gamma$};
+\node [anchor = south] at (-2.75,-36.0) {$\pi$};
+\node [anchor = east,color=black] at (-3,-3.2){BOSON DE HIGGS};
+
+
+\node [anchor = east,color=red] at (-6,-4.4){$ 1/g_0 \approx n_t-H-1/((n_t-p)^8 \approx e^{e^2 + 1/\Gamma}) $};
+
+\node [anchor = east,color=red] at (-6,-5.9){$  495 \approx g_1g_2g_3H \approx \frac {H}{n_t} ( a_s^{1/g_1} \approx (3u)^{\frac {1}{g_1g_2}} \approx     e^{\frac {e^e}{2g_3} } )$};
+
+\node [anchor = east,color=red] at (5,8){$1/g_1g_2g_3 \approx 17\times 137^{3/2}p_W/4p^2$  (0.03 ppm)$ \approx  2 + \sqrt 3 \approx ln6/ln \Phi $};
+
+\node [anchor = east,color= red] at (-23.5,-12.9) {~~~~~~$ (a^2)^{a^3} \approx p^{p^2}$};
+\node [anchor = east,color= red] at (-25,-11.5) {~~~~~~$ \Phi^{a} \approx a^{p/a}$};
+
+\node [anchor = east,color= red] at (-14.5,-12) {~~~~~~$ \Phi sin \theta \approx \frac {a^3  }{1836^2} $};
+
+\node [anchor = east,color= red] at (-16,-16) {~~~~~~$ w_5 \approx \frac {2a^2 sin \theta}{3570-1} \approx (a_s \sqrt {\pi e})^{1/2} $ };
+
+\node [anchor = east,color= red] at (-18.5,-18) {$ q \approx \frac{H^2 \sqrt 5}{1836 p e^2} \approx \frac {n_te sin^2\theta}{2p}$ };
+
+
+\node [anchor = east,color= red] at (-15.5,-14.5) {$\Delta_{Ed} = (136^2-40)^{1/2} \approx 2a/\pi g_2$};
+
+
+\node [anchor = east,color= red] at (-7,-7.9) {$ a^a \approx (2+\sqrt3)^{2^9} \approx (2a^2)^{2^6} \approx \phi^{5\times 153 = 3(2^8-1) }  $};
+
+\node [anchor = west,color= red] at (-8,-7.9) {$ 4a^3/3 \approx (a-136)^{1/2} (1836^2 + a -44 (2\times 153)^{1/5}) \Rightarrow a \approx 137.03599909943  $};
+
+
+
+\node [anchor = east,color= red] at (-5.5,-9.9) {~~~~~~$ \Phi^{210} \approx p^{p/a} \approx RAM_{1836} \approx P^2a \frac {\sqrt {Hn_t}}{p} ~~ (2~ ppm) $};
+
+\node [anchor = west,color= red] at (-3.5,-9.9) {$ (\frac {ln(a^{3/2}/3)}{2})^2 - \frac {a(2pp_G)^{1/2}}{Hn_tp_{hol}} \approx a^2 - 137^2 = \pi_a^2  ~~~~\Rightarrow  a \approx 137.03599909944$};
+
+
+
+\node [anchor = south,color=black!40!green] at (0.,-33.0) {\textbf{16}};
+\node [anchor = west,color=blue] at (0.,0.0) {\LARGE{$m_{bc}$ = masse du BI-CODON d'ADN}};
+\node [anchor = east,color=blue] at (-0.2,-0.2) {$m_e~f(16) / \Phi_0^2 \approx H m_H \approx $ };
+
+
+%\node [anchor = east,color=red] at (-18,2) {$f(31/2) \approx 2^{127/6} $ };
+%\node [anchor = east,color=red] at (-20,-0.2) {$\Phi_0^{8} = 48 \approx \Phi^8 + 1 $};
+
+\node [anchor = east,color=blue] at (-15,-0.2) {$(\frac {137}{4\pi/3})^{1/3} \approx \pi \sqrt \delta \beta^4 \approx \frac {a}{p^{1/2} \beta^ {1/4}}\approx \frac {\sqrt 6 (6\pi_a^5)^2}{d_e a^3}$};
+
+
+
+\node [anchor = south] at (4.25,-33.0) {$18$};
+\node [anchor = south] at (4.25,-36.0) {$4$};
+\node [cross,anchor = west,color=blue] at (4.25,4.25){Demi-Longueur d'onde Thermique: $ hc/2k_BT_{C}$};
+
+\node [cross,anchor = east,color=black] at (3.25,3.75){ $ \frac {aW}{Z}\approx \frac {1831}{e^e} \approx \frac {p_G}{\sqrt{p/8d_e} } $};
+
+
+%\node [cross,anchor = east,color=red] at (3.25,4.75){NOMBRE PREMIER D'EULER $(2^{2^{2^2+1}-1}-1) \times \pi ~~ $};
+\node [cross,anchor = west,color=red] at (3.45,3.15){$ T_{C} \approx 2.73 ~Kelvin \approx T_{H_2}T_{O_2}/T_{H_2O} \approx T_{mam}/j $};
+\node [cross,anchor = west,color=red] at (15.0,1.8){$ hc/k_BT_{mam}(40^0C) \approx \sqrt{Rl_P} $};
+
+%\node [cross,anchor = east,color=red] at (3.15,6.15){$RAMANUJAN_{137}\approx a \sqrt{P}/H ~ (8 ppm)\approx f(18) \times u^2$};
+
+%\node [cross,anchor = west,color=red] at (6.15,6.15){$ {\lambda_{Wien}} \approx \lambda_{e} ( \frac {P}{a^2H^2}\approx \frac {3}{\pi} f_{\pi}(17)\approx l_P f_{\pi}(24) ) $};
+\node [anchor = south] at (12.25,-33.0) {$22$};
+\node [anchor = south] at (12.25,-36.0) {$5$};
+%\node [anchor = east,color=blue] at (30.0,8.25){$f(20) = e^{2^5}  \approx (5/3)^{2^6}/2 ~ \approx \frac {\sqrt{m_Pm_F}}{\pi_a sin\theta} \approx \frac {sin^2 \theta~ l_1 }{r_H} \approx \frac {l_1 }{sin \theta  \sqrt {\lambdabar_e \lambdabar_{\mu} }  }$};
+%\node [anchor = east,color=black] at (12.25,12.250){BOSON UNIFIANT $X_{GUT}$};
+
+\node [anchor = east,color=black] at (12.25,12.250){BOSON $X_{GUT}$};
+
+\node [anchor = east,color=red] at (32,8.25){$ \frac {R_e l_P}{2 \lambdabar_e l_1}  \approx 60 (3570 \approx \Phi^{17}-1)^{1/2} ~~~(9 ppm)$};
+
+\node [anchor = east,color=red] at (35,6.25){$ \frac {R_T}{2l_1} \approx 137 \Pi_0^2/3  \approx \Pi_{+}^2 p_G/ \sqrt {n_t} \approx  \frac {4}{3}(H^{(0)} \sqrt {\frac {p}{n_t}}/p_G)^3 $};
+
+\node [anchor = west,color=blue] at (12.25,12.0){NEURON $t_N \approx  \frac {8\pi e t_1}{3570}~ (t_1 =$ 1 seconde) };
+%\node [anchor = east,color=black] at (14.,14.){$\pi^2 f(23) \approx \frac {l_P}{\lambdabar_e} = \frac {m_P}{m_e}\approx$};
+\node [anchor = east,color=blue] at (33.,14.){$(m_{ovocyte} \approx m_{Planck} )/em_e \approx \Phi^{210/2}$};
+%\node [anchor = east,color=black!40!green] at (16.,16.){$PHOTONDE$};
+%\node [anchor = east,color=black!40!green] at (20.,20.2){$GRAVITON$};
+%\node [anchor = west,color=blue] at (16.,16.){$2\pi a \times (ct_K \approx \lambdabar_e  u_n^{210} )$ };
+%\node [anchor = east ,color=red] at (13.3,16.0){$f(24)= e^{64} = (f(12))^8\approx~ $ (NOMBRE DU MONSTRE $O_M)/H^8$~~~~~~~~~~~~~~~~~~~~~~~~};
+\node [anchor = west,color=blue] at (18.25,18.250){Groupe de galaxies};
+\node [anchor = west,color=blue] at (17.25,17.550){Galaxie};
+
+\node [anchor = east,color=red] at (-18.5,17.550){$\pi^{\pi^{\pi}} \approx \frac {(e^e)^{(e^e)}\approx \frac {P}{30767} }{u_n^2} \approx \frac {P(p-1)^2}{H^{(0)}}  $   };
+
+%\approx \frac {(e^e)^{(e^e)}}{u_n^2}
+
+
+%\node [anchor = east,color=red] at (18,18){$ \frac {R}{2 \sqrt{\lambdabar_p \lambdabar_H}}  = \sqrt{\frac {H}{p} (\frac {M}{m_e}  = \frac {d}{\lambdabar_e})} = \frac {\hbar c}{Gm_em_p}  $};
+
+
+
+\node [anchor = east,color=red] at (18,18){$\hbar,G, m_{bc}^3 \rightarrow 2l_K \rightarrow m_{photon} = \hbar/cl_K \approx m_{graviton} \times (a_w \approx \frac {f(26)} {f(24)})$};
+
+
+
+\node [anchor = east,color=blue] at (36.7,15.75){$ a^a \approx (e ^ {1/e})^{p_G (n_t/p)^  {1/2} } \approx (\sqrt {a_s} ^  {1/ \sqrt {a_s}})^{\sqrt {pH}} \approx ((sin \theta) ^  {-sin \theta})^{(a/\pi)^2} \approx (q ^  {-q})^{2(a sin^2 \theta)^2} \approx (\pi ^ {1/\pi})^{p_{hol}} \approx (h_0 ^ {1/h_0 })^{2(\frac {d_e(p_W+1)}{a})^3} \approx ((a/2\pi) ^ {2\pi /a })^{2(\frac {(1831^2 + 2^2)^{1/2}}{a})^3} $};
+
+%\approx (sin \theta})^{-sin \theta (a/\pi)^2} \approx a_s^{2{p_{hol}/\sqrt a} 
+
+
+
+%\approx a^{\frac {\sqrt {a_s} a^2}{2x137^2}}   } \approx {a_s}^{a^{11}/P} ~~\Rigtharrow a^a \approx \sqrt {a_s} ^  {\sqrt {pH/a_s}}   $};
+
+
+%\node [anchor = east,color=red] at (2,18){$ 3^{3^3-1} \approx (2^{2^2-1})^{sqrt {a_{00}}/2} \approx a^{\frac {\sqrt {a_s} a^2}{2x137^2}}   } \approx {a_s}^{a^{11}/P} ~~\Rigtharrow a^a \approx \sqrt {a_s} ^  {\sqrt {pH/a_s}}   $};
+
+
+
+
+
+%\node [anchor = east,color=red] at (16,16.5){$\hbar,G, m_{bc}^3 \rightarrow 2l_K \rightarrow m_{photon} = \hbar/cl_K \approx m_{graviton} \times (a_w \approx \frac {f(26)} {f(24)})$};
+
+%\node [anchor = east,color=red] at (17.25,17.850){$f(25)\approx 2e^{24\pi}\approx O_B~ (W/F) \approx \sqrt {O_M}~ (8W \approx 7Z \approx 5aH) $};
+
+\node [anchor = east,color=red] at (13,14){$\hbar,G,G_F \rightarrow 52,255 Hz \rightarrow $ Lab (La = 442,9 Hz)  };
+
+
+\node [anchor = south,color=red] at (18.25,-33.0) {$\Gamma$};
+\node [anchor = west,color=blue] at (20.,20.0){$R \approx \frac{P}{a_s (a+1)}(R_T \approx \frac {ct_1}{\Phi^8}\approx \frac {R_C m_n}{eM}) $};
+\node [anchor = south] at (16.25,-33.0) {\textbf{24}};
+\node [anchor = east ,color=blue] at (31,20){~$\frac {f(26)}{6} \approx 2^{2^7} \approx (f(-5))^{211} \approx (\frac{2}{\Phi})^{2\times 209} \approx \frac{R}{\lambdabar_e} \approx (\frac{2}{u})^{210} \approx u^{3570q^2} \approx(\frac{6}{\pi})^a \approx (eS)^{36} \approx (\frac{g_3}{g_2}\approx \frac{\pi a x_0^{420}}{6\beta 137} )^{a_{00}-1}    $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~};
+
+
+%\node [anchor = east,color=red] at (28.25,27.750){$(6/5)^{2^{10}} \approx 2^{256}pn_t\beta^4/18^2~ (0.1 ppm) \approx Ct_1/\sqrt{a_0}\lambdabar_e  \approx (H/24) N_{Ed} \approx f(2e^e)/a_s^2 \approx (H/2\pi) (f(30) \approx t_{sp}/t_e)~~$ };
+%\node [anchor = east,color=red] at (27.95,26.250){$O_M \approx (a^{1/3}/2)f(1/\delta) \approx (d_e/a_s)(\delta+1)^{3570}  \Rightarrow DOUBLE~ a   \approx 137.035999099=$ mesuré (0.15 ppb)~~~~~~~~};
+
+%\node [anchor = east,color=red] at (12,27){ $ N_{Edd} = 136 \times 2^{256} \approx (3/10) M/m_{neutron} $ ~~(0.05 \%)~;~ $12/\pi \approx \frac {pN_{Edd}}{Hf(30) \approx \sqrt{\frac {a}{3\pi) \approx 2\pi \sqrt{\frac {d_e}{e) \approx Scos\theta \approx \frac {\sqrt{2\times 136}}{\beta S} \approx \frac {pN_{\beta^2}}{8\sqrt 2) \sqrt {9\mu} \approx \frac {\tau g_1}{g_2}$  };
+
+
+\node [anchor = east,color=red] at (35,27.5){ $ N_{Edd} = 136 \times 2^{256} \approx (3/10) M/m_{neutron} $ ~~(0.05 \%)~;~ $12/\pi \approx \frac {pN_{Edd}}{Hf(30) } \approx \sqrt{\frac {a}{3\pi}} \approx 2\pi \sqrt{\frac {d_e}{e}} \approx Scos\theta \approx \frac {\sqrt{2\times 136}}{\beta S} \approx \frac {\beta^2}{8\sqrt 2} \sqrt {({9\mu} \approx \frac {\tau g_1}{g_2}} )   $ };
+
+%\approx \sqrt{\frac {a}{3\pi) \approx 2\pi \sqrt{\frac {d_e}{e) \approx Scos\theta \approx \frac {\sqrt{2\times 136}}{\beta S} \approx \frac {pN_{\beta^2}}{8\sqrt 2) \sqrt {9\mu} \approx \frac {\tau g_1}{g_2}$  };
+
+
+\node [anchor = east,color=red] at (9.5,25.5){$ 3^{3^3-1} \approx \frac {R_e}{3\lambdabar_e} \approx (2^{2^3-1}-1)^{\sqrt {a_{00}}/2} 
+\approx a^ {(\frac {137}{a})^2 2\sqrt {a_s}} \approx {a_s}^{a^{11}/P}\Rightarrow a^a \approx (\sqrt {a_s} ^  {1/ \sqrt {a_s}})^{\sqrt {pH}} $};
+
+%\Rightarrow a^a \approx (e ^ {1/e})^{p_G\sqrt {n_t/p} } \approx (\sqrt {a_s} ^  {1/ \sqrt {a_s}})^{\sqrt {pH}} 
+%\approx ((sin \theta) ^  {-sin \theta})^{(a/\pi)^2} \approx (q ^  {-q})^{2(a sin^2 \theta)^2}   $};
+
+
+
+\node [anchor = east,color=red] at (9.5,23.5){Synthèse triconceptuelle : $\hbar,G, m_e, m_p, m_H \rightarrow R/2~~;~~ \hbar,G, m_N^3 \rightarrow R_e/2  $};
+
+\node [anchor = east,color=red] at (16,22){ $ u = R_e/R = Hp/a^3 \approx e^{2/e^2}  $ ~~(1.6 ppm) ~~ $ p \approx p_W = 6\pi^5 \approx \frac {a^2d_e}{1836} (2-ln2)^2 (\frac {p}{p_G})^{1/2}$ ~~ (30 ppb)};
+
+\node [anchor = west,color=red] at (16,22.5){ $ R = \sqrt{\lambdabar_p\lambdabar_H} (WZ)^4 \approx \frac {\lambdabar_e}{f(\sqrt a)}(\frac {Z}{W})^{5\times 153} $};
+
+
+\node [anchor = east,color=red] at (36,25){$\frac{1836}{12} = 153 = 1^3 + 3^3 + 5^3 \approx \frac{P^2 \beta}{pf(26)} $~ (0.1 ppm)};
+
+%\node [anchor = east,color= red] at (34.5,23.5) {~~~~~~$ p \approx p_W = 6 \pi^5  $};f
+
+
+%\node [anchor = east,color=red] at (25.95,24.50){$ f_3(1/\delta) \approx \sqrt a sin \theta (H/p)e^a \Rightarrow a = 137+\delta \approx 137.035999099$: idem (0.03 ppb)~~~~~~~~};
+\node [anchor = east,color=black] at (29.25,29.250){$f(\sqrt{H/2}) \approx M/m_e = Rc^2/2Gm_e = R\lambdabar_e/2l_P^2 = \lambdabar_e/TOPON$ (longueur d'onde de l'Univers) $\approx f(30) \times 153^2$};
+%\node [anchor = east,color=black] at (-6.25,10.250){\LARGE{MICRO-PHYSIQUE}};
+
+\node [anchor = east,color=red] at (0,6){$-ln(q = g_1 cos\theta = g_2 sin \theta) \approx 44\pi - a  \approx \frac {2\Phi_0} {e} \approx \frac {3570} {1838 \times 7^{1/4}}$   };
+\node [anchor = east,color=black] at (-9,4){\LARGE{MICRO-PHYSIQUE}};
+
+\node [anchor = east,color=red] at (12,2){$ 1 + g_1^2 + g_2^2 \approx \frac {ln\tau} {ln\mu} \approx \frac {1} {g_0}  = \frac {2a^3} {pp_G} = \frac {g_2} {g_1g_3} \approx (\frac {\beta e^{\pi}} {S^2} )^2 ~;~ S \approx \sqrt {a_{00}} sin\theta (cos\theta)^2 ~;~0.01 ppm  $};
+
+
+\node [anchor = west,color=red] at (-7.25,10.250){$(ct_N/\lambdabar_e)^2 \approx R_e/2\lambdabar_e \approx D_{Eg}/l_P ~;~D_{Eg} \approx \sqrt {2R_T l_1} = 3570~ l_1  \Rightarrow  l_1 = 1 metre   $};
+
+\node [anchor = east,color=red] at (-7.25,9.75){$\sum_{2}^{R_1/\lambdabar_e} \frac {1/n} {1/n^2} = \frac {r_H} {\lambdabar_e} = \frac {aH} {p} \Rightarrow \frac {RR_e} {R_1^2} \approx \frac {419-16} {417-16} \approx 2^{\frac {3} {2\times 209} } $};
+
+
+
+
+\node [anchor = east,color=red] at (-15,14){$  \frac {f(e^{\pi})} {f(23)} \approx \frac {g_0 495 \beta^{1/4}} {2 \sqrt {1836}} $};
+
+\node [anchor = east,color=red] at (2,12.250){$\frac {F^5} {Pa^3} = \frac {419} {417} \approx \frac {e^{1/q}} {3^3} \approx (g_1g_2g_3)^{\frac {-1} {2a}}\approx  (1+\sqrt3)^{\frac {1} {210}} \approx \frac {(3/sin \theta)^6 p_W} {2^{16}d_e^3p}  $};
+
+
+
+%\node [anchor = east,color=red] at (30.,22.5){$RAM_{1836}\approx P^2 a\sqrt{H/n_t}/p ~(2 ppm) ~ \approx (O_MO_B)^{1/2} \approx f(a^{2/3}) \approx f(2p/a)  \approx a^{2a^2/n_t} \approx p^{p/a} \approx e^{32\pi} \approx \Phi^{210} \approx \phi^j $};
+%\node [anchor = east,color=blue] at (22.75,-16){\LARGE{MACRO-PHYSIQUE}};
+red
+\node [anchor = east,color=red] at (36,-3.5){$~;~(\frac { \sqrt {e^{e^e}}}{a_s} )^3 \approx 3570 ~\tau~~;~~ \frac {3570} {\tau~} \approx \frac {g_1} {g_3} (\frac {6} {\pi})^2$};
+
+\node [anchor = east,color=red] at (21.5,-1.7){$p_{hol}^2 = \frac {4} {3}(\frac {aH} {p} = \frac {r_H} {\lambdabar_e})^3 \approx \frac {\delta F^4} {\beta Z^4} ~;~ \sqrt p \approx \frac {(20/3)^2} {\delta d_e} $};
+
+
+\node [anchor = west,color=red] at (-21.5,-1.7){$ \delta = a -136 ~;~ e^{e^e} \approx \frac {a^2F^2H^2\delta^4} {1836pW^4}$};
+
+\node [anchor = east,color=blue] at (37,-2){$\pi^{\sqrt a} \approx a_s^{2\pi} \approx e^{p/a} \approx F\pi /e $};
+
+
+\node [anchor = east,color=blue] at (20,-6){\LARGE{MACRO-PHYSIQUE}};
+
+\node [anchor = east,color=blue] at (34,-5.75){$R/2 = \frac {\hbar^2} {Gm_em_pm_H} = \frac {G_Ft_K^2} {m_e \lambdabar_e^4}  $ };
+
+
+\node [anchor = east,color=red] at (16,-3.5){$\rho_c = \frac {3c^2} {8\pi GR^2 } \approx \frac {m_H} {(l_1 / 10^{1/4})^3} 
+\approx \frac {3m_H} {v_{Hum}}  $};
+
+%\node [anchor = east,color=red] at (31.25,-16){ $4\pi (\frac {R_e}{\lambda_{Wien}})^2 \approx e^a$};
+\node [anchor = west,color= red] at (-14,-14) {$\frac {\pi}{e} \approx \gamma (\mu_e = 2d_e) \approx ucos \theta \approx \sqrt6 sin \theta  \approx (\frac {r_H}{\lambdabar_e})^{1/34} \approx \Phi^q \approx 4\pi q^2 \approx \frac {4\pi}{3}(g_0\approx g_1 \sqrt g_2)^3 $};
+%\node [anchor = east,color=red] at (1.25,-16){$\frac {R}{2\lambdabar_e} \approx N_{Lucas} = 2^{2^{2^{2^2-1}-1}-1}-1$};
+%\node [anchor = east,color=red] at (-18,-17){$aq^2 = 4(\pi_q\approx ln\pi + 2)$};
+%\node [anchor = east,color=red] at (-14.5,-15){Charge $q = g_1 cos \theta = g_2 sin \theta$};
+\node [anchor = south] at (20.25,-33.0) {$26$};
+\node [anchor = south] at (20.25,-36.0) {$6$};
+\node [anchor = south] at (28.25,-33.0) {$30$};
+\node [anchor = south] at (28.25,-36.0) {$7$};
+\node [anchor = south] at (31.25,-36.0) {$e^2$};
+\node [anchor = south] at (29.25,-31.0) {$ \sqrt{H/2}\approx a sin^2 \theta$};
+\node [anchor = south] at (32.6,-33.00) {$d$};
+\node [anchor = south] at (32.6,-36.00) {$k$};
+%%% Y AXIS
+\node [anchor = north] at (-31.55,-31.0) {$0$};
+\node [anchor = north] at (-31.55,-19.0) {$1$};
+\node [anchor = north] at (-31.55,-7.0) {$2$};
+\node [anchor = north] at (-31.55, 5.0) {$3$};
+\node [anchor = north] at (-31.55, 16.0) {$4$}; \node [anchor = south] at (-33.25,-34.5) {$f(-5) \approx 2/u_n$};
+\node [anchor = north] at (-31.55, 26.0) {$5$};
+%\node [anchor = north] at (-11.9, 34) {$   f(32) = e^{2^{2^{2^{2}}}} \approx (\frac {R_C}{\lambdabar_e})(\frac {\tau}{n_t})^{128/3} ~~~~ (\frac {4\pi^2}{3})(\frac {R_C}{r_H})^3 \approx a^a \approx (2a^2)^{64} \approx \Pi_i^{20} O_{M_i} \approx (\frac {Z}{W})^{35\times 153}$};
+
+\node [anchor = north,color=red] at (2, 35.25) {$\hbar,G, u  m_{bicodon}, m_{photon}, m_{graviton} \Rightarrow  R_{Cosmos} = R_e^2/2l_P  \approx \lambdabar_e 6^{128}/(1+1/\sqrt 2) \approx l_P (6^{p_G/ \sqrt a} \approx \Phi^{17a^2/ (4\times 137)} \approx 3570^{\frac {\beta a^2}{4\times 137}}) $};
+
+\node [anchor = north,color=red] at (-15,33.2){$ \frac {R}{2 \sqrt{\lambdabar_p \lambdabar_H}}  = \sqrt{\frac {H}{p} (\frac {M}{m_e}  = \frac {d}{\lambdabar_e})} = \frac {\hbar c}{Gm_em_p}  $};
+
+
+
+\node [anchor = north,color=red] at (12, 33) {$  R_{Cosmos}/l_1 \approx  u^{(137/e^e)^3 +1} \approx u^{3^6}/S^2   $};
+
+\node [anchor = north] at (-35.6, 32.5) {$ e^{e^{e^{e^{e^{-g_2}}}}}$};
+\node [anchor = north] at (-29.0,36.0) {$y=\ln\ln Y$};
+%%% Y' AX
+IS
+\node [anchor = north] at (-34.25,-30.0) {$e$~~~~~~~~};
+\node [anchor = north] at (-34.25,-20.0) {$10$~~~~~~~~};
+\node [anchor = north] at (-34.25,-12.0) {$100$~~~~~~~~};
+\node [anchor = north] at (-27,-1.5) {$495^2 = H^{(0)}= h_0^4  \approx \frac {WZ\sqrt{2\pi a_s sin\theta}}{F} \approx (\frac {Hp}{F})^7$};
+\node [anchor = north] at (-34.25,4.0) {$10^{10}~~~~~~~~$};
+\node [anchor = north] at (-34.25,12.0) {$10^{20}~~~~~~~~$};
+\node [anchor = north] at (-34.25,20.0) {$10^{40}~~~~~~~~$};
+\node [anchor = north] at (-34.25,28.0) {$10^{80}~~~~~~~~$};
+\node [anchor = north] at (-34.25,36.0) {$Y$};
+%% SLOPE
+\end{tikzpicture}
+{\color{black}
+
+\caption[Graphics \ref{AxeCosmique}: AXE COSMIQUE]{\footnotesize{Les rapports Y (/ électron) entourent la loi $e^{2^{d/4}}$, basée sur 8 relations holiques 2D-1D imbriquées micro-macrophysiques, d'où le \textit{double} logarithme $y = ln(lnY)$ qui dépend de la série spectroscopique $d = 4k + 2$, de $k = 0$ à $k = 7$: \textbf{Le Tableau Périodique (\underline {s}=2, \underline {p}= 6, \underline {d}=  10, \underline {f}= 14)  est étendu à une séquence d'octonions de Bott. L'Univers observable est permanent, boson de jauge terminal du Cosmos:  U (k = 7), GUT (k= 5), Faible (k=3), Fort (Gluons k=1)}; Pour k = 6, $f(26) \approx 6 R(Hubble) \approx 12(N(Lucas)= 2^{127}-1)$, et le Topon correspond à $M/m_e \approx f(30) \times 153^2$ où $12\times 153 = 1836 \approx m_p/m_e ~= p \approx 1836.152673 $. D'où $R = 2a_G \lambdabar_e  \approx 2 \hbar^2/Gm_p^2m_e = 2\hbar^2/Gm^3 $, où $m$ est la masse liée à la Super-Période $ t_{sp} =\hbar^4/G_F^{5/2}\rho_c^{3/2} = \hbar^3/G^2m^5 \approx 5.4829 \times 10^{57} ~s$, avec la cte de Fermi $G_F \approx 1.435850991 \times 10^{-62} kg~ m^5~ s^{-2}$ et la dens. crit. $\rho_c = 3c^2/8\pi R^2 = M/(4\pi R^3/3)~;~  l_1^3\rho_c/m_e
+\approx (137/2\pi d_e)^3\approx 137 (4/3)^{2/3} (137a)^{1/2}/2 $. Le rayon du Cosmos $R_C = R_e^2/2l_P$ vient de son rayon hol. réduit $R_e = (r_e = \lambdabar_e/a)^3/l_P^2$ lié à R par $R_e = R \times (u = Hp/a^3 \approx e^{2/e^2} ) = 2\hbar^2/G(m_N=am_e)^3$~;~ $(\frac {2}{\Phi} )^{2 \times 209} \approx (2 \sqrt{10}/3\pi \approx (a/137g_3)^2 ) R_e \approx  WR/Zd_e^2 $~ (7ppm); $u_n = n_t^2/a^3 \approx \frac {aa_sZ\sqrt \beta}{2\times 137F } $ et $u_{p-1} \approx \Phi_{p-1}^2/2$ où $\frac {PO_B}{O_M} \approx \Phi_{p-1}^{10}; \Phi_0^{8} = 48 \approx \Phi^8 + 1  $. Le nb. d'Eddington $N_{Ed} = 136 \times 2^{256} \approx (3/10)M/m_n$, d'où $n_t = m_n/m_e \approx 1838.683659 \approx \pi \times (153^2 +(e/2)^2)/40$ (10 ppb). $f(18)/ \pi \approx$ le Nb Prem. d'Euler et le rapport thermique, relié aux points triples de $H_2, O_2, et H_2O$. \textbf{Le cardinal du Monstre $O_M$ définit doublement la constante électrique $a \approx 137.035999099 $, (mesure 0.15 ppb), avec $a_s = a_w/2\pi (Hp)^{3/2}$}, $d_e \approx 1.001159652$. La période de Kotov vérifie $t_{sp}/t_K \approx O_M/\sqrt2 \approx e^a/F$ et $ct_K \approx d_{Soleil-Uranus}$. $f(29) \approx N_{Ram}^4 = e^{4\pi \sqrt{163}}/2p_{hol} ~(1 ppm) \approx e^{....-g_Z}a/8\beta (Hpn_t)^{1/3} ~ (3 ppm) (\beta = 1/(H-p) $; n=12 confirme la symétrie d'Eddington Proton-Tau, hors Modèle Standard. \textbf{Pour n = 1836, la fonction de partition de Ramanujan $RAM_n= e^{\pi \sqrt{2n/3}}/4n \sqrt3$ confirme $G \approx 6.67545 \times 10^{-11} kg^{-1}m^3 s^{-2}$ (2 ppm), lié à $p^{p^2}\approx (a^2)^{a^3}$}. Le nombre de photons dans l'Univers est lié aux cardinaux du Monstre et du Bébé-Monstre par $n_{ph}\approx (137/90)^2O_MO_B$ (10 ppm). Le produit des 20 groupes du Monstre est lié à $a^a$ et au volume du Cosmos. $f(14) = f(10)^2  \Rightarrow g_Z = Z/495^2 \approx \mu^{-\mu/\tau} \approx 1838.5\sqrt2/3570 \Rightarrow$, boson de Higgs = $495^2 ~ (10 ppm)$, lié à la constante d'Atiyah $\Gamma = \gamma a/\pi \approx a^{a/209}$, ;~$\mu \approx 206.7682869$;~$\tau \approx 3477.441701$;~ $m_P^2 = \hbar c/Gm_e;~ P=m_P/m_e;~H = m_H/m_e \approx 1837.152646~;~ \sqrt a_0 = a_w/WZ;~ W = m_W/m_e \approx 157340.1093;~ Z = m_z/m_e \approx 178451.7529; ~cos\theta = W/Z; ~ F = \sqrt a_w \approx 573007.3652 = (274\Gamma)^{3/2} \approx 2\pi a (665\times666)^{1/2}-3;FH^{(0)}/666p_G \approx (WZ sin \theta)^{1/2} = 6(139\times 138 +1) = 6N_0^{\prime} ~ (ppb) $~ seul nb commun, avec $N_0 = 43$, aux suites A235392 et A267504 $;  j= 8\pi^2/ln2;~ \Phi = (1+\sqrt5)/2$ (Nb d'Or) ;~ $\phi = 1 +\sqrt2 $ (Nb d'Argent). \textbf{$m_{bc}$ est centrale}. \textbf{Le Neuron $ t_N = G_F^{5/4}/\hbar^2 G^{3/4} \approx 19.14 ~ms $ vérifie $Ct_N / \lambdabar_e \approx 5^2 f(30)$ et est lié à la seconde via 3570 liant le mètre au rayon terrestre $R_T$}. Couplages de jauge : $g_1 = Zsin\theta/H^0; g_2 = W/H^{(0)};   g_F \approx \frac {F}{H^{(0)}}; g_3/g_2 = g_0/g_1 \approx 6/ \pi \approx \Phi^{4/3};x_0 = g_0(1+g_1/g_2); \pi_a^2 = a^2-137^2 \approx aW/\sqrt {150} Z ; g_3 \approx 2/\Phi \approx 2/ln(2\pi_ag_3);  w_5 = hc/k_BT \lambda_{Wien} = 5(1-e^{-5})\approx 5a/138 ; WZ/N_0^{\prime} = N_0^{\prime}/sin\theta \approx (137/a)^2H^{(0)}/(3 \times N_0/2^7)^{1/2}$.} }}
+
+%$ \frac {WZ}{N_0^{\prime}} \approx \frac {N_0^{\prime}}{sin\theta}; ~{(a/137)^2 \sqrt {3 \times N_0/2^7}
+
+\label{AxeCosmique}
+
+\end{table}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
 \begin{table}
 
 \centering
